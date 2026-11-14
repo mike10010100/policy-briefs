@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practical AI Governance Framework | Policy Brief by Michael Paulauski</title>
+  <meta name="description" content="Federal policy recommendations on hyperscale data-center power and water, public compute, civil liberties and legal aid AI, worker tax parity and wage insurance, and deepfake liability." />
+  <link rel="canonical" href="https://mike10010100.github.io/policy-briefs/ai-governance/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Practical AI Governance Framework | Policy Brief" />
+  <meta property="og:description" content="Pay-your-own-freight clean data centers, public compute, civil-liberties red lines, legal-aid AI, worker tax parity, and federal wage insurance. Prepared by Michael Paulauski (Nov 2026)." />
+  <meta property="og:url" content="https://mike10010100.github.io/policy-briefs/ai-governance/" />
+  <meta property="og:image" content="https://mike10010100.github.io/policy-briefs/assets/og-ai-governance.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Practical AI Governance Framework | Policy Brief" />
+  <meta name="twitter:description" content="Pay-your-own-freight clean data centers, public compute, civil-liberties red lines, legal-aid AI, worker tax parity, and federal wage insurance." />
+  <meta name="twitter:image" content="https://mike10010100.github.io/policy-briefs/assets/og-ai-governance.png" />
+
+  <script>
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var queryTheme = params.get("theme");
+        var saved = localStorage.getItem("ai-brief-theme");
+        var theme = (queryTheme === "dark" || queryTheme === "light")
+          ? queryTheme
+          : (saved === "dark" || saved === "light"
+            ? saved
+            : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+
+  <header id="top" class="site-header">
+    <div class="header-inner">
+      <div class="header-top-row">
+        <div class="header-crumb-group">
+          <a class="back-index-link" href="../">&larr; All Policy Briefs</a>
+          <span class="doc-badge">Brief 2026-01 &middot; Federal AI Governance</span>
+        </div>
+        <div class="utility-controls">
+          <button id="copy-page-btn" class="btn btn-compact" type="button">Copy Page Link</button>
+          <button id="theme-toggle-btn" class="btn btn-compact" type="button" aria-label="Toggle color theme">Dark Mode</button>
+        </div>
+      </div>
+
+      <h1 class="site-title">Practical AI governance framework</h1>
+
+      <div class="meta-bar">
+        <span class="meta-item">Prepared by <strong>Michael Paulauski</strong></span>
+        <span class="meta-sep" aria-hidden="true">&middot;</span>
+        <span class="meta-item">November 13, 2026</span>
+        <span class="meta-sep" aria-hidden="true">&middot;</span>
+        <span class="meta-item">9 min read &middot; 5 Policy Pillars + 16-Term Glossary</span>
+      </div>
+
+      <div class="action-bar">
+        <a class="btn btn-primary" href="./Practical-AI-Governance-Policy-Brief.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download PDF (6 pp.)
+        </a>
+        <a class="btn" href="./Practical-AI-Governance-Policy-Brief.md">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+          </svg>
+          Markdown Source
+        </a>
+        <a class="btn" href="https://github.com/mike10010100/policy-briefs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-toc" aria-label="Jump to section">
+    <details>
+      <summary>Jump to section</summary>
+      <ul>
+        <li><a href="#bluf">Bottom line up front</a></li>
+        <li><a href="#data-centers">1. Data centers: clean power and water</a></li>
+        <li><a href="#compute-antitrust">2. Public compute and antitrust</a></li>
+        <li><a href="#civil-liberties-justice">3. Civil liberties, legal aid, and health care</a></li>
+        <li><a href="#workers-taxes">4. Worker taxes, bossware, and wage insurance</a></li>
+        <li><a href="#deepfakes-fraud">5. Deepfakes, scams, and creator rights</a></li>
+        <li><a href="#trade-offs">Trade-offs to weigh in policy design</a></li>
+        <li><a href="#references">Key references for staff follow-up</a></li>
+        <li><a href="#glossary">Appendix: Plain-English glossary</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <div class="layout-shell">
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <div class="toc-heading">Contents</div>
+      <ul class="toc-list">
+        <li><a class="toc-link" href="#bluf"><span class="toc-num">&bull;</span><span>Bottom line up front</span></a></li>
+        <li><a class="toc-link" href="#data-centers"><span class="toc-num">01</span><span>Clean power and water</span></a></li>
+        <li><a class="toc-link" href="#compute-antitrust"><span class="toc-num">02</span><span>Compute and antitrust</span></a></li>
+        <li><a class="toc-link" href="#civil-liberties-justice"><span class="toc-num">03</span><span>Civil liberties and law</span></a></li>
+        <li><a class="toc-link" href="#workers-taxes"><span class="toc-num">04</span><span>Workers, taxes, and wages</span></a></li>
+        <li><a class="toc-link" href="#deepfakes-fraud"><span class="toc-num">05</span><span>Deepfakes and likenesses</span></a></li>
+        <li><a class="toc-link" href="#trade-offs"><span class="toc-num">&bull;</span><span>Policy trade-offs</span></a></li>
+        <li><a class="toc-link" href="#references"><span class="toc-num">&bull;</span><span>Key references</span></a></li>
+        <li><a class="toc-link" href="#glossary"><span class="toc-num">&bull;</span><span>Plain-English glossary</span></a></li>
+      </ul>
+      <a class="toc-back-top" href="#top">&uarr; Back to top</a>
+    </aside>
+
+    <main class="brief-article">
+      <section id="bluf" class="bluf-card">
+        <div class="section-head">
+          <h2>Bottom line up front</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#bluf" aria-label="Copy link to Bottom line up front"># Link</button>
+        </div>
+        <p data-verbatim>Polling from the Pew Research Center and community-backlash research from the Brookings Institution point to concrete household pressures driving public frustration over AI: rising home electric bills, local water strain, workplace surveillance, and job anxiety. Families are also confronting algorithmic rent and health-insurance abuses alongside unpermitted data-center power plants near residential neighborhoods.</p>
+        <p data-verbatim>Yet trying to bottle up AI software at the U.S. border will fail, and hardware export controls alone cannot preserve an American lead. Benchmark tracking in the Stanford AI Index and strategic assessments from CSIS and the Lowy Institute show that despite U.S. chip restrictions, Chinese labs such as DeepSeek and Alibaba have narrowed frontier benchmark gaps to single digits and gained wide global adoption through <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-2">open-weight</span> releases. Pew also finds that 71% of Americans expect AI to reduce total U.S. jobs over the next two decades, with the sharpest jump in concern among adults under 30 (climbing from 61% in 2024 to 73% in 2026) amid tighter entry-level white-collar hiring.</p>
+        <div class="bluf-goal">
+          <div class="goal-kicker">Core Federal Goal</div>
+          <p data-verbatim>The federal policy goal is straightforward: let American researchers and startups build at full speed, require hyperscale tech operators to fund clean infrastructure up front, build public and open alternatives to Big Tech monopolies, set statutory civil-liberties and patient-care limits on automated decisions, and pair pro-worker tax and labor rules with real income protection when capable <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-1">AI agents</span> displace mid-career staff.</p>
+        </div>
+      </section>
+
+      <aside class="metrics-strip" aria-label="Key figures cited in this brief">
+        <div class="metrics-heading">Key figures cited in this brief</div>
+        <div class="metrics-grid">
+          <div class="stat-card">
+            <div class="stat-figure">71%</div>
+            <div class="stat-label">Americans expecting AI to reduce total U.S. jobs over 20 years, rising to 73% among adults under 30.</div>
+            <div class="stat-cite">Pew Research Center (2026)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">$9B+ / 76-126 GW</div>
+            <div class="stat-label">Single PJM capacity-auction jump vs. existing grid headroom unlocked by modest peak load flexibility.</div>
+            <div class="stat-cite">PJM Market Monitor; Duke Nicholas Institute (2025-2026)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">92%</div>
+            <div class="stat-label">Low-income Americans' civil legal problems receiving inadequate or no legal help.</div>
+            <div class="stat-cite">Legal Services Corporation Justice Gap Report</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">25.5%-33.5% vs. ~5%</div>
+            <div class="stat-label">Effective U.S. tax rate on human labor compared with software and equipment under 100% bonus depreciation.</div>
+            <div class="stat-cite">Acemoglu, Manera &amp; Restrepo, Brookings (2020)</div>
+          </div>
+        </div>
+      </aside>
+
+      <section id="data-centers" class="brief-section">
+        <div class="section-kicker">Recommendation 01 &middot; Clean Power, Water &amp; Air</div>
+        <div class="section-head">
+          <h2>1. Make hyperscale data centers fund clean power and water up front</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#data-centers" aria-label="Copy link to Section 1"># Link</button>
+        </div>
+        <p data-verbatim>Across the <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-5">PJM grid</span> spanning 13 states and Washington, D.C., U.S. Department of Energy filings and PJM's Independent Market Monitor show that surging data center load has collided with power plant retirements, adding more than $9 billion to a single wholesale capacity auction and pushing up household electric bills. Through <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-6">FERC</span> wholesale tariff orders and Department of Energy grid-grant conditions, Washington should push 100% cost-causation tariffs for hyperscale loads (such as facilities over 20 megawatts) so families never subsidize Big Tech grid upgrades.</p>
+        <p data-verbatim>Fast-track <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-7">interconnection queues</span> should be reserved for large facilities that bring matched clean generation (using near-term solar and battery storage while scaling <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-10">geothermal</span> and nuclear) and agree to trim non-urgent runs by 0.25% to 1% of annual electricity use (mostly partial drawdowns across roughly 85 to 366 peak grid-stress hours a year, equal to 22 to 88 full-load hours). Companion 2025 and 2026 studies from Duke University's Nicholas Institute find that this modest <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-8">peak curtailment</span> unlocks 76 to 126 gigawatts of headroom on the existing grid, while broader data center load flexibility cuts U.S. power-system capital and operating costs by $40 billion to $150 billion over ten years. FERC should also speed up advanced transmission <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-9">reconductoring</span> alongside fast-track clean-generation interconnections using spare capacity at operating power plants under <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-7">Order 845</span> and generator-replacement rules at retiring coal sites.</p>
+        <p data-verbatim>On water and air, Water Foundation and Brookings analyses show that a single hyperscale facility can draw 1 million to 5 million gallons of treated water a day in dry basins. Because federal agencies cannot set city water rates directly, Congress and the executive branch should condition EPA State Revolving Fund water grants, Bureau of Reclamation funding, DOE loans, and federal cloud contracts on ending subsidized potable water discounts for large data centers and requiring <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-11">closed-loop</span> or recycled graywater cooling with automatic drought cutbacks.</p>
+        <p data-verbatim>The EPA should also finalize a binding rule, without "national security" enforcement waivers, confirming that trailer-mounted or "temporary" methane turbines powering fixed data centers cannot claim Clean Air Act <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-11">nonroad-engine exemptions</span>. That closes the loophole behind unpermitted gas turbines documented in NAACP, Southern Environmental Law Center, and Earthjustice filings in South Memphis and Southaven, Mississippi.</p>
+      </section>
+
+      <section id="compute-antitrust" class="brief-section">
+        <div class="section-kicker">Recommendation 02 &middot; Public Compute &amp; Antitrust</div>
+        <div class="section-head">
+          <h2>2. Break Big Tech compute bottlenecks and ban algorithmic price-fixing</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#compute-antitrust" aria-label="Copy link to Section 2"># Link</button>
+        </div>
+        <p data-verbatim>Leaving frontier AI in the hands of four or five cloud conglomerates concentrates too much economic and political power. Building on NSF's 2026 launch of the <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-3">NAIRR</span> Operations Center, Congress should pass the bipartisan CREATE AI Act and appropriate multi-billion-dollar funding for publicly owned compute at national labs and university supercomputing centers so researchers, public hospitals, and independent startups get real capacity without relying on donated Big Tech cloud credits. Federal policy should also keep open-weight AI models legal so smaller firms and civic institutions can run software locally without paying permanent rent to closed corporate APIs.</p>
+        <p data-verbatim>On antitrust, the FTC and DOJ should block exclusive cloud-compute tying, scrutinize chip allocation bottlenecks, and police <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-4">"acqui-hire"</span> deals structured to dodge merger review. Building on DOJ's RealPage consent decrees, Congress should also pass the Preventing Algorithmic Collusion Act to outlaw shared pricing algorithms fed by nonpublic competitor data that let competing landlords and corporations inflate rents and consumer prices in lockstep.</p>
+      </section>
+
+      <section id="civil-liberties-justice" class="brief-section">
+        <div class="section-kicker">Recommendation 03 &middot; Civil Liberties, Courts &amp; Health Care</div>
+        <div class="section-head">
+          <h2>3. Set statutory civil-liberties, courtroom, and patient-care guardrails while funding legal aid AI</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#civil-liberties-justice" aria-label="Copy link to Section 3"># Link</button>
+        </div>
+        <p data-verbatim>As the 2026 Pentagon vendor dispute analyzed by Just Security and the Electronic Frontier Foundation showed, constitutional boundaries cannot rest on private contract standoffs between one AI lab and defense officials. Congress should pass statutory requirements for meaningful human control over lethal force targeting people, turn the FY2025 defense bill's non-binding nuclear guardrail into a binding statutory ban on autonomous AI in nuclear launch decisions, and enact the Fourth Amendment Is Not For Sale Act to close the commercial <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-16">data-broker loophole</span> documented by the ACLU and GAO, where intelligence and police agencies buy bulk phone-location records without a warrant.</p>
+        <p data-verbatim>Inside the justice system, policy should separate citizen access from institutional coercion. The Legal Services Corporation's Justice Gap Report finds that 92% of low-income Americans' civil legal problems receive inadequate or no legal help. Congress should expand Legal Services Corporation and State Justice Institute technology grants for vetted civil tools, like those piloted at Stanford's Legal Design Lab, that help low-income tenants and veterans handle evictions, consumer debt, and benefits claims. Because federal law bars LSC from criminal cases, Congress should pair this with dedicated Department of Justice <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-15">Byrne JAG</span> grants for state public defenders and federal Judiciary Defender Services funding so overworked defense lawyers can use audited AI to review criminal discovery files.</p>
+        <p data-verbatim>At the same time, federal statute should bar black-box algorithms from federal sentencing and federally funded benefits denials (including Medicaid, SNAP, and veterans' benefits), while conditioning state Byrne JAG funds on barring opaque bail and sentencing scores. Congress and the Judicial Conference should finish reworking the withdrawn 2026 <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-15">Rule 707</span> draft and related evidence rules to set strict Daubert-level reliability and deepfake-authentication standards for trial evidence.</p>
+        <p data-verbatim>In health care, following lawsuits over Medicare Advantage prior-authorization algorithms and congressional scrutiny of Original Medicare's 2026 six-state <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-16">WISeR</span> pilot, Congress, HHS, and the Department of Labor should prohibit Medicare Advantage and Medicaid managed-care plans, federal Medicare contractors, ERISA group health plans, and commercial insurers under the Public Health Service Act from denying medical necessity by algorithm without a licensed physician reviewing the patient record, and ban paying review vendors based on care denials or savings.</p>
+      </section>
+
+      <section id="workers-taxes" class="brief-section">
+        <div class="section-kicker">Recommendation 04 &middot; Worker Taxes, Bossware &amp; Wage Insurance</div>
+        <div class="section-head">
+          <h2>4. Equalize worker taxes, ban abusive "bossware," and insure workers against agentic displacement</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#workers-taxes" aria-label="Copy link to Section 4"># Link</button>
+        </div>
+        <p data-verbatim>Research by Daron Acemoglu, Andrea Manera, and Pascual Restrepo in <em>Brookings Papers on Economic Activity</em> calculates that U.S. tax law imposes a 25.5% to 33.5% effective tax rate on human labor (combining income, payroll, and benefit-phaseout taxes) while taxing software and equipment at roughly 5%, a gap locked back in when the 2025 tax law restored 100% first-year <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-12">bonus depreciation</span> and immediate domestic software write-offs. That wedge subsidizes "so-so automation" and pushes firms to replace staff with mediocre software largely for the tax break.</p>
+        <p data-verbatim>Congress should scale back across-the-board 100% corporate bonus depreciation toward true economic depreciation (carving out clean energy, grid hardware, and domestic chip fabs) and use that corporate revenue to fund a refundable working-class payroll tax credit with a mandatory dollar-for-dollar general-revenue transfer keeping the Social Security and Medicare Trust Funds whole.</p>
+        <p data-verbatim>On the job, federal labor law should require an accountable human decision-maker for hiring, firing, pay, and work-speed safety, while outlawing injury-inducing algorithmic quotas (<span class="inline-term" tabindex="0" role="button" data-glossary-target="term-13">"bossware"</span>). Consistent with the AFL-CIO's Workers First Initiative on AI, workers should also gain statutory rights to advance notice and collective bargaining before employers deploy workplace AI.</p>
+        <p data-verbatim>Tax parity only stops marginal automation; once capable AI agents outperform humans at a fraction of payroll cost, mid-career cognitive workers will still face displacement where legacy retraining programs like the expired Trade Adjustment Assistance system and generic WIOA classroom vouchers failed. Drawing on Hamilton Project and Brookings labor research, Congress should enact federal <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-13">wage insurance</span> for displaced workers with at least two or three years of job tenure that temporarily replaces half of the earnings drop (up to an annual cap such as $10,000 for two years) when they take a lower-paying job with a new employer. Congress should also update the federal <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-14">WARN Act</span> so distributed remote and rolling white-collar AI layoffs trigger 90-day notice and mandatory severance transition funding.</p>
+        <p data-verbatim>For skill transitions and younger entrants, federal workforce funds should shift away from generic classroom vouchers toward paid apprenticeships and employer-backed sectoral training in shortage fields like nursing, grid trades, and public-interest tech (sectoral models shown to raise long-term pay in MDRC randomized trials), paired with broader Federal Unemployment Tax Act training-approval standards and extended UI stipends so displaced workers keep income support during full-time programs. Finally, Congress should modernize <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-14">ERISA</span> multi-employer plan rules so unions and sectoral boards can run portable benefit pools across short-tenure jobs without weakening W-2 misclassification laws.</p>
+      </section>
+
+      <section id="deepfakes-fraud" class="brief-section">
+        <div class="section-kicker">Recommendation 05 &middot; Deepfakes, Scams &amp; Creator Rights</div>
+        <div class="section-head">
+          <h2>5. Close civil deepfake gaps, stop voice-clone fraud, and protect creator likenesses</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#deepfakes-fraud" aria-label="Copy link to Section 5"># Link</button>
+        </div>
+        <p data-verbatim>Building on the criminal penalties and 48-hour platform takedowns enacted in the 2025 TAKE IT DOWN Act, Congress should pass the DEFIANCE Act so intimate-deepfake victims can sue perpetrators directly in federal court, alongside the bipartisan NO FAKES Act to give working creators and private citizens an enforceable federal consent and licensing right over AI clones of their voice and likeness.</p>
+        <p data-verbatim>Federal law should also stiffen wire-fraud penalties and telecom caller-authentication rules for AI voice-clone scams targeting seniors, require commercial AI platforms to embed open <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-4">provenance metadata</span> and prohibit stripping it, and support collective licensing markets for commercial creative archives without outlawing open research.</p>
+      </section>
+
+      <section id="trade-offs" class="brief-section">
+        <div class="section-kicker">Implementation Design</div>
+        <div class="section-head">
+          <h2>Trade-offs to weigh in policy design</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#trade-offs" aria-label="Copy link to Trade-offs"># Link</button>
+        </div>
+        <div class="tradeoffs-grid">
+          <article class="tradeoff-card">
+            <div class="tradeoff-eyebrow">01 &middot; Permitting Scope</div>
+            <p data-verbatim>Fast-tracking clean energy infrastructure can fracture center-left coalitions if permitting bills sweep too broadly, as <em>Time</em> documented during the 2025 and 2026 permitting battles. Statutory fast-tracks must stay tightly scoped to clean transmission lines, reconductoring, dynamic line ratings, and battery storage so they never weaken NEPA review, Tribal consultation, or Clean Air Act enforcement on fossil projects, as demanded by the Sierra Club and frontline community groups.</p>
+          </article>
+          <article class="tradeoff-card">
+            <div class="tradeoff-eyebrow">02 &middot; Tax Design &amp; Training Scale</div>
+            <p data-verbatim>Market-oriented economists at ITIF and the American Enterprise Institute warn that literal "robot taxes" or domestic AI compute taxes are nearly impossible to define in tax law and risk pushing data centers abroad, while MDRC implementation studies caution that high-performing sectoral training programs are hard to scale rapidly without deep employer commitment. Pairing general bonus-depreciation reform with trust-fund-neutral payroll credits and rapid-reemployment wage insurance cushions displaced workers immediately without taxing domestic compute or stranding laid-off staff in low-return classes.</p>
+          </article>
+          <article class="tradeoff-card">
+            <div class="tradeoff-eyebrow">03 &middot; Open Weights vs. Frontier Testing</div>
+            <p data-verbatim>Keeping model weights open remains essential to check Big Tech monopoly lock-in. To address national-security risks without choking off open science, federal pre-release testing mandates should apply only to frontier training runs capable of enabling catastrophic biological weapons or critical-infrastructure cyberattacks, with a clear statutory safe harbor for ordinary open-weight releases.</p>
+          </article>
+          <article class="tradeoff-card">
+            <div class="tradeoff-eyebrow">04 &middot; Courtroom Accuracy &amp; Audits</div>
+            <p data-verbatim>State court administrators and the National Center for State Courts warn that low-income litigants rarely have a second lawyer to catch AI <span class="inline-term" tabindex="0" role="button" data-glossary-target="term-1">hallucinations</span>, which empirical tests by Stanford researchers still find in commercial legal tools. Publicly funded legal-aid software must carry mandatory independent accuracy audits and human attorney sign-off.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="references" class="brief-section references-card">
+        <div class="section-head">
+          <h2>Key references for staff follow-up</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#references" aria-label="Copy link to Key references"># Link</button>
+        </div>
+        <ul class="references-list">
+          <li>Tyler H. Norris et al., <em>Rethinking Load Growth: Assessing the Potential for Integration of Large Flexible Loads in US Power Systems</em> (Feb. 2025), and Martin T. Ross and Jackson Ewing, <em>Data Centers and Generation Capacity over the Next Decade: Potential Benefits of Flexibility</em> (Feb. 2026), Duke University Nicholas Institute</li>
+          <li>Daron Acemoglu, Andrea Manera, and Pascual Restrepo, "Does the U.S. Tax Code Favor Automation?," <em>Brookings Papers on Economic Activity</em> (Spring 2020)</li>
+          <li>The Hamilton Project / Brookings Institution, wage-loss insurance and AI workforce transition proposals; MDRC, <em>WorkAdvance</em> and sectoral employment randomized evaluations</li>
+          <li>Pew Research Center, U.S. public opinion surveys on AI, employment, and data centers (2025-2026); Stanford HAI, <em>AI Index Report</em> (2025-2026)</li>
+          <li>AFL-CIO and AFL-CIO Technology Institute, <em>Workers First Initiative on AI</em> (2025)</li>
+          <li>U.S. Judicial Conference Advisory Committee on Evidence Rules, Machine-Generated Evidence / Rule 707 rulemaking record (2025-2026); Legal Services Corporation, <em>The Justice Gap: The Unmet Civil Legal Needs of Low-Income Americans</em> (2022)</li>
+        </ul>
+      </section>
+
+      <section id="glossary" class="brief-section wide-section glossary-section">
+        <div class="section-head">
+          <h2>Appendix: Plain-English technical and policy glossary</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#glossary" aria-label="Copy link to Glossary"># Link</button>
+        </div>
+        <p class="glossary-intro">Quick reference for AI, energy-grid, tax, labor, healthcare, and legal terms used in this brief. Click any dotted term in the text above to preview its definition.</p>
+
+        <div class="glossary-filters" role="group" aria-label="Filter glossary by category">
+          <button class="filter-pill active" type="button" data-cat="all">All (16)</button>
+          <button class="filter-pill" type="button" data-cat="ai">AI &amp; computing (4)</button>
+          <button class="filter-pill" type="button" data-cat="grid">Power, water &amp; air (7)</button>
+          <button class="filter-pill" type="button" data-cat="policy">Tax, labor, health &amp; law (5)</button>
+        </div>
+
+        <div class="glossary-toolbar">
+          <input id="glossary-filter" class="glossary-search" type="search" placeholder="Filter glossary terms..." aria-label="Filter glossary terms" />
+          <span id="glossary-count" class="glossary-count">Showing 16 of 16 terms</span>
+        </div>
+
+        <div id="glossary-empty" class="glossary-empty">No matching terms found. Clear the search box or switch categories to view all 16 glossary entries.</div>
+
+        <div class="glossary-group" data-group="ai">
+          <h3 class="glossary-group-title">AI and computing</h3>
+          <div class="glossary-grid">
+            <dl id="term-1" class="glossary-card" data-entry data-category="ai">
+              <dt>AI agents ("agentic" AI) and hallucinations</dt>
+              <dd>AI agents are software systems that go beyond answering chat prompts to carry out multi-step office tasks across external programs, such as processing insurance claims, reviewing files, or writing software. Hallucinations are plausible-sounding false facts or invented legal citations produced when an AI guesses instead of checking verified records.</dd>
+            </dl>
+            <dl id="term-2" class="glossary-card" data-entry data-category="ai">
+              <dt>Open-weight models vs. closed APIs</dt>
+              <dd>An open-weight model releases its trained numerical parameters ("weights") publicly so universities, hospitals, and small businesses can download and run the software on their own computers. Closed APIs keep the model locked on a tech company's servers and charge customers ongoing fees for access.</dd>
+            </dl>
+            <dl id="term-3" class="glossary-card" data-entry data-category="ai">
+              <dt>Hyperscale data centers and NAIRR public compute</dt>
+              <dd>Hyperscale data centers are industrial server complexes built by major cloud providers that often draw 20 to 1,000+ megawatts of electricity, comparable to a small city. NAIRR (the National Artificial Intelligence Research Resource) is a National Science Foundation initiative that provides shared supercomputing capacity to academic, nonprofit, and startup researchers outside Big Tech.</dd>
+            </dl>
+            <dl id="term-4" class="glossary-card" data-entry data-category="ai">
+              <dt>"Acqui-hires" and provenance metadata</dt>
+              <dd>An acqui-hire is a deal where a tech giant hires away a startup's founders and core engineers while licensing its technology to gain control without triggering standard antitrust merger review. Provenance metadata is a tamper-evident digital record embedded in synthetic audio, video, or images that records which commercial AI tool generated or edited the file.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="glossary-group" data-group="grid">
+          <h3 class="glossary-group-title">Power grid, water, and air</h3>
+          <div class="glossary-grid">
+            <dl id="term-5" class="glossary-card" data-entry data-category="grid">
+              <dt>PJM grid and wholesale capacity auctions</dt>
+              <dd>PJM Interconnection is America's largest regional grid operator, managing wholesale electricity across 13 Mid-Atlantic and Midwest states plus Washington, D.C. Its capacity auctions pay power plants in advance to guarantee enough supply during future peak demand; surging data-center power forecasts have driven those auction prices sharply higher on household bills.</dd>
+            </dl>
+            <dl id="term-6" class="glossary-card" data-entry data-category="grid">
+              <dt>FERC and 100% cost-causation tariffs</dt>
+              <dd>FERC (the Federal Energy Regulatory Commission) regulates interstate electricity transmission and wholesale power markets. A 100% cost-causation tariff is a rate rule requiring a giant new electricity user, such as a hyperscale data center, to pay the full cost of the grid upgrades and power lines it triggers so residential bills do not rise.</dd>
+            </dl>
+            <dl id="term-7" class="glossary-card" data-entry data-category="grid">
+              <dt>Interconnection queues, Order 845, and generator replacement</dt>
+              <dd>The interconnection queue is the multi-year engineering waitlist new power projects and large facilities face before plugging into the grid. FERC Order 845 lets new clean generation or batteries share unused grid-hookup capacity at an operating power plant, while generator-replacement rules let clean power projects reuse the existing grid hookup left behind when an older coal plant retires.</dd>
+            </dl>
+            <dl id="term-8" class="glossary-card" data-entry data-category="grid">
+              <dt>Peak load curtailment</dt>
+              <dd>A binding grid agreement where a data center trims non-urgent computing jobs (or switches to on-site batteries) during the grid's highest-stress summer and winter hours so utilities do not have to build billions of dollars in extra fossil-fuel peaker plants.</dd>
+            </dl>
+            <dl id="term-9" class="glossary-card" data-entry data-category="grid">
+              <dt>Reconductoring and dynamic line ratings</dt>
+              <dd>Reconductoring replaces old steel-core wires on existing transmission towers with modern composite-core cables that carry roughly twice as much electricity without multi-year land fights for new towers. Dynamic line ratings use real-time wind and temperature sensors so grid operators can safely send more power through existing wires on cool or breezy days.</dd>
+            </dl>
+            <dl id="term-10" class="glossary-card" data-entry data-category="grid">
+              <dt>Enhanced geothermal</dt>
+              <dd>Clean baseload energy that uses modern precision drilling techniques from the oil-and-gas industry to tap natural heat miles underground, generating steady 24/7 carbon-free electricity with a small land footprint.</dd>
+            </dl>
+            <dl id="term-11" class="glossary-card" data-entry data-category="grid">
+              <dt>Closed-loop cooling, graywater, and the nonroad-engine loophole</dt>
+              <dd>Closed-loop cooling circulates liquid inside sealed pipes to cool servers instead of evaporating millions of gallons of municipal drinking water into the air; graywater is treated municipal wastewater reused for industrial cooling. The Clean Air Act nonroad-engine exemption is a rule meant for movable machinery like bulldozers that some operators used to run trailer-mounted methane gas turbines continuously at fixed data centers without air-pollution permits.</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="glossary-group" data-group="policy">
+          <h3 class="glossary-group-title">Tax, labor, health, and law</h3>
+          <div class="glossary-grid">
+            <dl id="term-12" class="glossary-card" data-entry data-category="policy">
+              <dt>100% bonus depreciation vs. economic depreciation ("so-so automation")</dt>
+              <dd>Bonus depreciation is a tax rule letting corporations deduct the full cost of new software or equipment in Year 1 instead of spreading deductions over the asset's useful working life (economic depreciation). Economists use "so-so automation" to describe mediocre software that barely matches human staff and gets deployed mainly because equipment write-offs are taxed far more lightly than human wages.</dd>
+            </dl>
+            <dl id="term-13" class="glossary-card" data-entry data-category="policy">
+              <dt>"Bossware," wage insurance, and sectoral training</dt>
+              <dd>"Bossware" is workplace software that monitors keystrokes, cameras, or movement speed to enforce rigid quotas or automated discipline. Wage insurance is a temporary federal paycheck supplement (such as covering half of a pay drop up to an annual cap for two years) when a laid-off worker starts a new job at lower pay. Sectoral training pairs public workforce funds directly with local employers who co-design training for specific job shortages and hire graduates.</dd>
+            </dl>
+            <dl id="term-14" class="glossary-card" data-entry data-category="policy">
+              <dt>WARN Act, FUTA, and ERISA multi-employer plans</dt>
+              <dd>The WARN Act requires large employers to give advance notice before mass layoffs. FUTA (the Federal Unemployment Tax Act) sets federal baseline rules for state unemployment insurance. ERISA is the federal law governing private workplace health and retirement benefits, including multi-employer pools that let workers carry benefits across short-term jobs.</dd>
+            </dl>
+            <dl id="term-15" class="glossary-card" data-entry data-category="policy">
+              <dt>Byrne JAG, LSC, Daubert reliability, and Rule 707</dt>
+              <dd>Byrne JAG is the main Department of Justice grant program for state criminal-justice systems (including state public defenders), while the Legal Services Corporation (LSC) funds civil legal aid for low-income households. Daubert is the federal courtroom standard requiring technical evidence to prove its reliability before reaching a jury; Proposed Rule 707 was a 2025-2026 draft federal evidence rule applying Daubert reliability checks to machine-generated trial evidence.</dd>
+            </dl>
+            <dl id="term-16" class="glossary-card" data-entry data-category="policy">
+              <dt>Medicare Advantage prior authorization, WISeR, and the data-broker loophole</dt>
+              <dd>Prior authorization requires insurer sign-off before a doctor's prescribed treatment is covered; WISeR (Wasteful and Inappropriate Service Reduction) is a 2026 six-state federal pilot introducing private AI prior-authorization contractors into traditional Original Medicare. The commercial data-broker loophole is the government practice of buying bulk phone-location and personal records from private data brokers instead of getting a court warrant.</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Policy Brief by Michael Paulauski &middot; November 13, 2026</div>
+      <div class="footer-links">
+        <a href="../">All Policy Briefs</a>
+        <a href="./Practical-AI-Governance-Policy-Brief.pdf">PDF Edition</a>
+        <a href="./Practical-AI-Governance-Policy-Brief.md">Markdown Source</a>
+        <a href="https://github.com/mike10010100/policy-briefs">GitHub Repository</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="term-popover" class="term-popover" role="dialog" aria-modal="false" aria-labelledby="term-popover-title" hidden>
+    <div class="term-popover-head">
+      <h4 id="term-popover-title" class="term-popover-title"></h4>
+      <button id="term-popover-close" class="term-popover-close" type="button" aria-label="Close definition">&times;</button>
+    </div>
+    <p id="term-popover-body" class="term-popover-body"></p>
+    <a id="term-popover-link" class="term-popover-link" href="#glossary">View in Glossary &darr;</a>
+  </div>
+
+  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite">Link copied</div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var themeBtn = document.getElementById("theme-toggle-btn");
+      var copyPageBtn = document.getElementById("copy-page-btn");
+      var toast = document.getElementById("copy-toast");
+      var progressBar = document.getElementById("reading-progress");
+      var toastTimer = null;
+
+      function syncThemeButton() {
+        var current = root.getAttribute("data-theme") || "light";
+        themeBtn.textContent = current === "dark" ? "Light Mode" : "Dark Mode";
+      }
+
+      syncThemeButton();
+
+      themeBtn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("ai-brief-theme", next);
+        } catch (e) {}
+        syncThemeButton();
+      });
+
+      function updateProgressBar() {
+        if (!progressBar) return;
+        var scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var pct = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+        progressBar.style.width = pct.toFixed(1) + "%";
+      }
+
+      updateProgressBar();
+      window.addEventListener("scroll", updateProgressBar, { passive: true });
+      window.addEventListener("resize", updateProgressBar, { passive: true });
+
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.add("visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("visible");
+        }, 1800);
+      }
+
+      function copyText(text, label) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            showToast(label || "Link copied");
+          }).catch(function () {
+            showToast("Link ready in address bar");
+          });
+        } else {
+          var temp = document.createElement("input");
+          temp.value = text;
+          document.body.appendChild(temp);
+          temp.select();
+          try {
+            document.execCommand("copy");
+            showToast(label || "Link copied");
+          } catch (e) {
+            showToast("Copy unavailable");
+          }
+          document.body.removeChild(temp);
+        }
+      }
+
+      copyPageBtn.addEventListener("click", function () {
+        var cleanUrl = window.location.origin + window.location.pathname;
+        if (window.location.protocol === "file:") {
+          cleanUrl = window.location.href.split("#")[0].split("?")[0];
+        }
+        copyText(cleanUrl, "Page link copied");
+      });
+
+      var anchorBtns = document.querySelectorAll(".copy-anchor-btn");
+      anchorBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var anchor = btn.getAttribute("data-anchor");
+          var base = window.location.href.split("#")[0];
+          history.replaceState(null, "", anchor);
+          copyText(base + anchor, "Link copied");
+        });
+      });
+
+      /* Close mobile jump menu after clicking a link */
+      var mobileDetails = document.querySelector(".mobile-toc details");
+      if (mobileDetails) {
+        mobileDetails.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            mobileDetails.removeAttribute("open");
+          });
+        });
+      }
+
+      /* Active TOC highlight on scroll */
+      var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc-link"));
+      var sections = tocLinks.map(function (link) {
+        return document.querySelector(link.getAttribute("href"));
+      }).filter(Boolean);
+
+      if ("IntersectionObserver" in window && sections.length) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var id = "#" + entry.target.id;
+              tocLinks.forEach(function (link) {
+                link.classList.toggle("active", link.getAttribute("href") === id);
+              });
+            }
+          });
+        }, { rootMargin: "-15% 0px -70% 0px" });
+
+        sections.forEach(function (sec) {
+          observer.observe(sec);
+        });
+      }
+
+      /* Glossary category pills + search filter */
+      var filterInput = document.getElementById("glossary-filter");
+      var countEl = document.getElementById("glossary-count");
+      var emptyEl = document.getElementById("glossary-empty");
+      var categoryBtns = Array.prototype.slice.call(document.querySelectorAll(".filter-pill"));
+      var groups = Array.prototype.slice.call(document.querySelectorAll("[data-group]"));
+      var entries = Array.prototype.slice.call(document.querySelectorAll("[data-entry]"));
+      var activeCategory = "all";
+
+      function setActiveCategory(cat) {
+        activeCategory = cat;
+        categoryBtns.forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-cat") === cat);
+        });
+      }
+
+      function applyGlossaryFilters() {
+        var q = filterInput ? filterInput.value.trim().toLowerCase() : "";
+        var visibleCount = 0;
+
+        entries.forEach(function (entry) {
+          var matchesCat = activeCategory === "all" || entry.getAttribute("data-category") === activeCategory;
+          var matchesSearch = !q || entry.textContent.toLowerCase().indexOf(q) !== -1;
+          var show = matchesCat && matchesSearch;
+          entry.style.display = show ? "" : "none";
+          if (show) visibleCount += 1;
+        });
+
+        groups.forEach(function (group) {
+          var hasVisible = Array.prototype.some.call(
+            group.querySelectorAll("[data-entry]"),
+            function (card) { return card.style.display !== "none"; }
+          );
+          group.style.display = hasVisible ? "" : "none";
+        });
+
+        if (countEl) {
+          countEl.textContent = "Showing " + visibleCount + " of " + entries.length + " terms";
+        }
+        if (emptyEl) {
+          emptyEl.style.display = visibleCount === 0 ? "block" : "none";
+        }
+      }
+
+      categoryBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          setActiveCategory(btn.getAttribute("data-cat") || "all");
+          applyGlossaryFilters();
+        });
+      });
+
+      if (filterInput) {
+        filterInput.addEventListener("input", applyGlossaryFilters);
+      }
+
+      /* Interactive inline glossary popover */
+      var popover = document.getElementById("term-popover");
+      var popoverTitle = document.getElementById("term-popover-title");
+      var popoverBody = document.getElementById("term-popover-body");
+      var popoverClose = document.getElementById("term-popover-close");
+      var popoverLink = document.getElementById("term-popover-link");
+      var activeTermEl = null;
+      var pulseTimer = null;
+      var openScrollY = 0;
+      var openTimestamp = 0;
+
+      function closePopover() {
+        if (!popover) return;
+        popover.classList.remove("visible");
+        popover.hidden = true;
+        if (activeTermEl) {
+          activeTermEl.classList.remove("is-open");
+          activeTermEl = null;
+        }
+      }
+
+      function positionPopover(termEl) {
+        var rect = termEl.getBoundingClientRect();
+        var popWidth = popover.offsetWidth || 340;
+        var popHeight = popover.offsetHeight || 160;
+        var left = rect.left + (rect.width / 2) - (popWidth / 2);
+        left = Math.max(12, Math.min(left, window.innerWidth - popWidth - 12));
+
+        var top = rect.bottom + 8;
+        if (top + popHeight > window.innerHeight - 12) {
+          top = Math.max(12, rect.top - popHeight - 8);
+        }
+
+        popover.style.left = Math.round(left) + "px";
+        popover.style.top = Math.round(top) + "px";
+      }
+
+      function openPopover(termEl) {
+        if (!popover) return;
+        if (activeTermEl === termEl && !popover.hidden) {
+          closePopover();
+          return;
+        }
+
+        var targetId = termEl.getAttribute("data-glossary-target");
+        var card = targetId ? document.getElementById(targetId) : null;
+        if (!card) return;
+
+        var dt = card.querySelector("dt");
+        var dd = card.querySelector("dd");
+        if (!dt || !dd) return;
+
+        if (activeTermEl) {
+          activeTermEl.classList.remove("is-open");
+        }
+
+        activeTermEl = termEl;
+        activeTermEl.classList.add("is-open");
+        popoverTitle.textContent = dt.textContent;
+        popoverBody.textContent = dd.textContent;
+        popoverLink.setAttribute("href", "#" + targetId);
+
+        openScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        openTimestamp = Date.now();
+
+        popover.hidden = false;
+        positionPopover(termEl);
+        popover.classList.add("visible");
+      }
+
+      document.querySelectorAll(".inline-term").forEach(function (termEl) {
+        termEl.addEventListener("click", function (e) {
+          e.stopPropagation();
+          openPopover(termEl);
+        });
+        termEl.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openPopover(termEl);
+          }
+        });
+      });
+
+      if (popoverClose) {
+        popoverClose.addEventListener("click", closePopover);
+      }
+
+      if (popoverLink) {
+        popoverLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          var href = popoverLink.getAttribute("href");
+          var targetId = href ? href.replace(/^#/, "") : "";
+          var targetCard = targetId ? document.getElementById(targetId) : null;
+          closePopover();
+          if (!targetCard) return;
+
+          if (targetCard.style.display === "none") {
+            setActiveCategory("all");
+            if (filterInput) filterInput.value = "";
+            applyGlossaryFilters();
+          }
+
+          targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+          document.querySelectorAll(".glossary-card.highlight-pulse").forEach(function (el) {
+            el.classList.remove("highlight-pulse");
+          });
+          targetCard.classList.add("highlight-pulse");
+          clearTimeout(pulseTimer);
+          pulseTimer = setTimeout(function () {
+            targetCard.classList.remove("highlight-pulse");
+          }, 2200);
+        });
+      }
+
+      document.addEventListener("click", function (e) {
+        if (!popover || popover.hidden) return;
+        if (!popover.contains(e.target) && !e.target.classList.contains("inline-term")) {
+          closePopover();
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closePopover();
+        }
+      });
+
+      window.addEventListener("scroll", function () {
+        if (!popover || popover.hidden) return;
+        if (Date.now() - openTimestamp < 180) return;
+        var curScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        if (Math.abs(curScrollY - openScrollY) > 80) {
+          closePopover();
+        }
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>
