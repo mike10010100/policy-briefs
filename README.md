@@ -15,11 +15,11 @@ Archive of policy briefs, working papers, and plain-English technical glossaries
 
 Covers five federal policy pillars:
 
-1. Requiring hyperscale data centers to pay 100% of grid upgrades, bring matched clean power and peak-hour load flexibility, end municipal drinking-water subsidies, and close Clean Air Act loopholes for unpermitted methane turbines.
-2. Expanding publicly owned compute under the NSF NAIRR Operations Center and CREATE AI Act, keeping open-weight models legal, policing cloud-compute tying and acqui-hires, and outlawing nonpublic algorithmic price-fixing.
-3. Setting statutory civil-liberties limits on lethal autonomous targeting, nuclear launch authority, and commercial data-broker surveillance, barring black-box algorithms in sentencing, public benefits, and medical-necessity denials, and funding audited AI tools for civil legal aid and public defenders.
-4. Reducing the tax gap between human wages and corporate equipment write-offs with a trust-fund-neutral payroll credit, outlawing abusive workplace monitoring ("bossware"), and pairing modernized WARN Act notice with federal wage insurance and sectoral training.
-5. Closing civil deepfake litigation gaps alongside federal voice-and-likeness consent rights, voice-clone fraud penalties, and platform provenance metadata rules.
+1. Requiring hyperscale data centers to pay 100% of grid upgrades, bring hourly-matched clean power and peak-hour load flexibility, end municipal drinking-water discounts in favor of closed-loop or reclaimed municipal wastewater cooling, and close Clean Air Act loopholes for unpermitted methane turbines.
+2. Expanding publicly owned compute under the NSF-DOE NAIRR Operations Center and CREATE AI Act, keeping open-weight models legal, policing cloud-compute tying and acqui-hires, and outlawing shared algorithmic price-fixing.
+3. Setting statutory civil-liberties limits on affirmative human control over lethal force decisions, nuclear launch authority, and commercial data-broker surveillance, barring black-box algorithms in sentencing, public benefits, and medical-necessity denials without individualized peer-specialty physician review, and funding human staffing alongside audited AI tools for civil legal aid and public defenders.
+4. Reducing the tax gap between human wages and corporate equipment or enterprise-automation software write-offs with a trust-fund-neutral payroll credit, outlawing abusive workplace monitoring ("bossware"), and pairing modernized WARN Act notice with federal wage insurance and sectoral training.
+5. Closing civil deepfake litigation gaps alongside federal voice-and-likeness consent rights with parody and anti-sign-away guardrails, voice-clone fraud penalties, synthetic-origin provenance metadata rules, and voluntary collective licensing without outlawing noncommercial open research.
 
 ## Repository Structure
 
