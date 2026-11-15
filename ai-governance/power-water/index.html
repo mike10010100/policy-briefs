@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean power, water, and air rules for hyperscale data centers | Brief 2026-01A by Michael Paulauski</title>
+  <meta name="description" content="Federal and state utility rules making hyperscale data centers fund 100% of grid upgrades, deliver hourly-matched clean power and peak curtailment, end drinking-water subsidies, and close gas-turbine air permitting loopholes." />
+  <link rel="canonical" href="https://mike10010100.github.io/policy-briefs/ai-governance/power-water/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Clean power, water, and air rules for hyperscale data centers | Brief 2026-01A" />
+  <meta property="og:description" content="100% cost-causation grid tariffs, 76-126 GW peak flexibility, closed-loop or reclaimed-water cooling, and closing Subpart KKKKa and nonroad methane-turbine loopholes." />
+  <meta property="og:url" content="https://mike10010100.github.io/policy-briefs/ai-governance/power-water/" />
+  <meta property="og:image" content="https://mike10010100.github.io/policy-briefs/assets/og-spoke-01.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clean power, water, and air rules for hyperscale data centers | Brief 2026-01A" />
+  <meta name="twitter:description" content="100% cost-causation grid tariffs, 76-126 GW peak flexibility, closed-loop or reclaimed-water cooling, and closing Subpart KKKKa and nonroad methane-turbine loopholes." />
+  <meta name="twitter:image" content="https://mike10010100.github.io/policy-briefs/assets/og-spoke-01.png" />
+
+  <script>
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var queryTheme = params.get("theme");
+        var saved = localStorage.getItem("ai-brief-theme");
+        var theme = (queryTheme === "dark" || queryTheme === "light")
+          ? queryTheme
+          : (saved === "dark" || saved === "light"
+            ? saved
+            : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" /></noscript>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+
+  <header id="top" class="site-header">
+    <div class="header-inner">
+      <div class="header-top-row">
+        <div class="header-crumb-group">
+          <a class="back-index-link" href="../">&larr; Executive Overview</a>
+          <a class="back-index-link" href="../../">All Briefs</a>
+          <span class="doc-badge">Brief 2026-01A &middot; Pillar 01 of 06</span>
+        </div>
+        <div class="utility-controls">
+          <button id="copy-page-btn" class="btn btn-compact" type="button">Copy Page Link</button>
+          <button id="theme-toggle-btn" class="btn btn-compact" type="button" aria-label="Toggle color theme">Dark Mode</button>
+        </div>
+      </div>
+
+      <h1 class="site-title">Clean power, water, and air rules for hyperscale data centers</h1>
+
+      <div class="meta-bar">
+        <span class="meta-item">Prepared by <strong>Michael Paulauski</strong></span>
+        <span class="meta-sep" aria-hidden="true">&middot;</span>
+        <span class="meta-item">November 15, 2026</span>
+        <span class="meta-sep" aria-hidden="true">&middot;</span>
+        <span class="meta-item">5 min read &middot; 8-Entry Scoped Glossary</span>
+      </div>
+
+      <div class="action-bar">
+        <a class="btn btn-primary" href="./power-water-brief.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
+          Download PDF (3 pp.)
+        </a>
+        <a class="btn" href="./power-water-brief.md">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>
+          Markdown Source
+        </a>
+        <a class="btn" href="../">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+          Executive Overview
+        </a>
+        <a class="btn" href="https://github.com/mike10010100/policy-briefs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="series-nav-strip" aria-label="Series 2026-01 issue briefs">
+    <div class="series-nav-inner">
+      <span class="series-nav-label">Series 2026-01:</span>
+      <a class="series-pill" href="../">Overview</a>
+      <a class="series-pill active" href="./" aria-current="page"><span class="series-pill-num">01</span><span>Power &amp; Water</span></a>
+      <a class="series-pill" href="../compute-antitrust/"><span class="series-pill-num">02</span><span>Compute &amp; Antitrust</span></a>
+      <a class="series-pill" href="../civil-liberties/"><span class="series-pill-num">03</span><span>Civil Liberties</span></a>
+      <a class="series-pill" href="../workers-taxes/"><span class="series-pill-num">04</span><span>Workers &amp; Taxes</span></a>
+      <a class="series-pill" href="../deepfakes-creators/"><span class="series-pill-num">05</span><span>Deepfakes &amp; Creators</span></a>
+      <a class="series-pill" href="../safety-youth-pace/"><span class="series-pill-num">06</span><span>Safety, Youth &amp; Pace</span></a>
+    </div>
+  </nav>
+
+  <nav class="mobile-toc" aria-label="Jump to section">
+    <details>
+      <summary>Jump to section</summary>
+      <ul>
+        <li><a href="#bluf">Bottom line up front</a></li>
+        <li><a href="#grid-cost-causation">01. Cost-causation tariffs</a></li>
+        <li><a href="#clean-interconnection">02. Clean queues and flexibility</a></li>
+        <li><a href="#water-air-loopholes">03. Water and turbine loopholes</a></li>
+        <li><a href="#trade-offs">Trade-offs to weigh in policy design</a></li>
+        <li><a href="#references">Key references for staff follow-up</a></li>
+        <li><a href="#glossary">Appendix: Plain-English glossary</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <div class="layout-shell">
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <div class="toc-heading">Contents</div>
+      <ul class="toc-list">
+        <li><a class="toc-link" href="#bluf"><span class="toc-num">&bull;</span><span>Bottom line up front</span></a></li>
+        <li><a class="toc-link" href="#grid-cost-causation"><span class="toc-num">01</span><span>Cost-causation tariffs</span></a></li>
+        <li><a class="toc-link" href="#clean-interconnection"><span class="toc-num">02</span><span>Clean queues and flexibility</span></a></li>
+        <li><a class="toc-link" href="#water-air-loopholes"><span class="toc-num">03</span><span>Water and turbine loopholes</span></a></li>
+        <li><a class="toc-link" href="#trade-offs"><span class="toc-num">&bull;</span><span>Policy trade-offs</span></a></li>
+        <li><a class="toc-link" href="#references"><span class="toc-num">&bull;</span><span>Key references</span></a></li>
+        <li><a class="toc-link" href="#glossary"><span class="toc-num">&bull;</span><span>Plain-English glossary</span></a></li>
+      </ul>
+      <a class="toc-back-top" href="#top">&uarr; Back to top</a>
+    </aside>
+
+    <main class="brief-article">
+      <section id="bluf" class="bluf-card">
+        <div class="section-head">
+          <h2>Bottom line up front</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#bluf" aria-label="Copy link to Bottom line up front"># Link</button>
+        </div>
+        <p data-verbatim>Across the <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-1">PJM grid</span> spanning 13 states and Washington, D.C., PJM's Independent Market Monitor calculates that surging data-center demand forecasts added $9.33 billion to the 2025/2026 wholesale capacity auction, while U.S. Department of Energy resource-adequacy filings warn that rapid large-load growth is colliding with plant retirements and driving up household electric bills. Meanwhile, single dry-basin campuses pull millions of gallons of municipal water daily or run trailer-mounted gas turbines outside major-source air permits.</p>
+        <p data-verbatim>Federal and state policy should enforce strict cost causation: require large facilities to fund grid upgrades up front, unlock clean <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-3" data-popover-title="Interconnection queues" data-popover-body="The multi-year engineering waitlist new power projects and large loads face before plugging into the regional transmission grid.">interconnection queues</span> through modest peak flexibility and surplus-capacity reuse, condition federal water and energy aid on closed-loop, hybrid adiabatic, or reclaimed cooling, and close methane-turbine air permitting loopholes.</p>
+      </section>
+
+      <aside class="metrics-strip" aria-label="Key figures cited in this issue brief">
+        <div class="metrics-heading">Key figures cited in this issue brief</div>
+        <div class="metrics-grid">
+          <div class="stat-card">
+            <div class="stat-figure">$9B+</div>
+            <div class="stat-label">Data-center capacity cost added to the 2025/2026 PJM wholesale auction.</div>
+            <div class="stat-cite">PJM Independent Market Monitor (Monitoring Analytics)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">76-126 GW</div>
+            <div class="stat-label">U.S. grid headroom unlocked by 0.25%-1% peak load curtailment.</div>
+            <div class="stat-cite">Norris et al., Duke Nicholas Institute (Feb. 2025)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">$40B-$150B</div>
+            <div class="stat-label">Ten-year U.S. capital, operating, and fuel savings from load flexibility (up to 50% flexible hours).</div>
+            <div class="stat-cite">Ross &amp; Ewing, Duke Nicholas Institute (Feb. 2026)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">1M-5M gal/day</div>
+            <div class="stat-label">Daily treated-water draw by a single hyperscale facility in dry basins.</div>
+            <div class="stat-cite">Water Foundation; Brookings Institution</div>
+          </div>
+        </div>
+      </aside>
+
+      <section id="grid-cost-causation" class="brief-section">
+        <div class="section-kicker">Section 01 · Transmission &amp; Capacity Rates</div>
+        <div class="section-head">
+          <h2>1. Require 100% cost-causation tariffs with minimum-term collateral</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#grid-cost-causation" aria-label="Copy link to Section 01"># Link</button>
+        </div>
+        <p data-verbatim>Through <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-2" data-popover-title="FERC (Federal Energy Regulatory Commission)" data-popover-body="The independent federal agency that regulates interstate electricity transmission and wholesale power markets, while state public utility commissions regulate retail rates.">FERC</span> wholesale transmission and capacity rules, Department of Energy grid-grant conditions, and state public utility commission rate standards, policymakers should require <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-2" data-popover-title="100% cost-causation tariffs" data-popover-body="A wholesale and retail rate rule requiring a giant new electricity user, such as a hyperscale data center, to pay the full cost of the grid upgrades and power capacity it triggers so residential bills do not rise.">100% cost-causation tariffs</span> paired with minimum-term financial collateral for hyperscale loads (such as facilities or campuses over 20 megawatts).</p>
+        <p data-verbatim>Mandatory collateral ensures residential customers and small businesses never subsidize Big Tech substation buildouts or inherit stranded grid debt if a speculative project cancels, consolidates workloads elsewhere, or misses load forecasts.</p>
+      </section>
+      <section id="clean-interconnection" class="brief-section">
+        <div class="section-kicker">Section 02 · Clean Power, Curtailment &amp; Reconductoring</div>
+        <div class="section-head">
+          <h2>2. Pair clean-power interconnection priority with peak load curtailment</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#clean-interconnection" aria-label="Copy link to Section 02"># Link</button>
+        </div>
+        <p data-verbatim>Congress and FERC should reserve fast-track <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-3" data-popover-title="Interconnection queues" data-popover-body="The multi-year engineering waitlist new power projects and large loads face before plugging into the grid.">interconnection queues</span> for large facilities that bring new, deliverable clean generation on a rising hourly-matched schedule (using near-term solar and battery storage while scaling <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-6">enhanced geothermal</span> and nuclear) and agree to trim non-urgent runs, shift regional workloads, or draw clean on-site storage without running diesel or fossil-methane backup by 0.25% to 1% of annual electricity use (mostly partial drawdowns across roughly 85 to 366 peak grid-stress hours a year, equal to 22 to 88 full-load hours).</p>
+        <p data-verbatim>Companion 2025 and 2026 studies from Duke University's Nicholas Institute find that curtailing grid withdrawals during those peak hours unlocks 76 to 126 gigawatts of headroom across U.S. grids (which federal rules should pair with a strict ban on fossil backup shifting), while broader data-center load flexibility scaling up to 50% of flexible hours cuts U.S. power-system capital, operating, and fuel costs by $40 billion to $150 billion over ten years (verified against <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-4">peak curtailment</span> dispatch telemetry).</p>
+        <p data-verbatim>Congress should also authorize FERC to speed up advanced transmission <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-5" data-popover-title="Advanced reconductoring" data-popover-body="Replacing aging steel-core wires on existing transmission towers with composite-core conductors that carry roughly twice as much power without multi-year land acquisition for new corridors.">reconductoring</span> and dynamic line ratings on existing corridors, and prioritize non-emitting power and storage interconnections that reuse spare hookup capacity at operating plants under <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-3" data-popover-title="FERC Order 845 and generator replacement" data-popover-body="FERC Order 845 (surplus interconnection) lets new generation or batteries share unused hookup capacity at an operating power plant, while generator-replacement rules let new projects reuse the existing hookup when an older plant retires; both are currently fuel-neutral rules that Congress and FERC can pair with clean-power priority.">Order 845</span> or retiring coal sites under a nationwide generator-replacement rule.</p>
+      </section>
+      <section id="water-air-loopholes" class="brief-section">
+        <div class="section-kicker">Section 03 · Water Conservation &amp; Air Permitting</div>
+        <div class="section-head">
+          <h2>3. Condition federal water funds and close methane-turbine air loopholes</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#water-air-loopholes" aria-label="Copy link to Section 03"># Link</button>
+        </div>
+        <p data-verbatim>On water, Water Foundation and Brookings analyses show that a single hyperscale facility can draw 1 million to 5 million gallons of treated water a day in dry basins. Because federal agencies cannot set municipal water rates directly, Congress should condition future EPA State Revolving Fund and Bureau of Reclamation water-project grants, while the executive branch conditions discretionary DOE loans and facilities serving federal cloud contracts, on ending subsidized potable water discounts for large data centers.</p>
+        <p data-verbatim>Those funding conditions should require zero-evaporation <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-7" data-popover-title="Closed-loop cooling" data-popover-body="Sealed heat-exchange cooling systems that recirculate fluid continuously without evaporating municipal water, trading higher peak-heat electricity use for near-zero operational water draw.">closed-loop</span>, <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-7" data-popover-title="Hybrid adiabatic cooling" data-popover-body="Dry-cooler systems that run without water most of the year and use limited evaporative misting only during the hottest summer hours, cutting annual water draw sharply compared with open cooling towers.">hybrid adiabatic</span>, or <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-7" data-popover-title="Reclaimed municipal wastewater" data-popover-body="Treated municipal wastewater piped to industrial facilities for non-potable cooling instead of drawing local drinking water.">reclaimed municipal wastewater</span> cooling in water-stressed basins, paired with automatic drought cutbacks on any remaining potable draw.</p>
+        <p data-verbatim>On air pollution, Congress and the EPA should close loopholes for methane turbines powering fixed data centers by repealing the 2026 Subpart KKKKa 24-month temporary-turbine (25 ppm NOx) and sub-45% capacity-factor SCR subcategories for dedicated data-center generation, blocking EPA's proposed Nonroad Combustion Turbines Rule (RIN 2060-AX08) and barring <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-8" data-popover-title="Methane-turbine permitting loopholes" data-popover-body="Some fixed data centers have run trailer-mounted or modular methane turbines without major-source air controls by claiming Clean Air Act nonroad-engine exemptions meant for movable equipment or short-term Subpart KKKKa stationary subcategories.">nonroad-engine claims</span>, counting co-located turbines together under major-source limits, codifying <em>Michigan v. DOE</em> limits against multi-year Federal Power Act Section 202(c) coal and gas retirement overrides, and statutorily barring Clean Air Act Section 110(f) and Section 112(i)(4) waivers for commercial data centers. That ends the unpermitted gas-turbine and emergency fossil practices documented in NAACP, Southern Environmental Law Center, and Earthjustice filings in South Memphis, Southaven, Mississippi, and federal grid dockets.</p>
+      </section>
+
+      <section id="trade-offs" class="brief-section">
+        <div class="section-kicker">Implementation Design</div>
+        <div class="section-head">
+          <h2>Trade-offs to weigh in policy design</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#trade-offs" aria-label="Copy link to Trade-offs"># Link</button>
+        </div>
+        <div class="tradeoffs-single">
+          <article class="tradeoff-card">
+            <div class="tradeoff-eyebrow">01 · Permitting Scope &amp; Community Safeguards</div>
+            <p data-verbatim>Fast-tracking clean energy infrastructure can fracture center-left coalitions if permitting bills sweep too broadly, as <em>Time</em> documented during the 2025 and 2026 permitting battles. Statutory fast-tracks must stay tightly scoped to interregional transmission timelines, reconductoring, dynamic line ratings, geothermal exploration, and battery or zero-carbon generation on low-conflict or remediated sites, while preserving Tribal consultation and cumulative fenceline safeguards everywhere and never granting fast-tracks or weaker NEPA and Clean Air Act enforcement to fossil projects, as demanded by the Sierra Club and frontline community groups.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="references" class="brief-section references-card">
+        <div class="section-head">
+          <h2>Key references for staff follow-up</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#references" aria-label="Copy link to Key references"># Link</button>
+        </div>
+        <ul class="references-list">
+          <li>Tyler H. Norris et al., <em>Rethinking Load Growth: Assessing the Potential for Integration of Large Flexible Loads in US Power Systems</em> (Feb. 2025), and Martin T. Ross and Jackson Ewing, <em>Data Centers and Generation Capacity over the Next Decade: Potential Benefits of Flexibility</em> (Feb. 2026), Duke University Nicholas Institute</li>
+          <li>PJM Interconnection Independent Market Monitor (Monitoring Analytics) 2025/2026 BRA analysis &amp; U.S. Department of Energy resource-adequacy and large-load docket filings (2025-2026)</li>
+          <li>Water Foundation &amp; Brookings Institution analyses of hyperscale data-center municipal water demand (2025-2026); NAACP, Southern Environmental Law Center, and Earthjustice air-permitting filings (South Memphis, TN; Southaven, MS)</li>
+          <li>U.S. EPA Standards of Performance for Stationary Combustion Turbines (40 C.F.R. Part 60 Subpart KKKKa, Jan. 2026), proposed Nonroad Combustion Turbines Rule (RIN 2060-AX08), and <em>Michigan v. DOE</em> Federal Power Act Section 202(c) litigation (2026)</li>
+        </ul>
+      </section>
+
+      <section id="glossary" class="brief-section wide-section glossary-section">
+        <div class="section-head">
+          <h2>Appendix: Plain-English technical and policy glossary</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#glossary" aria-label="Copy link to Glossary"># Link</button>
+        </div>
+        <p class="glossary-intro">Scoped plain-English definitions for technical, statutory, and institutional terms used in Brief 2026-01A. Click any dotted term in the text above to preview its definition.</p>
+
+        <div class="glossary-filters" role="group" aria-label="Filter glossary by category">
+          <button class="filter-pill active" type="button" data-cat="all">All (8)</button>
+          <button class="filter-pill" type="button" data-cat="grid">Power grid and interconnection (6)</button>
+          <button class="filter-pill" type="button" data-cat="water">Water cooling and air permitting (2)</button>
+        </div>
+
+        <div class="glossary-toolbar">
+          <input id="glossary-filter" class="glossary-search" type="search" placeholder="Filter glossary terms..." aria-label="Filter glossary terms" />
+          <span id="glossary-count" class="glossary-count">Showing 8 of 8 entries</span>
+        </div>
+
+        <div id="glossary-empty" class="glossary-empty">No matching terms found. Clear the search box or switch categories to view all 8 glossary entries.</div>
+
+        <div class="glossary-group" data-group="grid">
+          <h3 class="glossary-group-title">Power grid and interconnection</h3>
+          <div class="glossary-grid">
+            <dl id="term-1" class="glossary-card" data-entry data-category="grid">
+              <dt>PJM grid and wholesale capacity auctions</dt>
+              <dd>PJM Interconnection is America's largest regional grid operator, managing wholesale electricity across 13 Mid-Atlantic and Midwest states plus Washington, D.C. Its capacity auctions pay power plants in advance to guarantee enough supply during future peak demand; surging data-center power forecasts have driven those auction prices sharply higher on household bills.</dd>
+            </dl>
+            <dl id="term-2" class="glossary-card" data-entry data-category="grid">
+              <dt>FERC, state utility commissions, and 100% cost-causation tariffs</dt>
+              <dd>FERC (the Federal Energy Regulatory Commission) regulates interstate electricity transmission and wholesale power markets, while state public utility commissions set retail electricity rates. A 100% cost-causation tariff is a wholesale and retail rate rule requiring a giant new electricity user, such as a hyperscale data center, to pay the full cost of the grid upgrades and power capacity it triggers so residential bills do not rise.</dd>
+            </dl>
+            <dl id="term-3" class="glossary-card" data-entry data-category="grid">
+              <dt>Interconnection queues, Order 845, and generator replacement</dt>
+              <dd>The interconnection queue is the multi-year engineering waitlist new power projects and large loads face before plugging into the grid. FERC Order 845 ("surplus interconnection") lets new generation or batteries share unused hookup capacity at an operating power plant, while generator-replacement rules let new projects reuse the existing grid hookup when an older plant retires; both are currently fuel-neutral rules that Congress and FERC can pair with clean-power priority and a nationwide replacement standard at operating or retiring fossil sites.</dd>
+            </dl>
+            <dl id="term-4" class="glossary-card" data-entry data-category="grid">
+              <dt>Peak load curtailment</dt>
+              <dd>A binding grid agreement where a data center trims non-urgent computing jobs, shifts regional workloads, or draws clean on-site battery storage (without running diesel or fossil-methane backup generators) during the grid's highest-stress summer and winter hours so utilities do not have to build billions of dollars in extra fossil-fuel peaker plants.</dd>
+            </dl>
+            <dl id="term-5" class="glossary-card" data-entry data-category="grid">
+              <dt>Advanced reconductoring and dynamic line ratings</dt>
+              <dd>Advanced reconductoring replaces old steel-core wires on existing transmission towers with modern composite-core cables that carry roughly twice as much electricity without multi-year land fights for new towers. Dynamic line ratings use real-time wind and temperature sensors so grid operators can safely send more power through existing wires on cool or breezy days.</dd>
+            </dl>
+            <dl id="term-6" class="glossary-card" data-entry data-category="grid">
+              <dt>Enhanced geothermal</dt>
+              <dd>Clean baseload energy that uses modern directional rock-drilling techniques to tap natural heat miles underground and generate steady 24/7 carbon-free electricity with a small land footprint.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="glossary-group" data-group="water">
+          <h3 class="glossary-group-title">Water cooling and air permitting</h3>
+          <div class="glossary-grid">
+            <dl id="term-7" class="glossary-card" data-entry data-category="water">
+              <dt>Closed-loop, hybrid adiabatic, and reclaimed-water cooling</dt>
+              <dd>Closed-loop chillers recirculate fluid in sealed heat exchangers with zero evaporative water loss (at the cost of slightly higher hot-afternoon electricity draw), while hybrid adiabatic systems run dry most of the year and use evaporative misting only on extreme heat hours. Reclaimed (recycled) water is treated municipal wastewater piped to industrial campuses for non-potable cooling instead of drawing local drinking water.</dd>
+            </dl>
+            <dl id="term-8" class="glossary-card" data-entry data-category="water">
+              <dt>Methane-turbine permitting loopholes (Subpart KKKKa and nonroad claims)</dt>
+              <dd>Fixed data centers have run modular or trailer-mounted methane gas turbines outside major-source pollution controls by claiming Clean Air Act nonroad-engine status meant for movable machinery (which EPA's RIN 2060-AX08 proposal would widen) or using EPA's January 2026 Subpart KKKKa temporary (up to 24 months) and low-capacity-factor stationary turbine subcategories.</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <nav class="brief-pager" aria-label="Issue brief navigation">
+        <a class="pager-card" href="../../"><span class="pager-eyebrow">&larr; Repository Home</span><span class="pager-title">All Policy Briefs &amp; Archive Index</span></a>
+        <a class="pager-card pager-card-center" href="../"><span class="pager-eyebrow">Series 2026-01</span><span class="pager-title">Back to Executive Overview</span></a>
+        <a class="pager-card pager-card-next" href="../compute-antitrust/"><span class="pager-eyebrow">Next Brief (Brief 2026-01B) &rarr;</span><span class="pager-title">Public compute, open-weight models, and algorithmic antitrust</span></a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Brief 2026-01A by Michael Paulauski &middot; November 15, 2026</div>
+      <div class="footer-links">
+        <a href="../">Series Overview</a>
+        <a href="../../">All Briefs</a>
+        <a href="./power-water-brief.pdf">PDF Edition</a>
+        <a href="./power-water-brief.md">Markdown Source</a>
+        <a href="https://github.com/mike10010100/policy-briefs">GitHub Repository</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="term-popover" class="term-popover" role="dialog" aria-modal="false" aria-labelledby="term-popover-title" tabindex="-1" hidden>
+    <div class="term-popover-head">
+      <h4 id="term-popover-title" class="term-popover-title"></h4>
+      <button id="term-popover-close" class="term-popover-close" type="button" aria-label="Close definition">&times;</button>
+    </div>
+    <p id="term-popover-body" class="term-popover-body"></p>
+    <a id="term-popover-link" class="term-popover-link" href="#glossary">View in Glossary &darr;</a>
+  </div>
+
+  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite">Link copied</div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var themeBtn = document.getElementById("theme-toggle-btn");
+      var copyPageBtn = document.getElementById("copy-page-btn");
+      var toast = document.getElementById("copy-toast");
+      var progressBar = document.getElementById("reading-progress");
+      var toastTimer = null;
+
+      function syncThemeButton() {
+        var current = root.getAttribute("data-theme") || "light";
+        themeBtn.textContent = current === "dark" ? "Light Mode" : "Dark Mode";
+      }
+
+      syncThemeButton();
+
+      themeBtn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("ai-brief-theme", next);
+        } catch (e) {}
+        syncThemeButton();
+      });
+
+      function updateProgressBar() {
+        if (!progressBar) return;
+        var scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var pct = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+        progressBar.style.width = pct.toFixed(1) + "%";
+      }
+
+      updateProgressBar();
+      window.addEventListener("scroll", updateProgressBar, { passive: true });
+      window.addEventListener("resize", updateProgressBar, { passive: true });
+
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.add("visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("visible");
+        }, 1800);
+      }
+
+      function copyText(text, label) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            showToast(label || "Link copied");
+          }).catch(function () {
+            showToast("Link ready in address bar");
+          });
+        } else {
+          var temp = document.createElement("input");
+          temp.value = text;
+          document.body.appendChild(temp);
+          temp.select();
+          try {
+            document.execCommand("copy");
+            showToast(label || "Link copied");
+          } catch (e) {
+            showToast("Copy unavailable");
+          }
+          document.body.removeChild(temp);
+        }
+      }
+
+      copyPageBtn.addEventListener("click", function () {
+        var cleanUrl = window.location.origin + window.location.pathname;
+        if (window.location.protocol === "file:") {
+          cleanUrl = window.location.href.split("#")[0].split("?")[0];
+        }
+        copyText(cleanUrl, "Page link copied");
+      });
+
+      document.querySelectorAll(".copy-anchor-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var anchor = btn.getAttribute("data-anchor");
+          var base = window.location.href.split("#")[0];
+          history.replaceState(null, "", anchor);
+          copyText(base + anchor, "Link copied");
+        });
+      });
+
+      var mobileDetails = document.querySelector(".mobile-toc details");
+      if (mobileDetails) {
+        mobileDetails.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            mobileDetails.removeAttribute("open");
+          });
+        });
+      }
+
+      var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc-link"));
+      var sections = tocLinks.map(function (link) {
+        return document.querySelector(link.getAttribute("href"));
+      }).filter(Boolean);
+
+      if ("IntersectionObserver" in window && sections.length) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var id = "#" + entry.target.id;
+              tocLinks.forEach(function (link) {
+                link.classList.toggle("active", link.getAttribute("href") === id);
+              });
+            }
+          });
+        }, { rootMargin: "-15% 0px -70% 0px" });
+
+        sections.forEach(function (sec) {
+          observer.observe(sec);
+        });
+      }
+
+      var filterInput = document.getElementById("glossary-filter");
+      var countEl = document.getElementById("glossary-count");
+      var emptyEl = document.getElementById("glossary-empty");
+      var categoryBtns = Array.prototype.slice.call(document.querySelectorAll(".filter-pill"));
+      var groups = Array.prototype.slice.call(document.querySelectorAll("[data-group]"));
+      var entries = Array.prototype.slice.call(document.querySelectorAll("[data-entry]"));
+      var activeCategory = "all";
+
+      function setActiveCategory(cat) {
+        activeCategory = cat;
+        categoryBtns.forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-cat") === cat);
+        });
+      }
+
+      function applyGlossaryFilters() {
+        var q = filterInput ? filterInput.value.trim().toLowerCase() : "";
+        var visibleCount = 0;
+
+        entries.forEach(function (entry) {
+          var matchesCat = activeCategory === "all" || entry.getAttribute("data-category") === activeCategory;
+          var matchesSearch = !q || entry.textContent.toLowerCase().indexOf(q) !== -1;
+          var show = matchesCat && matchesSearch;
+          entry.style.display = show ? "" : "none";
+          if (show) visibleCount += 1;
+        });
+
+        groups.forEach(function (group) {
+          var hasVisible = Array.prototype.some.call(
+            group.querySelectorAll("[data-entry]"),
+            function (card) { return card.style.display !== "none"; }
+          );
+          group.style.display = hasVisible ? "" : "none";
+        });
+
+        if (countEl) {
+          countEl.textContent = "Showing " + visibleCount + " of " + entries.length + " entries";
+        }
+        if (emptyEl) {
+          emptyEl.style.display = visibleCount === 0 ? "block" : "none";
+        }
+      }
+
+      categoryBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          setActiveCategory(btn.getAttribute("data-cat") || "all");
+          applyGlossaryFilters();
+        });
+      });
+
+      if (filterInput) {
+        filterInput.addEventListener("input", applyGlossaryFilters);
+      }
+
+      var popover = document.getElementById("term-popover");
+      var popoverTitle = document.getElementById("term-popover-title");
+      var popoverBody = document.getElementById("term-popover-body");
+      var popoverClose = document.getElementById("term-popover-close");
+      var popoverLink = document.getElementById("term-popover-link");
+      var activeTermEl = null;
+      var openedViaKeyboard = false;
+      var pulseTimer = null;
+      var openScrollY = 0;
+      var openTimestamp = 0;
+
+      function closePopover(restoreFocus) {
+        if (!popover) return;
+        popover.classList.remove("visible");
+        popover.hidden = true;
+        if (activeTermEl) {
+          var prevTermEl = activeTermEl;
+          prevTermEl.classList.remove("is-open");
+          prevTermEl.setAttribute("aria-expanded", "false");
+          activeTermEl = null;
+          if (restoreFocus && openedViaKeyboard) {
+            prevTermEl.focus({ preventScroll: true });
+          }
+        }
+        openedViaKeyboard = false;
+      }
+
+      function positionPopover(termEl) {
+        var rect = termEl.getBoundingClientRect();
+        var popWidth = popover.offsetWidth || 340;
+        var popHeight = popover.offsetHeight || 160;
+        var left = rect.left + (rect.width / 2) - (popWidth / 2);
+        left = Math.max(12, Math.min(left, window.innerWidth - popWidth - 12));
+        var top = rect.bottom + 8;
+        if (top + popHeight > window.innerHeight - 12) {
+          top = Math.max(12, rect.top - popHeight - 8);
+        }
+        popover.style.left = Math.round(left) + "px";
+        popover.style.top = Math.round(top) + "px";
+      }
+
+      function openPopover(termEl, viaKeyboard) {
+        if (!popover) return;
+        if (activeTermEl === termEl && !popover.hidden) {
+          closePopover(!!viaKeyboard);
+          return;
+        }
+        var targetId = termEl.getAttribute("data-glossary-target");
+        var card = targetId ? document.getElementById(targetId) : null;
+        if (!card) return;
+        var dt = card.querySelector("dt");
+        var dd = card.querySelector("dd");
+        if (!dt || !dd) return;
+
+        if (activeTermEl) {
+          activeTermEl.classList.remove("is-open");
+          activeTermEl.setAttribute("aria-expanded", "false");
+        }
+        activeTermEl = termEl;
+        openedViaKeyboard = !!viaKeyboard;
+        activeTermEl.classList.add("is-open");
+        activeTermEl.setAttribute("aria-expanded", "true");
+        popoverTitle.textContent = termEl.getAttribute("data-popover-title") || dt.textContent;
+        popoverBody.textContent = termEl.getAttribute("data-popover-body") || dd.textContent;
+        popoverLink.setAttribute("href", "#" + targetId);
+
+        openScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        openTimestamp = Date.now();
+        popover.hidden = false;
+        positionPopover(termEl);
+        popover.classList.add("visible");
+        if (openedViaKeyboard) {
+          popover.focus({ preventScroll: true });
+        }
+      }
+
+      document.querySelectorAll(".inline-term").forEach(function (termEl) {
+        termEl.addEventListener("click", function (e) {
+          e.stopPropagation();
+          openPopover(termEl, false);
+        });
+        termEl.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openPopover(termEl, true);
+          }
+        });
+      });
+
+      if (popoverClose) {
+        popoverClose.addEventListener("click", function () {
+          closePopover(true);
+        });
+      }
+
+      if (popoverLink) {
+        popoverLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          var href = popoverLink.getAttribute("href");
+          var targetId = href ? href.replace(/^#/, "") : "";
+          var targetCard = targetId ? document.getElementById(targetId) : null;
+          closePopover(false);
+          if (!targetCard) return;
+          if (targetCard.style.display === "none") {
+            setActiveCategory("all");
+            if (filterInput) filterInput.value = "";
+            applyGlossaryFilters();
+          }
+          targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+          document.querySelectorAll(".glossary-card.highlight-pulse").forEach(function (el) {
+            el.classList.remove("highlight-pulse");
+          });
+          targetCard.classList.add("highlight-pulse");
+          clearTimeout(pulseTimer);
+          pulseTimer = setTimeout(function () {
+            targetCard.classList.remove("highlight-pulse");
+          }, 2200);
+        });
+      }
+
+      document.addEventListener("click", function (e) {
+        if (!popover || popover.hidden) return;
+        if (!popover.contains(e.target) && !e.target.classList.contains("inline-term")) {
+          closePopover(false);
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closePopover(true);
+        }
+      });
+
+      window.addEventListener("scroll", function () {
+        if (!popover || popover.hidden) return;
+        if (Date.now() - openTimestamp < 180) return;
+        var curScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        if (Math.abs(curScrollY - openScrollY) > 80) {
+          closePopover(false);
+        }
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

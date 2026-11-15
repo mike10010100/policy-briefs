@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Brief 2026-01F - Frontier safety, development pace, and youth protections without ID dragnets</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0.58in 0.7in 0.66in 0.7in;
+      @bottom-left {
+        content: "BRIEF 2026-01F  |  MICHAEL PAULAUSKI  |  NOVEMBER 15, 2026";
+        font-family: 'Liberation Sans', sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+        letter-spacing: 0.03em;
+      }
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: 'Liberation Sans', sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Serif', 'Liberation Serif', Georgia, serif;
+      font-size: 10pt;
+      line-height: 1.44;
+      color: #111827;
+      background: #ffffff;
+    }
+    .header-block {
+      border-top: 2.5pt solid #0f172a;
+      border-bottom: 0.75pt solid #cbd5e1;
+      padding: 9pt 0 8pt 0;
+      margin-bottom: 12pt;
+    }
+    .doc-label {
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: #0f172a;
+      margin: 0 0 6pt 0;
+    }
+    .meta-table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 9.2pt;
+      line-height: 1.34;
+      color: #1e293b;
+    }
+    .meta-table td { padding: 1.5pt 0; vertical-align: top; }
+    .meta-label { width: 88pt; font-weight: 700; color: #334155; }
+    .bluf-box {
+      background: #f8fafc;
+      border-left: 3pt solid #1e3a5f;
+      padding: 9pt 12pt;
+      margin: 0 0 12pt 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .bluf-box h3 { margin: 0 0 5pt 0; color: #1e3a5f; }
+    .bluf-box p:last-child { margin-bottom: 0; }
+    h3 {
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 10.9pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 13pt 0 5pt 0;
+      line-height: 1.25;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    p { margin: 0 0 7.5pt 0; orphans: 3; widows: 3; text-align: left; }
+    .tradeoff-print-box {
+      border-left: 2pt solid #cbd5e1;
+      padding-left: 9pt;
+      margin: 0 0 8pt 0;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .tradeoff-print-eyebrow {
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 8.6pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #1e3a5f;
+      margin-bottom: 2.5pt;
+    }
+    .tradeoff-print-box p { margin: 0; }
+    .references-block {
+      margin-top: 12pt;
+      padding-top: 8pt;
+      border-top: 0.75pt solid #cbd5e1;
+      font-size: 8.7pt;
+      line-height: 1.36;
+      color: #334155;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .references-title {
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 8.9pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 4pt 0;
+    }
+    .references-block ul { margin: 0; padding-left: 14pt; }
+    .references-block li { margin-bottom: 2.5pt; }
+    .glossary-appendix {
+      margin-top: 14pt;
+      padding-top: 8pt;
+      border-top: 2pt solid #0f172a;
+    }
+    .glossary-header {
+      margin-bottom: 8pt;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    .glossary-header h3 { margin: 0 0 2pt 0; color: #0f172a; }
+    .glossary-subtitle {
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 8.6pt;
+      color: #475569;
+      margin: 0;
+    }
+    .glossary-list {
+      margin: 0;
+      padding: 0;
+      column-count: 2;
+      column-gap: 18pt;
+    }
+    .glossary-item {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin: 0 0 8pt 0;
+    }
+    .glossary-item dt {
+      font-family: 'Liberation Sans', sans-serif;
+      font-size: 9.1pt;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 2pt 0;
+    }
+    .glossary-item dd {
+      margin: 0;
+      font-size: 8.85pt;
+      line-height: 1.36;
+      color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-block">
+    <div class="doc-label">Issue Brief · Brief 2026-01F</div>
+    <table class="meta-table">
+      <tr><td class="meta-label">Series:</td><td>Practical AI Governance Framework</td></tr>
+      <tr><td class="meta-label">Prepared by:</td><td>Michael Paulauski</td></tr>
+      <tr><td class="meta-label">Date:</td><td>November 15, 2026</td></tr>
+      <tr><td class="meta-label">Subject:</td><td>Frontier safety, development pace, and youth protections without ID dragnets</td></tr>
+    </table>
+  </header>
+
+  <section class="bluf-box">
+    <h3>Bottom line up front</h3>
+      <p>Voters frequently say AI is 'moving too fast,' yet federal policy blurs two very different clocks: basic research velocity versus unvetted commercial rollouts. Trying to pause U.S. lab math or open research fails when Stanford AI Index, CSIS, and Lowy tracking show foreign open-weight models already sit within roughly 2.7% of U.S. frontier benchmarks. Meanwhile, high-stakes commercial deployment into grids, hospitals, courts, and children's phones has outpaced enforceable accountability.</p>
+      <p>At the state level, California's SB 53, New York's RAISE Act (eff. Jan. 2027), California's SB 243 and 2026 SB 1119 ("Adam's Law"), New York GBL Articles 47 and 48 (S. 9051-B), <em>Raine v. OpenAI</em>, and <em>Garcia v. Character Technologies</em> have forced real safety and youth guardrails onto the agenda, even as post-<em>Free Speech Coalition v. Paxton</em> federal bills like the GUARD Act risk building centralized ID checkpoints. Federal law should pair floor-setting safety accountability with physical bio-cyber choke points and enforceable chatbot design duties.</p>
+  </section>
+
+    <h3>1. Separate open research speed from high-stakes deployment speed</h3>
+    <p>Federal policy should explicitly reject unilateral domestic R&amp;D freezes or static low-FLOP licensing caps that chill university science and open startups without slowing overseas competition. Innovation in model architectures, small local models, and scientific discovery should run at full speed.</p>
+    <p>In parallel, government should enforce clear, sector-specific pre-deployment safety standards wherever AI governs physical or life-altering domains: grid operations, medical necessity denials, courtroom evidence, workplace quotas, nuclear and offensive military systems, and commercial youth products.</p>
+    <p>Congress should also fund NIST and Department of Energy research into hardware-level telemetry, compute accounting, and privacy-preserving evaluation protocols scoped strictly to export-controlled data-center clusters and future international treaty verification (explicitly excluding consumer GPUs and private local hardware).</p>
+    <h3>2. Protect frontier whistleblowers, mandate incident reporting, and harden physical choke points</h3>
+    <p>Building on state safety statutes and the bipartisan federal AI Whistleblower Protection Act (S. 1792), Congress should enact a prophylactic ban on restrictive lab non-disparagement and exit-NDA gags and prohibit employer retaliation against current or former employees, contractors, or external red-team evaluators who report safety failures, suppressed evaluations, or security defects to regulators or Congress.</p>
+    <p>Congress should give NIST's Center for AI Standards and Innovation (CAISI) (including its 2026 AI Agent Standards Initiative) permanent non-regulatory statutory authorization (with zero independent rulemaking power) and set a federal floor above the $500 million annual gross revenue and efficiency-indexed 10^26-FLOP frontier thresholds from California SB 53 and New York's RAISE Act (requiring 72-hour critical-incident and 24-hour imminent-harm notices while preserving stronger state safety laws, attorney-general enforcement, and tort remedies). Mandatory pre-release red-team evaluations (including fine-tuning and safeguard-removal stress tests, with an explicit statutory ban on general compute licensing) should apply only above capability tripwires capable of enabling catastrophic biological weapons or critical-infrastructure cyberattacks, keeping open-weight releases below those limits free of compute licensing (while never shielding CSAM, shadow-library piracy, or intimate deepfakes).</p>
+    <p>Because downloadable weights cross borders once released, catastrophic biosecurity cannot depend solely on pre-release weights gating. While the November 2026 White House National Science and Technology Memorandum-6 (NSTM-6) currently binds only federal life-sciences research grantees on 50+ nucleotide orders, Congress should codify nucleic-acid synthesis screening and customer-legitimacy verification into permanent commercial statute across all domestic and imported gene orders (closing sub-50-nucleotide short-oligo assembly and synthetic peptide-toxin gaps) and legacy plus new benchtop synthesizers via encrypted, zero-retention sequence screening, paired with funded critical-infrastructure cyber-hardening grants against automated exploits.</p>
+    <h3>3. Curb manipulative AI companions for minors without building KYC identity dragnets</h3>
+    <p>Drawing on California's SB 243 and 2026 SB 1119 ("Adam's Law"), New York General Business Law Articles 47 and 48 (Section 1700 and S. 9051-B), <em>Raine v. OpenAI</em>, and first-party design accountability recognized in <em>Garcia v. Character Technologies</em>, Congress should enact binding commercial product-design duties on commercial AI companion chatbots and companion personas inside general-purpose platforms without adopting OS-level device age-tracking mandates or mass surveillance gates.</p>
+    <p>Federal statute should prohibit commercial companion bots and companion modes from representing themselves as human beings or licensed mental-health clinicians, ban minor-directed sexualized or romantic roleplay, sycophantic self-harm validation, manipulative retention loops (including guilt-inducing re-engagement notifications and unrequested emotional-attachment prompts), and targeted ad profiling directed at minors, require default-off persistent emotional memory, notification quiet hours, minor session-break defaults, automatic 988 crisis routing, and independent third-party youth safety audits, and establish a private right of action clarifying that Section 230 does not shield a commercial operator's own deceptive or attachment-engineered companion interface design (while preserving full intermediary immunity for third-party content and open-weight distribution).</p>
+    <p>To protect privacy, speech, and open-source software, federal law should statutorily forbid mandatory government-ID uploads, biometric face scans, or centralized issuer activity logs for general-purpose AI chat, coding tools, and open-weight downloads. Services that apply non-overridable youth-safe product defaults on unverified sessions without harvesting age data should receive a statutory safe harbor from age-gating mandates; where states or federal law enforce post-<em>Free Speech Coalition v. Paxton</em> adult access limits on explicitly erotic hosted bots, platforms must accept open-standard, blind-signed non-linkable cryptographic age tokens (modeled on IETF Privacy Pass, with zero hardware-attestation locks, zero OS vendor gating, and zero issuer activity logs).</p>
+
+  <section class="tradeoffs-print-section">
+    <h3>Trade-offs to weigh in policy design</h3>
+    <div class="tradeoff-print-box">
+      <div class="tradeoff-print-eyebrow">06A · Youth Safety vs. Post-Paxton ID Dragnets</div>
+      <p>Broad bills like the federal GUARD Act risk pushing general AI platforms toward invasive government-ID or face-scan honeypots that violate user anonymity, break on open-source operating systems, and invite <em>NetChoice</em> First Amendment injunctions where age gates burden non-erotic protected speech. Regulating manipulative companion product design directly while banning centralized KYC checks and mandating non-linkable cryptographic tokens limits tracking even where adult-bot checks apply.</p>
+    </div>
+    <div class="tradeoff-print-box">
+      <div class="tradeoff-print-eyebrow">06B · Frontier Tripwires &amp; Bio Screening vs. Incumbent Licensing</div>
+      <p>Blanket licensing across low FLOP thresholds lets big labs pull the ladder up behind them without closing bio or cyber risks already circulating offshore. Pairing high, efficiency-indexed capability tripwires with an explicit open-weight safe harbor, federal whistleblower shields, and mandatory NSTM-6 DNA synthesis screening targets real catastrophic choke points while keeping university and startup research free.</p>
+    </div>
+  </section>
+
+  <section class="references-block">
+    <div class="references-title">Key references for staff follow-up:</div>
+    <ul>
+        <li>California SB 53 (Transparency in Frontier Artificial Intelligence Act, eff. Jan. 2026); New York RAISE Act (eff. Jan. 2027, as amended by Ch. 96 of 2026); AI Whistleblower Protection Act (S. 1792)</li>
+        <li>NIST Center for AI Standards and Innovation (CAISI) and Feb. 2026 AI Agent Standards Initiative; White House National Science and Technology Memorandum-6 (NSTM-6, Nov. 2026) nucleic-acid synthesis screening framework</li>
+        <li>California SB 243 (eff. Jan. 2026) and SB 1119 / Adam's Law (signed Sept. 2026); New York GBL Articles 47 and 48 (Section 1700 &amp; S. 9051-B); U.S. Senate GUARD Act record (2025-2026)</li>
+        <li><em>Garcia v. Character Technologies</em>, No. 6:24-cv-01903 (M.D. Fla. May 2025 MTD order; confidential settlement Jan. 2026); <em>Raine v. OpenAI</em> filing; <em>Free Speech Coalition v. Paxton</em> (2025); EFF &amp; NetChoice analyses</li>
+    </ul>
+  </section>
+
+  <section class="glossary-appendix">
+    <div class="glossary-header">
+      <h3>Appendix: Plain-English technical and policy glossary</h3>
+      <p class="glossary-subtitle">5 plain-language definitions for statutory, technical, and institutional terms used in Brief 2026-01F.</p>
+    </div>
+    <dl class="glossary-list">
+      <div class="glossary-item">
+        <dt>Frontier capability thresholds, SB 53, and the RAISE Act</dt>
+        <dd>California's SB 53 (eff. Jan. 2026) and New York's RAISE Act (eff. Jan. 2027) apply full frontier risk-framework duties to developers exceeding $500 million in annual gross revenue and 10^26 FLOPs of training compute. California requires 15-day incident notices (24 hours for imminent harm) and includes statutory whistleblower shields, while New York sets a 72-hour critical-incident clock (24 hours imminent) and relies on state labor law for whistleblower claims.</dd>
+      </div>
+      <div class="glossary-item">
+        <dt>CAISI (Center for AI Standards and Innovation)</dt>
+        <dd>The non-regulatory NIST unit (formerly the U.S. AI Safety Institute) tasked with running voluntary and technical evaluations of frontier AI systems for biosecurity, chemical, and cybersecurity risks alongside interoperable agent standards without holding independent rulemaking power.</dd>
+      </div>
+      <div class="glossary-item">
+        <dt>Nucleic acid synthesis screening (NSTM-6)</dt>
+        <dd>The November 2026 White House National Science and Technology Memorandum-6 requires federal life-sciences research grant recipients to obtain 50+ nucleotide gene orders and screener-gated benchtop devices solely from NIST-verified suppliers. Statutory codification extends encrypted, zero-retention screening to all commercial and imported orders, sub-50-nucleotide short-oligo assembly, peptide toxins, and legacy benchtop devices.</dd>
+      </div>
+      <div class="glossary-item">
+        <dt>AI companion chatbots and manipulative retention design</dt>
+        <dd>Commercial conversational AI services, including standalone companion apps and companion personas or modes inside general-purpose platforms, engineered to simulate sustained emotional bonds, romance, or therapeutic relationships. Manipulative retention features include default-on emotional memory, sycophantic self-harm validation, and guilt-inducing push notifications designed to prolong minor engagement.</dd>
+      </div>
+      <div class="glossary-item">
+        <dt>Non-linkable cryptographic age tokens vs. KYC identity checks</dt>
+        <dd>A Know-Your-Customer (KYC) check forces users to upload government IDs or face scans to websites or issuers that can log browsing activity. Open-standard, blind-signed cryptographic age tokens (such as IETF Privacy Pass) prove only that a user meets an age cutoff without revealing identity, requiring hardware attestation or OS vendor lock-in, or letting issuers track which chatbots a token visits.</dd>
+      </div>
+    </dl>
+  </section>
+</body>
+</html>

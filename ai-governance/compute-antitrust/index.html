@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public compute, open-weight models, and algorithmic antitrust | Brief 2026-01B by Michael Paulauski</title>
+  <meta name="description" content="Breaking cloud-compute concentration via public NAIRR infrastructure and the CREATE AI Act, protecting open-weight AI models, blocking reverse acqui-hires and cloud tying, and banning pooled algorithmic price-fixing." />
+  <link rel="canonical" href="https://mike10010100.github.io/policy-briefs/ai-governance/compute-antitrust/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Public compute, open-weight models, and algorithmic antitrust | Brief 2026-01B" />
+  <meta property="og:description" content="Bipartisan CREATE AI Act public compute, open-weight software competition, antitrust enforcement against cloud tying and acqui-hires, and banning shared algorithmic price-fixing." />
+  <meta property="og:url" content="https://mike10010100.github.io/policy-briefs/ai-governance/compute-antitrust/" />
+  <meta property="og:image" content="https://mike10010100.github.io/policy-briefs/assets/og-spoke-02.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Public compute, open-weight models, and algorithmic antitrust | Brief 2026-01B" />
+  <meta name="twitter:description" content="Bipartisan CREATE AI Act public compute, open-weight software competition, antitrust enforcement against cloud tying and acqui-hires, and banning shared algorithmic price-fixing." />
+  <meta name="twitter:image" content="https://mike10010100.github.io/policy-briefs/assets/og-spoke-02.png" />
+
+  <script>
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var queryTheme = params.get("theme");
+        var saved = localStorage.getItem("ai-brief-theme");
+        var theme = (queryTheme === "dark" || queryTheme === "light")
+          ? queryTheme
+          : (saved === "dark" || saved === "light"
+            ? saved
+            : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" /></noscript>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+  <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+
+  <header id="top" class="site-header">
+    <div class="header-inner">
+      <div class="header-top-row">
+        <div class="header-crumb-group">
+          <a class="back-index-link" href="../">&larr; Executive Overview</a>
+          <a class="back-index-link" href="../../">All Briefs</a>
+          <span class="doc-badge">Brief 2026-01B &middot; Pillar 02 of 06</span>
+        </div>
+        <div class="utility-controls">
+          <button id="copy-page-btn" class="btn btn-compact" type="button">Copy Page Link</button>
+          <button id="theme-toggle-btn" class="btn btn-compact" type="button" aria-label="Toggle color theme">Dark Mode</button>
+        </div>
+      </div>
+
+      <h1 class="site-title">Public compute, open-weight models, and algorithmic antitrust</h1>
+
+      <div class="meta-bar">
+        <span class="meta-item">Prepared by <strong>Michael Paulauski</strong></span>
+        <span class="meta-sep" aria-hidden="true">&middot;</span>
+        <span class="meta-item">November 15, 2026</span>
+        <span class="meta-sep" aria-hidden="true">&middot;</span>
+        <span class="meta-item">4 min read &middot; 5-Entry Scoped Glossary</span>
+      </div>
+
+      <div class="action-bar">
+        <a class="btn btn-primary" href="./compute-antitrust-brief.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
+          Download PDF (2 pp.)
+        </a>
+        <a class="btn" href="./compute-antitrust-brief.md">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>
+          Markdown Source
+        </a>
+        <a class="btn" href="../">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+          Executive Overview
+        </a>
+        <a class="btn" href="https://github.com/mike10010100/policy-briefs">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" /></svg>
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="series-nav-strip" aria-label="Series 2026-01 issue briefs">
+    <div class="series-nav-inner">
+      <span class="series-nav-label">Series 2026-01:</span>
+      <a class="series-pill" href="../">Overview</a>
+      <a class="series-pill" href="../power-water/"><span class="series-pill-num">01</span><span>Power &amp; Water</span></a>
+      <a class="series-pill active" href="./" aria-current="page"><span class="series-pill-num">02</span><span>Compute &amp; Antitrust</span></a>
+      <a class="series-pill" href="../civil-liberties/"><span class="series-pill-num">03</span><span>Civil Liberties</span></a>
+      <a class="series-pill" href="../workers-taxes/"><span class="series-pill-num">04</span><span>Workers &amp; Taxes</span></a>
+      <a class="series-pill" href="../deepfakes-creators/"><span class="series-pill-num">05</span><span>Deepfakes &amp; Creators</span></a>
+      <a class="series-pill" href="../safety-youth-pace/"><span class="series-pill-num">06</span><span>Safety, Youth &amp; Pace</span></a>
+    </div>
+  </nav>
+
+  <nav class="mobile-toc" aria-label="Jump to section">
+    <details>
+      <summary>Jump to section</summary>
+      <ul>
+        <li><a href="#bluf">Bottom line up front</a></li>
+        <li><a href="#public-compute-open-weights">01. NAIRR and open weights</a></li>
+        <li><a href="#antitrust-collusion">02. Cloud tying and price-fixing</a></li>
+        <li><a href="#trade-offs">Trade-offs to weigh in policy design</a></li>
+        <li><a href="#references">Key references for staff follow-up</a></li>
+        <li><a href="#glossary">Appendix: Plain-English glossary</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <div class="layout-shell">
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <div class="toc-heading">Contents</div>
+      <ul class="toc-list">
+        <li><a class="toc-link" href="#bluf"><span class="toc-num">&bull;</span><span>Bottom line up front</span></a></li>
+        <li><a class="toc-link" href="#public-compute-open-weights"><span class="toc-num">01</span><span>NAIRR and open weights</span></a></li>
+        <li><a class="toc-link" href="#antitrust-collusion"><span class="toc-num">02</span><span>Cloud tying and price-fixing</span></a></li>
+        <li><a class="toc-link" href="#trade-offs"><span class="toc-num">&bull;</span><span>Policy trade-offs</span></a></li>
+        <li><a class="toc-link" href="#references"><span class="toc-num">&bull;</span><span>Key references</span></a></li>
+        <li><a class="toc-link" href="#glossary"><span class="toc-num">&bull;</span><span>Plain-English glossary</span></a></li>
+      </ul>
+      <a class="toc-back-top" href="#top">&uarr; Back to top</a>
+    </aside>
+
+    <main class="brief-article">
+      <section id="bluf" class="bluf-card">
+        <div class="section-head">
+          <h2>Bottom line up front</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#bluf" aria-label="Copy link to Bottom line up front"># Link</button>
+        </div>
+        <p data-verbatim>Leaving frontier AI in the hands of four or five cloud conglomerates concentrates too much economic and political power while stifling independent researchers, hospitals, and startups. At the same time, Stanford AI Index, CSIS, and Lowy Institute tracking shows that despite U.S. chip export restrictions, Chinese labs such as DeepSeek and Alibaba have narrowed frontier benchmark gaps to roughly 2.7% through <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-2">open-weight</span> software releases.</p>
+        <p data-verbatim>Federal competition policy should expand public compute infrastructure, keep open-weight AI legal to deploy on local hardware, police Big Tech cloud-compute tying and disguised mergers, and outlaw shared pricing algorithms that coordinate rents and consumer prices.</p>
+      </section>
+
+      <aside class="metrics-strip" aria-label="Key figures cited in this issue brief">
+        <div class="metrics-heading">Key figures cited in this issue brief</div>
+        <div class="metrics-grid">
+          <div class="stat-card">
+            <div class="stat-figure">2.7% / 3.3%</div>
+            <div class="stat-label">U.S.-China frontier benchmark gap vs. closed-to-open-weight gap as open models scale.</div>
+            <div class="stat-cite">Stanford HAI AI Index (2026); CSIS; Lowy Institute</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-figure">$35M -&gt; $2.6B</div>
+            <div class="stat-label">Sept. 2026 NSF NAIRR Operations Center award vs. permanent CREATE AI Act authorization.</div>
+            <div class="stat-cite">NSF NAIRR-OC (Sept. 2026); CREATE AI Act</div>
+          </div>
+        </div>
+      </aside>
+
+      <section id="public-compute-open-weights" class="brief-section">
+        <div class="section-kicker">Section 01 · Public Infrastructure &amp; Open Weights</div>
+        <div class="section-head">
+          <h2>1. Fund permanent NAIRR public compute and keep open-weight models legal</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#public-compute-open-weights" aria-label="Copy link to Section 01"># Link</button>
+        </div>
+        <p data-verbatim>Building on the National Science Foundation's September 2026 $35 million launch of the <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-3">NAIRR</span> Operations Center (in partnership with the Department of Energy), Congress should pass the bipartisan CREATE AI Act and appropriate multi-billion-dollar funding for publicly owned supercomputing and zero-egress, vendor-neutral cloud vouchers at national labs and university centers.</p>
+        <p data-verbatim>Direct public funding guarantees that academic researchers, teaching hospitals, civic institutions, and independent startups receive real pre-competitive R&amp;D, open-science training, and public-interest model validation capacity without relying on revocable, lock-in Big Tech cloud credits.</p>
+        <p data-verbatim>Federal policy should also keep open-weight AI models below Pillar 6's catastrophic bio-cyber tripwires legal so smaller firms, regional hospitals, and municipal institutions can inspect and run <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-1">AI agents</span> on local or domestic servers without paying permanent rent or ceding sensitive operational data to closed corporate APIs.</p>
+      </section>
+      <section id="antitrust-collusion" class="brief-section">
+        <div class="section-kicker">Section 02 · Competition Enforcement &amp; Price-Fixing</div>
+        <div class="section-head">
+          <h2>2. Police cloud tying, disguised acqui-hires, and algorithmic collusion</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#antitrust-collusion" aria-label="Copy link to Section 02"># Link</button>
+        </div>
+        <p data-verbatim>On antitrust, the FTC and DOJ should block exclusive cloud-compute tying agreements and discriminatory accelerator allocation bottlenecks, while Congress modernizes the Hart-Scott-Rodino Act (15 U.S.C. Section 18a, following the February 2026 judicial vacatur of expanded HSR rules in <em>Chamber of Commerce v. FTC</em>) so dominant-platform <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-4">"acqui-hire"</span> deals pairing talent buyouts with exclusive or quasi-exclusive IP licenses face mandatory premerger review.</p>
+        <p data-verbatim>Closing the 12-month aged-data training loophole left in DOJ's May 2026 <em>RealPage</em> consent judgment (and building on state statutes like California's AB 325), Congress should pass a targeted Preventing Algorithmic Collusion Act to outlaw <span class="inline-term" tabindex="0" role="button" aria-expanded="false" aria-controls="term-popover" data-glossary-target="term-5">shared pricing algorithms</span> that pool or train on current or historical nonpublic competitor data or coordinate competitor pricing across rival firms.</p>
+        <p data-verbatim>To avoid interfering with ordinary business analytics, the statute should explicitly spare proprietary or non-pooled single-merchant pricing and inventory software that uses only a firm's own operational data and public market prices without cross-competitor price coordination, keeping enforcement squarely aimed at competing landlords and corporations inflating rents and consumer prices in lockstep.</p>
+      </section>
+
+      <section id="trade-offs" class="brief-section">
+        <div class="section-kicker">Implementation Design</div>
+        <div class="section-head">
+          <h2>Trade-offs to weigh in policy design</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#trade-offs" aria-label="Copy link to Trade-offs"># Link</button>
+        </div>
+        <div class="tradeoffs-single">
+          <article class="tradeoff-card">
+            <div class="tradeoff-eyebrow">02 · Open Innovation vs. Oligopoly Capture</div>
+            <p data-verbatim>Restrictive model-licensing schemes sold under the banner of safety tend to entrench the largest cloud incumbents while pushing open development toward foreign labs. Pairing permanent public compute under NAIRR with legal open-weight distribution preserves domestic competition and lowers market-entry costs, while pairing narrow frontier catastrophic tripwires (covered in Brief 2026-01F) with antitrust enforcement targets actual concentration and collusion risks instead of open code.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="references" class="brief-section references-card">
+        <div class="section-head">
+          <h2>Key references for staff follow-up</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#references" aria-label="Copy link to Key references"># Link</button>
+        </div>
+        <ul class="references-list">
+          <li>Stanford HAI, <em>AI Index Report</em> (2025-2026); CSIS and Lowy Institute assessments of global open-weight AI adoption and U.S.-China frontier capability gaps (2025-2026)</li>
+          <li>National Science Foundation &amp; Department of Energy, $35M NAIRR Operations Center award (Sept. 2026); bipartisan CREATE AI Act (H.R. 2385 / S. 4441)</li>
+          <li>U.S. Department of Justice <em>United States v. RealPage</em> Final Judgment (May 2026) and California AB 325; FTC Section 6(b) cloud-compute and reverse acqui-hire inquiries and <em>Chamber of Commerce v. FTC</em> HSR litigation (2024-2026)</li>
+        </ul>
+      </section>
+
+      <section id="glossary" class="brief-section wide-section glossary-section">
+        <div class="section-head">
+          <h2>Appendix: Plain-English technical and policy glossary</h2>
+          <button class="copy-anchor-btn" type="button" data-anchor="#glossary" aria-label="Copy link to Glossary"># Link</button>
+        </div>
+        <p class="glossary-intro">Scoped plain-English definitions for technical, statutory, and institutional terms used in Brief 2026-01B. Click any dotted term in the text above to preview its definition.</p>
+
+        <div class="glossary-filters" role="group" aria-label="Filter glossary by category">
+          <button class="filter-pill active" type="button" data-cat="all">All (5)</button>
+          <button class="filter-pill" type="button" data-cat="compute">Models and public compute (3)</button>
+          <button class="filter-pill" type="button" data-cat="antitrust">Antitrust and pricing rules (2)</button>
+        </div>
+
+        <div class="glossary-toolbar">
+          <input id="glossary-filter" class="glossary-search" type="search" placeholder="Filter glossary terms..." aria-label="Filter glossary terms" />
+          <span id="glossary-count" class="glossary-count">Showing 5 of 5 entries</span>
+        </div>
+
+        <div id="glossary-empty" class="glossary-empty">No matching terms found. Clear the search box or switch categories to view all 5 glossary entries.</div>
+
+        <div class="glossary-group" data-group="compute">
+          <h3 class="glossary-group-title">Models and public compute</h3>
+          <div class="glossary-grid">
+            <dl id="term-1" class="glossary-card" data-entry data-category="compute">
+              <dt>AI agents ("agentic" AI)</dt>
+              <dd>AI agents are software systems that go beyond answering single chat prompts to plan and execute multi-step tasks across external software tools, databases, and enterprise workflows, such as organizing hospital records, writing code, or triaging customer tickets, where unverified actions can compound across connected systems.</dd>
+            </dl>
+            <dl id="term-2" class="glossary-card" data-entry data-category="compute">
+              <dt>Open-weight models vs. closed APIs</dt>
+              <dd>An open-weight model releases its trained numerical parameters ("weights") publicly so universities, hospitals, and smaller firms can download and run the software on their own servers or local hardware. Closed APIs keep the model locked on a tech company's servers and charge customers ongoing fees for access.</dd>
+            </dl>
+            <dl id="term-3" class="glossary-card" data-entry data-category="compute">
+              <dt>NAIRR public compute and the CREATE AI Act</dt>
+              <dd>NAIRR (the National Artificial Intelligence Research Resource) is an NSF-led federal public-compute initiative (with Department of Energy national-lab participation) that launched its $35 million Operations Center in September 2026; the bipartisan CREATE AI Act permanently authorizes NAIRR and scales publicly owned supercomputing and vendor-neutral cloud resources for academic, nonprofit, civic, and startup R&amp;D.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="glossary-group" data-group="antitrust">
+          <h3 class="glossary-group-title">Antitrust and pricing rules</h3>
+          <div class="glossary-grid">
+            <dl id="term-4" class="glossary-card" data-entry data-category="antitrust">
+              <dt>"Acqui-hires" and HSR premerger review</dt>
+              <dd>A deal structure (often called a reverse acqui-hire) where a tech giant hires away a startup's founders and core engineering team while taking an exclusive or quasi-exclusive IP license to gain effective control without triggering standard Hart-Scott-Rodino (15 U.S.C. Section 18a) antitrust premerger review.</dd>
+            </dl>
+            <dl id="term-5" class="glossary-card" data-entry data-category="antitrust">
+              <dt>Algorithmic collusion vs. independent pricing tools</dt>
+              <dd>Algorithmic collusion occurs when competing landlords or businesses feed or train shared third-party pricing software on current or historical nonpublic pricing, occupancy, or supply data to coordinate prices above competitive levels. Independent single-merchant tools analyze only public market prices and a firm's own internal operational data.</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <nav class="brief-pager" aria-label="Issue brief navigation">
+        <a class="pager-card" href="../power-water/"><span class="pager-eyebrow">&larr; Previous Brief (Brief 2026-01A)</span><span class="pager-title">Clean power, water, and air rules for hyperscale data centers</span></a>
+        <a class="pager-card pager-card-center" href="../"><span class="pager-eyebrow">Series 2026-01</span><span class="pager-title">Back to Executive Overview</span></a>
+        <a class="pager-card pager-card-next" href="../civil-liberties/"><span class="pager-eyebrow">Next Brief (Brief 2026-01C) &rarr;</span><span class="pager-title">Statutory civil-liberties, courtroom, and patient-care guardrails</span></a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Brief 2026-01B by Michael Paulauski &middot; November 15, 2026</div>
+      <div class="footer-links">
+        <a href="../">Series Overview</a>
+        <a href="../../">All Briefs</a>
+        <a href="./compute-antitrust-brief.pdf">PDF Edition</a>
+        <a href="./compute-antitrust-brief.md">Markdown Source</a>
+        <a href="https://github.com/mike10010100/policy-briefs">GitHub Repository</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="term-popover" class="term-popover" role="dialog" aria-modal="false" aria-labelledby="term-popover-title" tabindex="-1" hidden>
+    <div class="term-popover-head">
+      <h4 id="term-popover-title" class="term-popover-title"></h4>
+      <button id="term-popover-close" class="term-popover-close" type="button" aria-label="Close definition">&times;</button>
+    </div>
+    <p id="term-popover-body" class="term-popover-body"></p>
+    <a id="term-popover-link" class="term-popover-link" href="#glossary">View in Glossary &darr;</a>
+  </div>
+
+  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite">Link copied</div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var themeBtn = document.getElementById("theme-toggle-btn");
+      var copyPageBtn = document.getElementById("copy-page-btn");
+      var toast = document.getElementById("copy-toast");
+      var progressBar = document.getElementById("reading-progress");
+      var toastTimer = null;
+
+      function syncThemeButton() {
+        var current = root.getAttribute("data-theme") || "light";
+        themeBtn.textContent = current === "dark" ? "Light Mode" : "Dark Mode";
+      }
+
+      syncThemeButton();
+
+      themeBtn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("ai-brief-theme", next);
+        } catch (e) {}
+        syncThemeButton();
+      });
+
+      function updateProgressBar() {
+        if (!progressBar) return;
+        var scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var pct = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+        progressBar.style.width = pct.toFixed(1) + "%";
+      }
+
+      updateProgressBar();
+      window.addEventListener("scroll", updateProgressBar, { passive: true });
+      window.addEventListener("resize", updateProgressBar, { passive: true });
+
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.add("visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("visible");
+        }, 1800);
+      }
+
+      function copyText(text, label) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () {
+            showToast(label || "Link copied");
+          }).catch(function () {
+            showToast("Link ready in address bar");
+          });
+        } else {
+          var temp = document.createElement("input");
+          temp.value = text;
+          document.body.appendChild(temp);
+          temp.select();
+          try {
+            document.execCommand("copy");
+            showToast(label || "Link copied");
+          } catch (e) {
+            showToast("Copy unavailable");
+          }
+          document.body.removeChild(temp);
+        }
+      }
+
+      copyPageBtn.addEventListener("click", function () {
+        var cleanUrl = window.location.origin + window.location.pathname;
+        if (window.location.protocol === "file:") {
+          cleanUrl = window.location.href.split("#")[0].split("?")[0];
+        }
+        copyText(cleanUrl, "Page link copied");
+      });
+
+      document.querySelectorAll(".copy-anchor-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var anchor = btn.getAttribute("data-anchor");
+          var base = window.location.href.split("#")[0];
+          history.replaceState(null, "", anchor);
+          copyText(base + anchor, "Link copied");
+        });
+      });
+
+      var mobileDetails = document.querySelector(".mobile-toc details");
+      if (mobileDetails) {
+        mobileDetails.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            mobileDetails.removeAttribute("open");
+          });
+        });
+      }
+
+      var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc-link"));
+      var sections = tocLinks.map(function (link) {
+        return document.querySelector(link.getAttribute("href"));
+      }).filter(Boolean);
+
+      if ("IntersectionObserver" in window && sections.length) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var id = "#" + entry.target.id;
+              tocLinks.forEach(function (link) {
+                link.classList.toggle("active", link.getAttribute("href") === id);
+              });
+            }
+          });
+        }, { rootMargin: "-15% 0px -70% 0px" });
+
+        sections.forEach(function (sec) {
+          observer.observe(sec);
+        });
+      }
+
+      var filterInput = document.getElementById("glossary-filter");
+      var countEl = document.getElementById("glossary-count");
+      var emptyEl = document.getElementById("glossary-empty");
+      var categoryBtns = Array.prototype.slice.call(document.querySelectorAll(".filter-pill"));
+      var groups = Array.prototype.slice.call(document.querySelectorAll("[data-group]"));
+      var entries = Array.prototype.slice.call(document.querySelectorAll("[data-entry]"));
+      var activeCategory = "all";
+
+      function setActiveCategory(cat) {
+        activeCategory = cat;
+        categoryBtns.forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-cat") === cat);
+        });
+      }
+
+      function applyGlossaryFilters() {
+        var q = filterInput ? filterInput.value.trim().toLowerCase() : "";
+        var visibleCount = 0;
+
+        entries.forEach(function (entry) {
+          var matchesCat = activeCategory === "all" || entry.getAttribute("data-category") === activeCategory;
+          var matchesSearch = !q || entry.textContent.toLowerCase().indexOf(q) !== -1;
+          var show = matchesCat && matchesSearch;
+          entry.style.display = show ? "" : "none";
+          if (show) visibleCount += 1;
+        });
+
+        groups.forEach(function (group) {
+          var hasVisible = Array.prototype.some.call(
+            group.querySelectorAll("[data-entry]"),
+            function (card) { return card.style.display !== "none"; }
+          );
+          group.style.display = hasVisible ? "" : "none";
+        });
+
+        if (countEl) {
+          countEl.textContent = "Showing " + visibleCount + " of " + entries.length + " entries";
+        }
+        if (emptyEl) {
+          emptyEl.style.display = visibleCount === 0 ? "block" : "none";
+        }
+      }
+
+      categoryBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          setActiveCategory(btn.getAttribute("data-cat") || "all");
+          applyGlossaryFilters();
+        });
+      });
+
+      if (filterInput) {
+        filterInput.addEventListener("input", applyGlossaryFilters);
+      }
+
+      var popover = document.getElementById("term-popover");
+      var popoverTitle = document.getElementById("term-popover-title");
+      var popoverBody = document.getElementById("term-popover-body");
+      var popoverClose = document.getElementById("term-popover-close");
+      var popoverLink = document.getElementById("term-popover-link");
+      var activeTermEl = null;
+      var openedViaKeyboard = false;
+      var pulseTimer = null;
+      var openScrollY = 0;
+      var openTimestamp = 0;
+
+      function closePopover(restoreFocus) {
+        if (!popover) return;
+        popover.classList.remove("visible");
+        popover.hidden = true;
+        if (activeTermEl) {
+          var prevTermEl = activeTermEl;
+          prevTermEl.classList.remove("is-open");
+          prevTermEl.setAttribute("aria-expanded", "false");
+          activeTermEl = null;
+          if (restoreFocus && openedViaKeyboard) {
+            prevTermEl.focus({ preventScroll: true });
+          }
+        }
+        openedViaKeyboard = false;
+      }
+
+      function positionPopover(termEl) {
+        var rect = termEl.getBoundingClientRect();
+        var popWidth = popover.offsetWidth || 340;
+        var popHeight = popover.offsetHeight || 160;
+        var left = rect.left + (rect.width / 2) - (popWidth / 2);
+        left = Math.max(12, Math.min(left, window.innerWidth - popWidth - 12));
+        var top = rect.bottom + 8;
+        if (top + popHeight > window.innerHeight - 12) {
+          top = Math.max(12, rect.top - popHeight - 8);
+        }
+        popover.style.left = Math.round(left) + "px";
+        popover.style.top = Math.round(top) + "px";
+      }
+
+      function openPopover(termEl, viaKeyboard) {
+        if (!popover) return;
+        if (activeTermEl === termEl && !popover.hidden) {
+          closePopover(!!viaKeyboard);
+          return;
+        }
+        var targetId = termEl.getAttribute("data-glossary-target");
+        var card = targetId ? document.getElementById(targetId) : null;
+        if (!card) return;
+        var dt = card.querySelector("dt");
+        var dd = card.querySelector("dd");
+        if (!dt || !dd) return;
+
+        if (activeTermEl) {
+          activeTermEl.classList.remove("is-open");
+          activeTermEl.setAttribute("aria-expanded", "false");
+        }
+        activeTermEl = termEl;
+        openedViaKeyboard = !!viaKeyboard;
+        activeTermEl.classList.add("is-open");
+        activeTermEl.setAttribute("aria-expanded", "true");
+        popoverTitle.textContent = termEl.getAttribute("data-popover-title") || dt.textContent;
+        popoverBody.textContent = termEl.getAttribute("data-popover-body") || dd.textContent;
+        popoverLink.setAttribute("href", "#" + targetId);
+
+        openScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        openTimestamp = Date.now();
+        popover.hidden = false;
+        positionPopover(termEl);
+        popover.classList.add("visible");
+        if (openedViaKeyboard) {
+          popover.focus({ preventScroll: true });
+        }
+      }
+
+      document.querySelectorAll(".inline-term").forEach(function (termEl) {
+        termEl.addEventListener("click", function (e) {
+          e.stopPropagation();
+          openPopover(termEl, false);
+        });
+        termEl.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openPopover(termEl, true);
+          }
+        });
+      });
+
+      if (popoverClose) {
+        popoverClose.addEventListener("click", function () {
+          closePopover(true);
+        });
+      }
+
+      if (popoverLink) {
+        popoverLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          var href = popoverLink.getAttribute("href");
+          var targetId = href ? href.replace(/^#/, "") : "";
+          var targetCard = targetId ? document.getElementById(targetId) : null;
+          closePopover(false);
+          if (!targetCard) return;
+          if (targetCard.style.display === "none") {
+            setActiveCategory("all");
+            if (filterInput) filterInput.value = "";
+            applyGlossaryFilters();
+          }
+          targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+          document.querySelectorAll(".glossary-card.highlight-pulse").forEach(function (el) {
+            el.classList.remove("highlight-pulse");
+          });
+          targetCard.classList.add("highlight-pulse");
+          clearTimeout(pulseTimer);
+          pulseTimer = setTimeout(function () {
+            targetCard.classList.remove("highlight-pulse");
+          }, 2200);
+        });
+      }
+
+      document.addEventListener("click", function (e) {
+        if (!popover || popover.hidden) return;
+        if (!popover.contains(e.target) && !e.target.classList.contains("inline-term")) {
+          closePopover(false);
+        }
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closePopover(true);
+        }
+      });
+
+      window.addEventListener("scroll", function () {
+        if (!popover || popover.hidden) return;
+        if (Date.now() - openTimestamp < 180) return;
+        var curScrollY = window.scrollY || document.documentElement.scrollTop || 0;
+        if (Math.abs(curScrollY - openScrollY) > 80) {
+          closePopover(false);
+        }
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>
