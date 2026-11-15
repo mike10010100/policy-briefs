@@ -1732,7 +1732,7 @@ def build_root_index_html(hub_pages: int, spoke_pdf_pages: dict[str, int]) -> st
           <a href="./ai-governance/">{h_text(hub['title'])}</a>
         </h3>
 
-        <p class="entry-summary">A hub-and-spoke federal AI governance agenda separating open research speed from accountable commercial deployment: 100% cost-causation grid tariffs, water conservation, and gas-turbine air limits; public compute and algorithmic antitrust; statutory civil-liberties and health-care guardrails; worker tax parity and wage insurance; deepfake and creator rights; and frontier bio-cyber safety plus bans on manipulative chatbot design without government-ID dragnets.</p>
+        <p class="entry-summary">A hub-and-spoke federal AI governance agenda separating open research speed from accountable commercial and government deployment: 100% cost-causation grid tariffs, water conservation, and gas-turbine air limits; public compute and algorithmic antitrust; statutory civil-liberties and health-care guardrails; worker tax parity and wage insurance; deepfake and creator rights; and frontier bio-cyber safety plus bans on manipulative chatbot design without government-ID dragnets.</p>
 
         <div class="entry-tags" aria-label="Topics">
           <span class="entry-tag">executive overview</span>
@@ -1915,6 +1915,8 @@ Archive of policy briefs, statutory issue briefs, and plain-English technical gl
 ## Published Series
 
 ### {hub['code']}: {hub['title']} ({data.SITE['date']})
+
+Six-pillar federal AI governance agenda separating open research speed from accountable commercial and government deployment across power, water, and air rules, public compute and antitrust, civil liberties and health care, worker tax parity and wage insurance, deepfakes and creator rights, and frontier bio-cyber safety plus youth protections without government-ID dragnets.
 
 * **Executive Overview Web Edition:** {data.SITE['base_url']}/ai-governance/
 * **Executive Overview PDF ({hub_pages} pages):** [{hub['pdf_filename']}](./ai-governance/{hub['pdf_filename']})
@@ -2156,7 +2158,7 @@ def main() -> int:
                 build_og_html(
                     "Series 2026-01 · Michael Paulauski · November 2026",
                     "Practical AI Governance Framework",
-                    "Six-pillar federal agenda separating open research speed from accountable commercial deployment, with standalone statutory issue briefs.",
+                    "Six-pillar federal agenda separating open research speed from accountable commercial and government deployment, with standalone statutory issue briefs.",
                     [f"{sp['num']}. {sp['nav_label']}" for sp in data.SPOKES],
                     "mike10010100.github.io/policy-briefs/ai-governance",
                     f"Executive Overview ({hub_pages} pp.) + 6 Issue Briefs",

@@ -9,6 +9,8 @@ Archive of policy briefs, statutory issue briefs, and plain-English technical gl
 
 ### Series 2026-01: Practical AI governance framework (November 15, 2026)
 
+Six-pillar federal AI governance agenda separating open research speed from accountable commercial and government deployment across power, water, and air rules, public compute and antitrust, civil liberties and health care, worker tax parity and wage insurance, deepfakes and creator rights, and frontier bio-cyber safety plus youth protections without government-ID dragnets.
+
 * **Executive Overview Web Edition:** https://mike10010100.github.io/policy-briefs/ai-governance/
 * **Executive Overview PDF (3 pages):** [Practical-AI-Governance-Policy-Brief.pdf](./ai-governance/Practical-AI-Governance-Policy-Brief.pdf)
 * **Executive Overview Markdown:** [Practical-AI-Governance-Policy-Brief.md](./ai-governance/Practical-AI-Governance-Policy-Brief.md)

@@ -1481,13 +1481,13 @@ HUB = {
     "og_filename": "og-ai-governance.png",
     "read_time": "4 min read",
     "meta_description": (
-        "Six-pillar federal AI governance overview and candidate talking points covering clean data-center power and "
-        "water, public compute and antitrust, civil liberties and indigent defense, worker tax parity and wage insurance, "
+        "Six-pillar federal AI governance overview and candidate talking points covering clean data-center power, water, and "
+        "air, public compute and antitrust, civil liberties, courts, and health care, worker tax parity and wage insurance, "
         "deepfakes and creator rights, and frontier bio-cyber safety and youth protections without ID dragnets."
     ),
     "og_description": (
-        "Six-pillar federal agenda separating open research speed from accountable commercial deployment, linking each "
-        "talking-point pillar to a standalone statutory issue brief."
+        "Six-pillar federal agenda separating open research speed from accountable commercial and government deployment, "
+        "linking each talking-point pillar to a standalone statutory issue brief."
     ),
     "metrics": [
         {
@@ -1526,8 +1526,8 @@ HUB = {
     "bluf_goal": (
         "The governing principle is to separate open research speed from accountable deployment speed: let American "
         "researchers, universities, and startups build without Big Tech bottlenecks while enforcing binding public-interest "
-        "rules wherever commercial AI touches the power grid, civil rights, courts, health care, paychecks, creative work, "
-        "catastrophic bio-cyber risks, and minors."
+        "rules wherever commercial or government AI touches power, water, and air, civil rights, courts, health care, "
+        "paychecks, deepfakes and creative work, catastrophic bio-cyber risks, and minors."
     ),
     "pillars": [
         {
