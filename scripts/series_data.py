@@ -61,54 +61,54 @@ SPOKES = [
         "og_pills": [
             "100% Cost-Causation Tariffs",
             "0.25%-1% Peak Curtailment",
-            "Closed-Loop & Reclaimed Water",
+            "Zero/Low-Water Cooling Rules",
             "Clean Air Loophole Closures",
         ],
         "meta_description": (
             "Federal and state utility rules making hyperscale data centers fund 100% of grid upgrades, "
-            "deliver hourly-matched clean power and peak curtailment, end drinking-water subsidies, "
+            "earn fast-track queues via rising hourly-matched clean power and peak curtailment, end drinking-water subsidies, "
             "and close gas-turbine air permitting loopholes."
         ),
         "og_description": (
-            "100% cost-causation grid tariffs, 76-126 GW peak flexibility, closed-loop or reclaimed-water cooling, "
-            "and closing Subpart KKKKa and nonroad methane-turbine loopholes."
+            "100% cost-causation grid tariffs, 76-126 GW of system-wide headroom via clean peak curtailment, "
+            "zero/low-evaporation cooling rules, and closing Subpart KKKKa and nonroad turbine loopholes."
         ),
         "metrics": [
             {
                 "figure": "$9B+",
-                "label": "Data-center capacity cost added to the 2025/2026 PJM wholesale auction.",
+                "label": "Data-center capacity cost added to the 2025/2026 PJM wholesale auction (existing and forecast load).",
                 "cite": "PJM Independent Market Monitor (Monitoring Analytics)",
             },
             {
                 "figure": "76-126 GW",
-                "label": "U.S. grid headroom unlocked by 0.25%-1% peak load curtailment.",
+                "label": "System-wide U.S. grid headroom modeled for 0.25%-1% peak load curtailment.",
                 "cite": "Norris et al., Duke Nicholas Institute (Feb. 2025)",
             },
             {
                 "figure": "$40B-$150B",
-                "label": "Ten-year U.S. capital, operating, and fuel savings from load flexibility (up to 50% flexible hours).",
+                "label": "Ten-year U.S. capital, operating, and fuel savings (flexing deferrable load across up to 50% of operating hours).",
                 "cite": "Ross & Ewing, Duke Nicholas Institute (Feb. 2026)",
             },
             {
                 "figure": "1M-5M gal/day",
-                "label": "Daily treated-water draw by a single hyperscale facility in dry basins.",
+                "label": "Peak daily evaporative potable draw by an unretrofitted hyperscale facility in dry basins.",
                 "cite": "Water Foundation; Brookings Institution",
             },
         ],
         "bluf_paragraphs": [
             (
                 "Across the [[term-1|PJM grid]] spanning 13 states and Washington, D.C., PJM's Independent Market Monitor "
-                "calculates that surging data-center demand forecasts added $9.33 billion to the 2025/2026 wholesale capacity "
-                "auction, while U.S. Department of Energy resource-adequacy filings warn that rapid large-load growth is "
-                "colliding with plant retirements and driving up household electric bills. Meanwhile, single dry-basin "
-                "campuses pull millions of gallons of municipal water daily or run trailer-mounted gas turbines outside "
-                "major-source air permits."
+                "calculates that existing and forecast data-center load added $9.33 billion to the 2025/2026 wholesale capacity "
+                "auction, while U.S. Department of Energy resource-adequacy and FERC RM26-4 large-load filings warn that rapid "
+                "load growth is colliding with plant retirements and driving up household electric bills. Meanwhile, single "
+                "dry-basin campuses pull millions of gallons of municipal water daily or run trailer-mounted gas turbines "
+                "outside major-source air permits."
             ),
             (
                 "Federal and state policy should enforce strict cost causation: require large facilities to fund "
-                "grid upgrades up front, unlock clean [[term-3|interconnection queues|Interconnection queues|The multi-year engineering waitlist new power projects and large loads face before plugging into the regional transmission grid.]] "
+                "grid upgrades up front, unlock clean [[term-3|interconnection queues|Interconnection queues|The multi-year engineering waitlist new power projects and large loads face before plugging into transmission or distribution grids.]] "
                 "through modest peak flexibility and surplus-capacity reuse, condition federal water and energy aid on "
-                "closed-loop, hybrid adiabatic, or reclaimed cooling, and close methane-turbine air permitting loopholes."
+                "zero- or low-evaporation cooling and drought protections, and close data-center turbine air loopholes."
             ),
         ],
         "sections": [
@@ -123,9 +123,10 @@ SPOKES = [
                         "Through [[term-2|FERC|FERC (Federal Energy Regulatory Commission)|The independent federal agency that regulates interstate electricity transmission and wholesale power markets, while state public utility commissions regulate retail rates.]] "
                         "wholesale transmission and capacity rules, Department of Energy grid-grant conditions, and state public "
                         "utility commission rate standards, policymakers should require "
-                        "[[term-2|100% cost-causation tariffs|100% cost-causation tariffs|A wholesale and retail rate rule requiring a giant new electricity user, such as a hyperscale data center, to pay the full cost of the grid upgrades and power capacity it triggers so residential bills do not rise.]] "
+                        "[[term-2|100% cost-causation tariffs|100% cost-causation tariffs|A wholesale and retail rate rule requiring a giant new electricity user, such as a hyperscale data center, to pay the full cost of the grid upgrades and dedicated supply capacity it triggers so wholesale clearing prices and residential bills do not rise.]] "
                         "paired with minimum-term financial collateral for hyperscale loads (such as facilities or "
-                        "campuses over 20 megawatts)."
+                        "campuses over 20 megawatts, aggregated across phased buildings, co-located tenants, and "
+                        "behind-the-meter pairings)."
                     ),
                     (
                         "Mandatory collateral ensures residential customers and small businesses never subsidize Big Tech "
@@ -142,29 +143,32 @@ SPOKES = [
                 "heading": "2. Pair clean-power interconnection priority with peak load curtailment",
                 "paragraphs": [
                     (
-                        "Congress and FERC should reserve fast-track [[term-3|interconnection queues|Interconnection queues|The multi-year engineering waitlist new power projects and large loads face before plugging into the grid.]] "
-                        "for large facilities that bring new, deliverable clean generation on a rising hourly-matched "
-                        "schedule (using near-term solar and battery storage while scaling [[term-6|enhanced geothermal]] "
-                        "and nuclear) and agree to trim non-urgent runs, shift regional workloads, or draw clean on-site "
-                        "storage without running diesel or fossil-methane backup by 0.25% to 1% of annual electricity use "
-                        "(mostly partial drawdowns across roughly 85 to 366 peak grid-stress hours a year, equal to 22 "
-                        "to 88 full-load hours)."
+                        "Congress should empower FERC, ERCOT/non-RTO regulators, and state utility commissions to reserve "
+                        "fast-track [[term-3|interconnection queues|Interconnection queues|The multi-year engineering waitlist new power projects and large loads face before plugging into transmission or distribution grids.]] "
+                        "for large facilities that bring new, deliverable clean generation or interim clean-capacity bridge "
+                        "contracts on a rising hourly-matched schedule (using near-term solar and battery storage while "
+                        "scaling [[term-6|enhanced geothermal]] and nuclear) and agree to trim non-urgent runs, shift "
+                        "regional workloads, or draw clean on-site storage without running diesel or fossil-methane backup "
+                        "by 0.25% to 1% of annual electricity use (mostly partial drawdowns across roughly 85 to 366 peak "
+                        "grid-stress hours a year, equal to 22 to 88 full-load hours)."
                     ),
                     (
                         "Companion 2025 and 2026 studies from Duke University's Nicholas Institute find that curtailing "
-                        "grid withdrawals during those peak hours unlocks 76 to 126 gigawatts of headroom across U.S. "
-                        "grids (which federal rules should pair with a strict ban on fossil backup shifting), while broader "
-                        "data-center load flexibility scaling up to 50% of flexible hours cuts U.S. power-system capital, "
-                        "operating, and fuel costs by $40 billion to $150 billion over ten years (verified against "
-                        "[[term-4|peak curtailment]] dispatch telemetry)."
+                        "grid withdrawals during those peak hours unlocks 76 to 126 gigawatts of system-wide headroom "
+                        "across major U.S. balancing authorities (where local transmission can deliver it, achieved via "
+                        "workload shifting or clean storage instead of the fossil backup generators modeled in baseline "
+                        "cases), while shifting deferrable workloads across up to 50% of annual operating hours cuts U.S. "
+                        "power-system capital, operating, and fuel costs by $40 billion to $150 billion over ten years "
+                        "(enforced via utility-metered [[term-4|peak curtailment]] telemetry and collateral clawbacks)."
                     ),
                     (
                         "Congress should also authorize FERC to speed up advanced transmission "
                         "[[term-5|reconductoring|Advanced reconductoring|Replacing aging steel-core wires on existing transmission towers with composite-core conductors that carry roughly twice as much power without multi-year land acquisition for new corridors.]] "
-                        "and dynamic line ratings on existing corridors, and prioritize non-emitting power and storage "
+                        "and dynamic line ratings on existing corridors, and prioritize non-emitting generation and storage "
                         "interconnections that reuse spare hookup capacity at operating plants under "
-                        "[[term-3|Order 845|FERC Order 845 and generator replacement|FERC Order 845 (surplus interconnection) lets new generation or batteries share unused hookup capacity at an operating power plant, while generator-replacement rules let new projects reuse the existing hookup when an older plant retires; both are currently fuel-neutral rules that Congress and FERC can pair with clean-power priority.]] "
-                        "or retiring coal sites under a nationwide generator-replacement rule."
+                        "[[term-3|Order 845|FERC Order 845 and generator replacement|FERC Order 845 (surplus interconnection) lets new clean generation or batteries share unused injection capacity at an operating power plant, while generator-replacement rules let new projects reuse the existing hookup when an older plant retires.]] "
+                        "or retiring fossil sites under a nationwide generator-replacement rule opened to third-party clean "
+                        "projects if incumbents delay."
                     ),
                 ],
             },
@@ -180,28 +184,28 @@ SPOKES = [
                         "1 million to 5 million gallons of treated water a day in dry basins. Because federal agencies "
                         "cannot set municipal water rates directly, Congress should condition future EPA State Revolving Fund "
                         "and Bureau of Reclamation water-project grants, while the executive branch conditions discretionary "
-                        "DOE loans and facilities serving federal cloud contracts, on ending subsidized potable water "
-                        "discounts for large data centers."
+                        "DOE loans and facilities serving federal cloud contracts, on ending subsidized bulk potable water "
+                        "discounts for large data centers, paired with state drought permitting and industrial groundwater caps."
                     ),
                     (
-                        "Those funding conditions should require zero-evaporation "
-                        "[[term-7|closed-loop|Closed-loop cooling|Sealed heat-exchange cooling systems that recirculate fluid continuously without evaporating municipal water, trading higher peak-heat electricity use for near-zero operational water draw.]], "
-                        "[[term-7|hybrid adiabatic|Hybrid adiabatic cooling|Dry-cooler systems that run without water most of the year and use limited evaporative misting only during the hottest summer hours, cutting annual water draw sharply compared with open cooling towers.]], "
-                        "or [[term-7|reclaimed municipal wastewater|Reclaimed municipal wastewater|Treated municipal wastewater piped to industrial facilities for non-potable cooling instead of drawing local drinking water.]] "
-                        "cooling in water-stressed basins, paired with automatic drought cutbacks on any remaining potable draw."
+                        "Those conditions should require zero-evaporation "
+                        "[[term-7|closed-loop|Closed-loop cooling|Sealed heat-exchange cooling systems that recirculate fluid without evaporating municipal water, paired with on-site battery storage so hot-afternoon chiller power draw does not strain peak grids.]], "
+                        "dry-rated [[term-7|hybrid adiabatic|Hybrid adiabatic cooling|Dry-cooler systems that run without water most of the year and switch off potable misting during declared droughts, cutting annual water draw sharply compared with open cooling towers.]], "
+                        "or return-flow-safe [[term-7|reclaimed municipal wastewater|Reclaimed municipal wastewater|Treated municipal wastewater piped to industrial facilities for non-potable cooling without depleting downstream return flows or local drinking water.]] "
+                        "cooling in water-stressed basins, with automatic drought shutoffs on any potable draw."
                     ),
                     (
-                        "On air pollution, Congress and the EPA should close loopholes for methane turbines powering fixed "
-                        "data centers by repealing the 2026 Subpart KKKKa 24-month temporary-turbine (25 ppm NOx) and "
-                        "sub-45% capacity-factor SCR subcategories for dedicated data-center generation, blocking EPA's "
-                        "proposed Nonroad Combustion Turbines Rule (RIN 2060-AX08) and barring "
-                        "[[term-8|nonroad-engine claims|Methane-turbine permitting loopholes|Some fixed data centers have run trailer-mounted or modular methane turbines without major-source air controls by claiming Clean Air Act nonroad-engine exemptions meant for movable equipment or short-term Subpart KKKKa stationary subcategories.]], "
-                        "counting co-located turbines together under major-source limits, codifying *Michigan v. DOE* limits "
-                        "against multi-year Federal Power Act Section 202(c) coal and gas retirement overrides, and "
-                        "statutorily barring Clean Air Act Section 110(f) and Section 112(i)(4) waivers for commercial data "
-                        "centers. That ends the unpermitted gas-turbine and emergency fossil practices documented in NAACP, "
-                        "Southern Environmental Law Center, and Earthjustice filings in South Memphis, Southaven, Mississippi, "
-                        "and federal grid dockets."
+                        "On air pollution, Congress and the EPA should close loopholes for turbines powering fixed data centers "
+                        "by repealing the 2026 Subpart KKKKa 24-month temporary-turbine (25 ppm NOx) and <=45% capacity-factor "
+                        "SCR exemptions while requiring SCR-grade controls on aggregated <=850 MMBtu/h modular turbine banks, "
+                        "blocking EPA's proposed Nonroad Combustion Turbines Rule (RIN 2060-AX08) and barring "
+                        "[[term-8|nonroad-engine claims|Methane-turbine permitting loopholes|Fixed data centers have avoided Title I major-source PSD controls and SCR limits by claiming Clean Air Act nonroad-engine status (which RIN 2060-AX08 would widen) or using Subpart KKKKa's 24-month temporary, <=45% capacity-factor, and <=850 MMBtu/h NSPS exemptions.]], "
+                        "aggregating co-located turbines across PSD, Title V, and NSPS limits, codifying *Michigan v. DOE* "
+                        "against Federal Power Act Section 202(c) retirement overrides and non-blackout 50-hour backup-generator "
+                        "waivers, and statutorily barring Clean Air Act Section 110(f) and Section 112(i)(4) waivers for "
+                        "commercial data centers or fossil plants dedicated to serving them. That ends the unpermitted turbine "
+                        "and emergency fossil practices documented in NAACP, Southern Environmental Law Center, and Earthjustice "
+                        "filings in South Memphis, Southaven, Mississippi, and federal grid dockets."
                     ),
                 ],
             },
@@ -228,15 +232,16 @@ SPOKES = [
             ),
             (
                 "PJM Interconnection Independent Market Monitor (Monitoring Analytics) 2025/2026 BRA analysis & U.S. "
-                "Department of Energy resource-adequacy and large-load docket filings (2025-2026)"
+                "Department of Energy resource-adequacy and FERC RM26-4 large-load docket filings (2025-2026)"
             ),
             (
                 "Water Foundation & Brookings Institution analyses of hyperscale data-center municipal water demand (2025-2026); "
                 "NAACP, Southern Environmental Law Center, and Earthjustice air-permitting filings (South Memphis, TN; Southaven, MS)"
             ),
             (
-                "U.S. EPA Standards of Performance for Stationary Combustion Turbines (40 C.F.R. Part 60 Subpart KKKKa, Jan. 2026), "
-                "proposed Nonroad Combustion Turbines Rule (RIN 2060-AX08), and *Michigan v. DOE* Federal Power Act Section 202(c) litigation (2026)"
+                "U.S. EPA Standards of Performance for Stationary Combustion Turbines (40 C.F.R. Part 60 Subpart KKKKa, 91 FR 1910, "
+                "Jan. 2026), proposed Nonroad Combustion Turbines Rule (RIN 2060-AX08), and *Michigan v. DOE* Federal Power Act "
+                "Section 202(c) litigation (2026)"
             ),
         ],
         "glossary": [
@@ -247,7 +252,7 @@ SPOKES = [
                 "dd": (
                     "PJM Interconnection is America's largest regional grid operator, managing wholesale electricity across "
                     "13 Mid-Atlantic and Midwest states plus Washington, D.C. Its capacity auctions pay power plants in advance "
-                    "to guarantee enough supply during future peak demand; surging data-center power forecasts have driven "
+                    "to guarantee enough supply during future peak demand; existing and forecast data-center demand has driven "
                     "those auction prices sharply higher on household bills."
                 ),
             },
@@ -259,8 +264,8 @@ SPOKES = [
                     "FERC (the Federal Energy Regulatory Commission) regulates interstate electricity transmission and wholesale "
                     "power markets, while state public utility commissions set retail electricity rates. A 100% cost-causation "
                     "tariff is a wholesale and retail rate rule requiring a giant new electricity user, such as a hyperscale "
-                    "data center, to pay the full cost of the grid upgrades and power capacity it triggers so residential "
-                    "bills do not rise."
+                    "data center, to pay the full cost of the grid upgrades and dedicated supply capacity it triggers so "
+                    "wholesale clearing prices and residential bills do not rise."
                 ),
             },
             {
@@ -269,11 +274,11 @@ SPOKES = [
                 "dt": "Interconnection queues, Order 845, and generator replacement",
                 "dd": (
                     "The interconnection queue is the multi-year engineering waitlist new power projects and large loads face "
-                    "before plugging into the grid. FERC Order 845 (\"surplus interconnection\") lets new generation or batteries "
-                    "share unused hookup capacity at an operating power plant, while generator-replacement rules let new projects "
-                    "reuse the existing grid hookup when an older plant retires; both are currently fuel-neutral rules that "
-                    "Congress and FERC can pair with clean-power priority and a nationwide replacement standard at operating "
-                    "or retiring fossil sites."
+                    "before plugging into transmission or distribution grids. FERC Order 845 (\"surplus interconnection\") lets "
+                    "new clean generation or batteries share unused injection capacity at an operating power plant, while "
+                    "generator-replacement rules let new projects reuse the existing grid hookup when an older plant retires; "
+                    "both are currently fuel-neutral rules that Congress and FERC can pair with clean-power priority and a "
+                    "nationwide competitive replacement standard at operating or retiring fossil sites."
                 ),
             },
             {
@@ -304,7 +309,8 @@ SPOKES = [
                 "dt": "Enhanced geothermal",
                 "dd": (
                     "Clean baseload energy that uses modern directional rock-drilling techniques to tap natural heat miles "
-                    "underground and generate steady 24/7 carbon-free electricity with a small land footprint."
+                    "underground and generate steady 24/7 carbon-free electricity with a small land footprint under strict "
+                    "induced-seismicity and groundwater-casing rules."
                 ),
             },
             {
@@ -313,10 +319,10 @@ SPOKES = [
                 "dt": "Closed-loop, hybrid adiabatic, and reclaimed-water cooling",
                 "dd": (
                     "Closed-loop chillers recirculate fluid in sealed heat exchangers with zero evaporative water loss "
-                    "(at the cost of slightly higher hot-afternoon electricity draw), while hybrid adiabatic systems run "
-                    "dry most of the year and use evaporative misting only on extreme heat hours. Reclaimed (recycled) "
-                    "water is treated municipal wastewater piped to industrial campuses for non-potable cooling instead "
-                    "of drawing local drinking water."
+                    "(paired with on-site storage so higher hot-afternoon power draw does not strain peak grids), while dry-rated "
+                    "hybrid adiabatic systems run without water most of the year and shut off potable misting during droughts. "
+                    "Reclaimed (recycled) water is treated municipal wastewater piped to industrial campuses for non-potable "
+                    "cooling without depleting downstream return flows or local drinking water."
                 ),
             },
             {
@@ -324,10 +330,10 @@ SPOKES = [
                 "cat": "water",
                 "dt": "Methane-turbine permitting loopholes (Subpart KKKKa and nonroad claims)",
                 "dd": (
-                    "Fixed data centers have run modular or trailer-mounted methane gas turbines outside major-source "
-                    "pollution controls by claiming Clean Air Act nonroad-engine status meant for movable machinery (which "
-                    "EPA's RIN 2060-AX08 proposal would widen) or using EPA's January 2026 Subpart KKKKa temporary (up to "
-                    "24 months) and low-capacity-factor stationary turbine subcategories."
+                    "Fixed data centers have avoided Title I major-source PSD controls and SCR limits by claiming Clean Air Act "
+                    "nonroad-engine status meant for movable machinery (which EPA's RIN 2060-AX08 proposal would widen) or using "
+                    "EPA's January 2026 Subpart KKKKa NSPS rule (91 FR 1910), which exempts 24-month temporary units, large "
+                    "turbines at <=45% capacity factor, and all modular turbines <=850 MMBtu/h from SCR controls."
                 ),
             },
         ],
@@ -353,28 +359,29 @@ SPOKES = [
         "og_eyebrow": "Brief 2026-01B · Michael Paulauski · November 2026",
         "og_pills": [
             "CREATE AI Act & NAIRR",
-            "Open-Weight Competition",
+            "Sub-Tripwire Open-Weight Competition",
             "Cloud-Tying & Acqui-Hire Enforcement",
             "No Algorithmic Price-Fixing",
         ],
         "meta_description": (
             "Breaking cloud-compute concentration via public NAIRR infrastructure and the CREATE AI Act, protecting "
-            "open-weight AI models, blocking reverse acqui-hires and cloud tying, and banning pooled algorithmic price-fixing."
+            "sub-tripwire open-weight AI models, blocking reverse acqui-hires and cloud tying, and banning shared "
+            "algorithmic price-fixing."
         ),
         "og_description": (
-            "Bipartisan CREATE AI Act public compute, open-weight software competition, antitrust enforcement against "
+            "Bipartisan CREATE AI Act public compute, sub-tripwire open-weight competition, antitrust enforcement against "
             "cloud tying and acqui-hires, and banning shared algorithmic price-fixing."
         ),
         "metrics": [
             {
                 "figure": "2.7% / 3.3%",
-                "label": "U.S.-China frontier benchmark gap vs. closed-to-open-weight gap as open models scale.",
-                "cite": "Stanford HAI AI Index (2026); CSIS; Lowy Institute",
+                "label": "March 2026 LMArena U.S.-China top-model gap vs. closed-to-open-weight gap.",
+                "cite": "Stanford HAI AI Index (2026)",
             },
             {
                 "figure": "$35M -> $2.6B",
-                "label": "Sept. 2026 NSF NAIRR Operations Center award vs. permanent CREATE AI Act authorization.",
-                "cite": "NSF NAIRR-OC (Sept. 2026); CREATE AI Act",
+                "label": "5-yr NSF NAIRR-OC award vs. 6-yr NAIRR Task Force public-compute funding target.",
+                "cite": "NSF Award #2616251 (Sept. 2026); NAIRR Task Force",
             },
         ],
         "bluf_paragraphs": [
@@ -382,13 +389,14 @@ SPOKES = [
                 "Leaving frontier AI in the hands of four or five cloud conglomerates concentrates too much economic and "
                 "political power while stifling independent researchers, hospitals, and startups. At the same time, "
                 "Stanford AI Index, CSIS, and Lowy Institute tracking shows that despite U.S. chip export restrictions, "
-                "Chinese labs such as DeepSeek and Alibaba have narrowed frontier benchmark gaps to roughly 2.7% through "
-                "[[term-2|open-weight]] software releases."
+                "top U.S.-China frontier gaps narrowed to 2.7% on LMArena by March 2026 while [[term-2|open-weight]] "
+                "releases from labs such as DeepSeek and Alibaba sit within 3.3% of closed leaders and drive wide global "
+                "adoption."
             ),
             (
-                "Federal competition policy should expand public compute infrastructure, keep open-weight AI legal to "
-                "deploy on local hardware, police Big Tech cloud-compute tying and disguised mergers, and outlaw "
-                "shared pricing algorithms that coordinate rents and consumer prices."
+                "Federal competition policy should expand public compute infrastructure, protect open-weight AI deployment "
+                "on local hardware below catastrophic bio-cyber boundaries, police Big Tech cloud-compute tying and "
+                "disguised mergers, and outlaw shared pricing algorithms that coordinate rents and consumer prices."
             ),
         ],
         "sections": [
@@ -401,21 +409,24 @@ SPOKES = [
                 "paragraphs": [
                     (
                         "Building on the National Science Foundation's September 2026 $35 million launch of the "
-                        "[[term-3|NAIRR]] Operations Center (in partnership with the Department of Energy), Congress should "
-                        "pass the bipartisan CREATE AI Act and appropriate multi-billion-dollar funding for publicly owned "
-                        "supercomputing and zero-egress, vendor-neutral cloud vouchers at national labs and university "
-                        "centers."
+                        "[[term-3|NAIRR]] Operations Center (coordinating interagency and Department of Energy partner labs), "
+                        "Congress should pass the bipartisan CREATE AI Act and appropriate the full $2.6 billion six-year "
+                        "NAIRR Task Force target for publicly owned supercomputing at national labs and universities alongside "
+                        "vendor-neutral commercial cloud vouchers conditioned on zero operational egress fees and workload "
+                        "portability."
                     ),
                     (
-                        "Direct public funding guarantees that academic researchers, teaching hospitals, civic institutions, "
-                        "and independent startups receive real pre-competitive R&D, open-science training, and "
-                        "public-interest model validation capacity without relying on revocable, lock-in Big Tech cloud credits."
+                        "Direct public appropriations (beyond H.R. 2385 and S. 4441's reliance on private cloud donations) "
+                        "guarantee that academic researchers, teaching hospitals, civic institutions, and independent startups "
+                        "receive durable pre-competitive R&D, open-science training, and public-interest validation capacity "
+                        "without relying on revocable, lock-in Big Tech cloud credits."
                     ),
                     (
-                        "Federal policy should also keep open-weight AI models below Pillar 6's catastrophic bio-cyber "
-                        "tripwires legal so smaller firms, regional hospitals, and municipal institutions can inspect and "
-                        "run [[term-1|AI agents]] on local or domestic servers without paying permanent rent or ceding "
-                        "sensitive operational data to closed corporate APIs."
+                        "Federal policy should also protect open-weight AI distribution below Pillar 6's narrow catastrophic "
+                        "bio-cyber tripwires (Brief 2026-01F) from compute licensing bans, paired with NSTM-6 gene-synthesis "
+                        "screening and cyber-hardening, so smaller firms, regional hospitals, and municipal institutions can "
+                        "inspect and run [[term-1|AI agents]] on local or domestic servers without paying permanent rent or "
+                        "ceding sensitive data to closed APIs."
                     ),
                 ],
             },
@@ -427,25 +438,25 @@ SPOKES = [
                 "heading": "2. Police cloud tying, disguised acqui-hires, and algorithmic collusion",
                 "paragraphs": [
                     (
-                        "On antitrust, the FTC and DOJ should block exclusive cloud-compute tying agreements and "
+                        "On antitrust, the FTC and DOJ should block dominant-provider cloud-compute tying agreements and "
                         "discriminatory accelerator allocation bottlenecks, while Congress modernizes the Hart-Scott-Rodino "
-                        "Act (15 U.S.C. Section 18a, following the February 2026 judicial vacatur of expanded HSR rules in "
-                        "*Chamber of Commerce v. FTC*) so dominant-platform [[term-4|\"acqui-hire\"]] deals pairing talent "
-                        "buyouts with exclusive or quasi-exclusive IP licenses face mandatory premerger review."
+                        "Act (15 U.S.C. Section 18a, beyond the legacy filing rules restored after the February 2026 vacatur "
+                        "in *Chamber of Commerce v. FTC*) so dominant-platform [[term-4|\"acqui-hire\"]] deals pairing mass "
+                        "technical-talent absorption and investor payouts with exclusive or non-exclusive IP licenses or minority "
+                        "stakes trigger mandatory premerger review on combined deal value."
                     ),
                     (
                         "Closing the 12-month aged-data training loophole left in DOJ's May 2026 *RealPage* consent judgment "
-                        "(and building on state statutes like California's AB 325), Congress should pass a targeted "
-                        "Preventing Algorithmic Collusion Act to outlaw [[term-5|shared pricing algorithms]] that pool or "
-                        "train on current or historical nonpublic competitor data or coordinate competitor pricing across "
-                        "rival firms."
+                        "(and complementing broader state statutes like California's AB 325), Congress should pass a targeted "
+                        "Preventing Algorithmic Collusion Act (modeled on S. 232) to outlaw [[term-5|shared pricing algorithms]] "
+                        "that pool or train model weights on current or historical nonpublic competitor data, or facilitate "
+                        "agreement or coercion to align competitor prices across rival firms."
                     ),
                     (
-                        "To avoid interfering with ordinary business analytics, the statute should explicitly spare "
-                        "proprietary or non-pooled single-merchant pricing and inventory software that uses only a firm's "
-                        "own operational data and public market prices without cross-competitor price coordination, "
-                        "keeping enforcement squarely aimed at competing landlords and corporations inflating rents and "
-                        "consumer prices in lockstep."
+                        "To avoid interfering with lawful business analytics or commercial speech (*RealPage, Inc. v. James*), "
+                        "the statute should explicitly spare in-house or strictly tenant-isolated single-merchant pricing and "
+                        "inventory software whose model weights and outputs rely solely on a firm's own operational data and "
+                        "public market prices without cross-competitor price coordination."
                     ),
                 ],
             },
@@ -455,10 +466,10 @@ SPOKES = [
                 "eyebrow": "02 · Open Innovation vs. Oligopoly Capture",
                 "body": (
                     "Restrictive model-licensing schemes sold under the banner of safety tend to entrench the largest cloud "
-                    "incumbents while pushing open development toward foreign labs. Pairing permanent public compute under "
-                    "NAIRR with legal open-weight distribution preserves domestic competition and lowers market-entry costs, "
-                    "while pairing narrow frontier catastrophic tripwires (covered in Brief 2026-01F) with antitrust "
-                    "enforcement targets actual concentration and collusion risks instead of open code."
+                    "incumbents while pushing open development toward foreign labs. Pairing appropriated public compute under "
+                    "NAIRR with licensing-free open-weight distribution below narrow Pillar 6 catastrophic tripwires (paired "
+                    "with NSTM-6 DNA screening and cyber-hardening) preserves domestic competition and targets real concentration "
+                    "and collusion risks instead of open code."
                 ),
             }
         ],
@@ -468,13 +479,13 @@ SPOKES = [
                 "AI adoption and U.S.-China frontier capability gaps (2025-2026)"
             ),
             (
-                "National Science Foundation & Department of Energy, $35M NAIRR Operations Center award (Sept. 2026); "
-                "bipartisan CREATE AI Act (H.R. 2385 / S. 4441)"
+                "National Science Foundation Award #2616251 ($35M NAIRR Operations Center, Sept. 2026); NAIRR Task Force "
+                "$2.6B six-year implementation roadmap; bipartisan CREATE AI Act (H.R. 2385 / S. 4441)"
             ),
             (
-                "U.S. Department of Justice *United States v. RealPage* Final Judgment (May 2026) and California AB 325; "
-                "FTC Section 6(b) cloud-compute and reverse acqui-hire inquiries and *Chamber of Commerce v. FTC* HSR "
-                "litigation (2024-2026)"
+                "U.S. Department of Justice *United States v. RealPage* Final Judgment (May 2026), *RealPage, Inc. v. James* "
+                "(S.D.N.Y. Sept. 2026), S. 232, and California AB 325; FTC Section 6(b) cloud-AI partnership study, acqui-hire "
+                "inquiries, and *Chamber of Commerce v. FTC* HSR litigation (2024-2026)"
             ),
         ],
         "glossary": [
@@ -495,8 +506,9 @@ SPOKES = [
                 "dt": "Open-weight models vs. closed APIs",
                 "dd": (
                     "An open-weight model releases its trained numerical parameters (\"weights\") publicly so universities, "
-                    "hospitals, and smaller firms can download and run the software on their own servers or local hardware. "
-                    "Closed APIs keep the model locked on a tech company's servers and charge customers ongoing fees for access."
+                    "hospitals, and smaller firms can download and run the software on their own servers or local hardware, "
+                    "subject to Pillar 6's narrow catastrophic bio-cyber boundaries. Closed APIs keep the model locked on a "
+                    "tech company's servers and charge customers ongoing fees for access."
                 ),
             },
             {
@@ -505,10 +517,9 @@ SPOKES = [
                 "dt": "NAIRR public compute and the CREATE AI Act",
                 "dd": (
                     "NAIRR (the National Artificial Intelligence Research Resource) is an NSF-led federal public-compute "
-                    "initiative (with Department of Energy national-lab participation) that launched its $35 million "
-                    "Operations Center in September 2026; the bipartisan CREATE AI Act permanently authorizes NAIRR and "
-                    "scales publicly owned supercomputing and vendor-neutral cloud resources for academic, nonprofit, "
-                    "civic, and startup R&D."
+                    "initiative (coordinating interagency and DOE partner labs) that launched its $35 million Operations Center "
+                    "in September 2026; the bipartisan CREATE AI Act permanently authorizes NAIRR, requiring dedicated multi-year "
+                    "appropriations (targeting the $2.6 billion Task Force benchmark) beyond voluntary private cloud donations."
                 ),
             },
             {
@@ -516,9 +527,10 @@ SPOKES = [
                 "cat": "antitrust",
                 "dt": "\"Acqui-hires\" and HSR premerger review",
                 "dd": (
-                    "A deal structure (often called a reverse acqui-hire) where a tech giant hires away a startup's founders "
-                    "and core engineering team while taking an exclusive or quasi-exclusive IP license to gain effective "
-                    "control without triggering standard Hart-Scott-Rodino (15 U.S.C. Section 18a) antitrust premerger review."
+                    "A deal structure (often called a reverse acqui-hire) where a dominant platform hires away a startup's "
+                    "founders and core technical team while using exclusive or non-exclusive IP licenses, minority stakes, and "
+                    "investor payoffs to absorb effective control without triggering Hart-Scott-Rodino (15 U.S.C. Section 18a) "
+                    "premerger reporting thresholds."
                 ),
             },
             {
@@ -527,9 +539,10 @@ SPOKES = [
                 "dt": "Algorithmic collusion vs. independent pricing tools",
                 "dd": (
                     "Algorithmic collusion occurs when competing landlords or businesses feed or train shared third-party "
-                    "pricing software on current or historical nonpublic pricing, occupancy, or supply data to coordinate "
-                    "prices above competitive levels. Independent single-merchant tools analyze only public market prices "
-                    "and a firm's own internal operational data."
+                    "pricing software or pre-trained weights on current or historical nonpublic pricing, occupancy, or supply "
+                    "data, or use shared software to facilitate price alignment or coercion. Independent in-house or strictly "
+                    "tenant-isolated tools analyze only public market prices and a firm's own internal data without cross-competitor "
+                    "alignment."
                 ),
             },
         ],
@@ -546,6 +559,7 @@ SPOKES = [
         "nav_label": "Civil Liberties",
         "short_toc": "Rights, courts & health",
         "title": "Statutory civil-liberties, courtroom, and patient-care guardrails",
+        "seo_title": "Civil liberties, courts & health AI rules",
         "hub_kicker": "Pillar 03 · Civil Liberties, Courts & Health Care",
         "hub_heading": "3. Set statutory civil-liberties, courtroom, and patient-care guardrails while expanding indigent defense and vetted legal-aid tools",
         "read_time": "5 min read",
@@ -554,18 +568,20 @@ SPOKES = [
         "og_filename": "og-spoke-03.png",
         "og_eyebrow": "Brief 2026-01C · Michael Paulauski · November 2026",
         "og_pills": [
-            "Human Warfighting & Nuclear Control",
-            "No Warrantless Broker Surveillance",
+            "Human Offensive Command (Point Defense Kept)",
+            "Warrants for Dragnets & Data Brokers",
             "Indigent Defense & AI Evidence Rules",
-            "Physician Sign-Off on Health Denials",
+            "Specialist Clinical Review on Denials",
         ],
         "meta_description": (
-            "Binding human-control rules on lethal force and nuclear launch, warrant requirements for biometric dragnets "
-            "and data brokers, expanded legal aid alongside black-box courtroom bans, and physician sign-off over health-care denials."
+            "Binding human-control rules on offensive lethal strikes (preserving point defense) and nuclear launch, warrant "
+            "requirements for biometric dragnets and broker data buys, expanded legal aid alongside black-box sentencing "
+            "and benefits bans, and relevant-specialty clinical review on health denials."
         ),
         "og_description": (
-            "Statutory lethal-force and nuclear human-control lines, warrant rules on data brokers, indigent defense "
-            "capacity and reworked Rule 707 and deepfake evidence rules, and stopping automated health-insurance denials."
+            "Statutory offensive-command and nuclear control lines (preserving point defense), warrant rules for biometric "
+            "dragnets and data brokers, indigent defense and Oct. 2026 Rule 707/901(c) evidence rules, and specialist "
+            "clinical review on health denials."
         ),
         "metrics": [
             {
@@ -575,7 +591,7 @@ SPOKES = [
             },
             {
                 "figure": "6 States",
-                "label": "Original Medicare states testing private AI prior-auth contractors under CMS WISeR.",
+                "label": "States in CMS's WISeR pilot testing private AI review on targeted Original Medicare services.",
                 "cite": "Centers for Medicare & Medicaid Services (2026)",
             },
         ],
@@ -598,22 +614,22 @@ SPOKES = [
                 "toc_num": "01",
                 "kicker": "Section 01 · Defense Authority & Fourth Amendment Limits",
                 "toc_label": "Warfighting and surveillance",
-                "heading": "1. Codify human command over lethal force and close surveillance loopholes",
+                "heading": "1. Codify human offensive lethal command and close surveillance loopholes",
                 "paragraphs": [
                     (
-                        "Congress should enact binding defense appropriations and fielding prohibitions requiring meaningful "
-                        "human verification and command authorization over anti-personnel target selection and offensive "
-                        "lethal force (barring automated kill-list rubber-stamping while preserving point-defense "
-                        "counter-munitions against incoming projectiles), alongside a binding statutory ban on autonomous "
-                        "AI in nuclear command, control, and launch decisions."
+                        "Congress should enact permanent statutory and defense-appropriations prohibitions requiring meaningful "
+                        "human verification and command authorization over lethal or dual-use target selection and offensive "
+                        "strikes (barring automated kill-list rubber-stamping while preserving point-defense counter-munitions "
+                        "against incoming projectiles and unmanned threats), alongside a binding statutory ban on autonomous "
+                        "AI in nuclear warning validation, command, control, and launch decisions."
                     ),
                     (
-                        "For domestic policing and intelligence, Congress should require judicial warrants (subject only to "
-                        "narrow, audited imminent-life-safety exigencies and backed by statutory suppression remedies) for "
-                        "government AI facial-recognition and networked camera dragnets, and enact the Fourth Amendment Is "
-                        "Not For Sale Act to close the commercial [[term-2|data-broker loophole]] documented by the ACLU and "
-                        "GAO, where intelligence and police agencies buy bulk phone-location and web-browsing records without "
-                        "a warrant."
+                        "For domestic policing and intelligence, Congress should require judicial warrants or crime-specific "
+                        "probable-cause orders (with 48-hour retroactive exigency filings and statutory suppression remedies) "
+                        "for government one-to-many biometric searches and public or vendor-networked camera/ALPR dragnets, and "
+                        "enact the Fourth Amendment Is Not For Sale Act to close the commercial [[term-2|data-broker loophole]] "
+                        "for U.S.-person location and browsing records (including indirect vendor or fusion-center queries) "
+                        "documented by the ACLU and GAO."
                     ),
                 ],
             },
@@ -629,24 +645,26 @@ SPOKES = [
                         "Services Corporation's Justice Gap Report finds that 92% of low-income Americans' substantial civil "
                         "legal problems receive inadequate or no legal help. Alongside expanded funding to hire human legal-aid "
                         "attorneys and public defenders, Congress should expand Legal Services Corporation and State Justice "
-                        "Institute technology grants for vetted civil tools, like those piloted at Stanford's Legal Design Lab, "
-                        "that help low-income tenants and veterans handle evictions, consumer debt, and benefits claims."
+                        "Institute technology grants for zero-retention, confidentiality-protected, vetted civil tools, like "
+                        "those piloted at Stanford's Legal Design Lab, helping low-income tenants and veterans with evictions, "
+                        "debt, and benefits claims."
                     ),
                     (
-                        "Because federal law bars LSC from criminal cases, Congress should pair civil legal-aid funding with "
-                        "ring-fenced Department of Justice [[term-1|Byrne JAG|Byrne JAG and LSC legal-aid funding|Byrne JAG is the primary Department of Justice grant program supporting state and local criminal-justice systems (including indigent public defense), whereas the Legal Services Corporation (LSC) funds civil legal aid for low-income households and is barred by federal statute from criminal cases.]] "
-                        "public-defender grants and federal Judiciary Defender Services funding so overworked defense lawyers can "
-                        "use zero-retention, privilege-protected, audited AI to review criminal discovery files."
+                        "Because federal law generally bars LSC from criminal cases, Congress should pair civil legal-aid "
+                        "funding with ring-fenced Department of Justice [[term-1|Byrne JAG]] public-defender grants and federal "
+                        "Judiciary Defender Services funding so overworked defense lawyers can use zero-retention, "
+                        "privilege-protected, audited AI to review criminal discovery files."
                     ),
                     (
-                        "At the same time, federal statute should bar unreviewed automated or black-box algorithms from federal "
-                        "sentencing and federally funded benefits denials (including Medicaid, SNAP, and veterans' benefits), "
-                        "while conditioning state Byrne JAG funds on barring algorithmic risk-assessment scores in pre-trial "
-                        "detention, bail, and sentencing. Congress and the Judicial Conference should also finish reworking the "
-                        "[[term-3|Rule 707|Daubert reliability, withdrawn Proposed Rule 707, and Rule 901(c)|Daubert is the federal courtroom standard requiring expert technical evidence to prove its reliability before reaching a jury; after withdrawing Proposed Rule 707 in May 2026 for revision, the Judicial Conference Advisory Committee on Evidence Rules is reworking machine-evidence reliability and companion Rule 901(c) deepfake-authentication standards.]] "
-                        "draft withdrawn in May 2026 and companion Rule 901(c) deepfake-authentication rules to set strict "
-                        "Daubert-grade reliability standards for criminal and civil trials without pricing out or blocking "
-                        "authentic bystander recordings."
+                        "At the same time, federal statute should require individualized human findings and explainable criteria "
+                        "in federal sentencing and federally funded benefits determinations (including Medicaid, SNAP, and "
+                        "veterans' benefits), while conditioning non-defender state Byrne JAG funds (exempting ring-fenced "
+                        "public-defender grants) on barring proprietary or unvalidated risk scores from justifying pre-trial "
+                        "detention, bail, or harsher sentences. Following its May 2026 withdrawal and October 2026 Boston review, "
+                        "the Judicial Conference Advisory Committee on Evidence Rules (with congressional oversight under the "
+                        "Rules Enabling Act) should finalize revised [[term-3|Rule 707]] reliability standards (including defense "
+                        "protective-order access to validation data) and Rule 901(c) deepfake rules that exempt routine phone "
+                        "processing and preserve lay bystander authentication without shifting burdens onto indigent litigants."
                     ),
                 ],
             },
@@ -655,26 +673,28 @@ SPOKES = [
                 "toc_num": "03",
                 "kicker": "Section 03 · Health Insurance & Patient Care",
                 "toc_label": "Prior authorization and WISeR",
-                "heading": "3. Ban algorithmic health-care denials and vendor denial bounties",
+                "heading": "3. Ban unreviewed algorithmic health denials and vendor denial bounties",
                 "paragraphs": [
                     (
                         "Following federal lawsuits over Medicare Advantage prior-authorization algorithms and the unanimous "
-                        "June 2026 House Appropriations Committee vote to defund Original Medicare's six-state "
-                        "[[term-5|WISeR]] pilot, Congress should halt WISeR and direct HHS and the Department of Labor to set "
-                        "an enforceable patient-review standard across public and private coverage."
+                        "June 2026 House Appropriations Committee voice vote to defund Original Medicare's six-state "
+                        "[[term-5|WISeR]] pilot, Congress should permanently halt WISeR and direct HHS, the Department of "
+                        "Labor, and OPM (with Treasury for tax-qualified plans) to set an enforceable patient-review standard "
+                        "across public and private coverage."
                     ),
                     (
-                        "Federal statute and agency rules should prohibit Medicare Advantage and Medicaid managed-care plans, "
-                        "federal Medicare contractors, Federal Employees Health Benefits plans, ERISA group health plans, and "
-                        "commercial insurers under the Public Health Service Act from denying medical necessity or cutting off "
-                        "post-acute care by algorithm without documented, individualized review of the patient record by a "
-                        "licensed physician or qualified health-care specialist acting within clinical scope of practice (while "
-                        "permitting automated fast-track approvals)."
+                        "Federal statute and agency rules should prohibit Medicare Advantage, Medicaid fee-for-service and "
+                        "managed-care plans, federal Medicare contractors, Federal Employees Health Benefits plans, TRICARE, "
+                        "ERISA group health plans, and commercial insurers under the Public Health Service Act from delaying, "
+                        "downgrading, or denying medical necessity or cutting off post-acute care by algorithm without documented, "
+                        "individualized review of the patient record by a relevant-specialty physician or scope-matched qualified "
+                        "clinician (while permitting automated fast-track approvals)."
                     ),
                     (
-                        "Rules should equally ban denial-based bounties or savings quotas for both outside contractors and "
-                        "in-house insurer reviewers, and pair a federal statutory remedy with an explicit savings clause so "
-                        "ERISA (including self-funded plans), Medicare Advantage, and FEHBA preemption never shield unlawful "
+                        "Rules should equally ban denial bounties, utilization quotas, and batch rubber-stamping for outside "
+                        "contractors and in-house reviewers, and pair a federal statutory remedy with explicit non-preemption "
+                        "carve-outs across ERISA Sections 502(a) and 514(b)(2)(B), Medicare Advantage (42 U.S.C. Section "
+                        "1395w-26(b)(3)), and FEHBA (5 U.S.C. Section 8902(m)(1)) so preemption never shields unlawful "
                         "algorithmic care denials from state bad-faith accountability."
                     ),
                 ],
@@ -687,7 +707,7 @@ SPOKES = [
                     "State court administrators and the National Center for State Courts warn that low-income litigants "
                     "rarely have a second lawyer to catch AI [[term-4|hallucinations]], which empirical tests by Stanford "
                     "researchers still find in commercial legal tools. Publicly funded legal-aid software must carry "
-                    "mandatory independent accuracy audits, court-approved, attorney-vetted template bounds for pro se "
+                    "mandatory independent accuracy audits, court-compatible, attorney-vetted template bounds for pro se "
                     "self-help tools, and human attorney sign-off on open-ended generative court briefs."
                 ),
             }
@@ -695,12 +715,11 @@ SPOKES = [
         "references": [
             (
                 "Just Security & Electronic Frontier Foundation analyses of 2026 Pentagon AI vendor disputes; FY2025 NDAA "
-                "nuclear command-and-control provisions; ACLU & GAO reports on federal purchases of commercial data-broker records"
+                "Section 1638 nuclear command-and-control provisions; ACLU & GAO reports on federal data-broker purchases"
             ),
             (
-                "Legal Services Corporation, *The Justice Gap: The Unmet Civil Legal Needs of Low-Income Americans* (2022); "
-                "U.S. Judicial Conference Advisory Committee on Evidence Rules, Proposed Rule 707 withdrawal (May 2026) and "
-                "Rule 901(c) rulemaking record"
+                "Legal Services Corporation, *The Justice Gap* (2022); Stanford RegLab legal-AI hallucination studies (*Magesh "
+                "et al.*); Judicial Conference Evidence Rules Committee May 2026 Rule 707 withdrawal and Oct. 2026 Boston Rule 707 / 901(c) review"
             ),
             (
                 "Centers for Medicare & Medicaid Services, WISeR six-state pilot documentation (2026), House Appropriations "
@@ -715,7 +734,7 @@ SPOKES = [
                 "dd": (
                     "Byrne JAG is the primary Department of Justice grant program supporting state and local criminal-justice "
                     "systems (including indigent public defense), whereas the Legal Services Corporation (LSC) funds civil "
-                    "legal aid for low-income households and is barred by federal statute from criminal cases."
+                    "legal aid for low-income households and is generally barred by federal statute from criminal cases."
                 ),
             },
             {
@@ -734,8 +753,8 @@ SPOKES = [
                 "dt": "Daubert reliability, withdrawn Proposed Rule 707, and Rule 901(c)",
                 "dd": (
                     "Daubert is the federal courtroom standard requiring expert technical evidence to prove reliable methods "
-                    "before reaching a jury. After withdrawing Proposed Rule 707 in May 2026 for refinement, the Judicial "
-                    "Conference Advisory Committee on Evidence Rules is developing updated machine-generated evidence "
+                    "before reaching a jury. Following its May 2026 withdrawal of Proposed Rule 707 and October 2026 Boston "
+                    "symposium, the Judicial Conference Advisory Committee on Evidence Rules is developing updated machine-evidence "
                     "reliability standards alongside Rule 901(c) procedures for challenging suspected deepfakes."
                 ),
             },
@@ -775,7 +794,7 @@ SPOKES = [
         "short_toc": "Workers, taxes & wages",
         "title": "Worker tax parity, workplace AI rules, and displacement insurance",
         "hub_kicker": "Pillar 04 · Worker Taxes, Bossware & Wage Insurance",
-        "hub_heading": "4. Equalize worker taxes, ban abusive \"bossware,\" and insure workers against agentic displacement",
+        "hub_heading": "4. Narrow the worker-capital tax gap, ban abusive \"bossware,\" and insure displaced workers",
         "read_time": "5 min read",
         "md_filename": "workers-taxes-brief.md",
         "pdf_filename": "workers-taxes-brief.pdf",
@@ -788,17 +807,18 @@ SPOKES = [
             "90-Day WARN & Sectoral Training",
         ],
         "meta_description": (
-            "Ending tax favoritism for so-so automation, outlawing abusive bossware quotas and forced arbitration, "
-            "requiring NLRA bargaining, and pairing 90-day WARN notice with wage insurance and sectoral apprenticeships."
+            "Narrowing the tax wedge favoring software and equipment over human labor, outlawing abusive bossware quotas "
+            "and workplace-AI forced arbitration waivers, requiring NLRA bargaining, and pairing 90-day WARN notice with "
+            "50% wage-loss insurance and sectoral apprenticeships."
         ),
         "og_description": (
-            "Correcting the 25.5%-33.5% vs. ~5% labor-to-software tax gap, banning bossware and forced arbitration, "
-            "enacting 50% federal wage insurance, and updating the WARN Act."
+            "Narrowing the 25.5%-33.5% vs. ~5% labor-to-software-and-equipment tax gap, banning abusive bossware and "
+            "workplace-AI arbitration waivers, enacting 50% wage-loss insurance, and modernizing WARN."
         ),
         "metrics": [
             {
                 "figure": "25.5%-33.5% vs. ~5%",
-                "label": "Effective U.S. tax rate on human labor vs. software and equipment under 100% bonus depreciation.",
+                "label": "Effective U.S. tax rate on labor (up to 33.5% with phaseouts) vs. software and equipment under 100% bonus depreciation.",
                 "cite": "Acemoglu, Manera & Restrepo, Brookings (2020)",
             },
             {
@@ -808,26 +828,26 @@ SPOKES = [
             },
             {
                 "figure": "50% / $15k-$20k/yr",
-                "label": "Annual earnings-drop replacement cap (for up to two years) under proposed federal wage insurance.",
+                "label": "50% of wage drop replaced, capped at $15k-$20k/yr for up to two years (1+ yr tenure).",
                 "cite": "Adapted from Hamilton Project / Brookings models",
             },
             {
                 "figure": "90 Days",
-                "label": "Upgraded federal WARN notice covering distributed remote and rolling mass layoffs.",
+                "label": "Upgraded federal WARN notice (100+ FTE firms) covering remote and rolling layoffs plus severance.",
                 "cite": "Federal WARN Act Modernization Pillar",
             },
         ],
         "bluf_paragraphs": [
             (
                 "Pew Research finds that 71% of Americans expect AI to reduce total U.S. jobs over the next two decades, "
-                "with concern among adults under 30 jumping from 61% in 2024 to 73% in 2026. Yet current U.S. tax law "
-                "tilts employers toward replacing workers even when automation barely breaks even, while outdated WARN "
-                "thresholds and expired Trade Adjustment Assistance leave displaced staff without transition income."
+                "with the share of adults under 30 expecting job cuts jumping from 61% in 2024 to 73% in 2026. Yet current "
+                "U.S. tax law tilts employers toward replacing workers even when automation barely breaks even, while "
+                "outdated WARN thresholds and expired Trade Adjustment Assistance leave displaced staff without transition income."
             ),
             (
-                "Instead of unworkable 'robot taxes' or low-return classroom vouchers, federal policy should fix the "
-                "capital-vs-labor tax wedge, set hard workplace dignity and bargaining rights, and build automatic wage "
-                "insurance and paid sectoral career paths."
+                "Instead of unworkable 'robot taxes' or low-return classroom vouchers, federal policy should narrow the "
+                "capital-vs-labor tax wedge, set hard workplace dignity and bargaining rights, and build standing "
+                "wage-loss insurance and paid sectoral career paths."
             ),
         ],
         "sections": [
@@ -847,16 +867,18 @@ SPOKES = [
                         "automation\" and pushes firms to replace staff with mediocre software largely for the tax break."
                     ),
                     (
-                        "Congress should scale back corporate 100% bonus depreciation toward economic depreciation while carefully "
-                        "preserving domestic R&D and software development expensing under Section 174A (so local open-weight "
-                        "deployments are not taxed worse than cloud APIs deducted under Section 162), alongside small-business "
-                        "Section 179 hardware limits, grid hardware, domestic chip fabs, and restored clean-energy tax "
-                        "incentives cut back in July 2025."
+                        "Congress should taper large corporate and pass-through 100% bonus depreciation (with anti-leasing "
+                        "rules) toward statutory MACRS schedules while preserving Section 174A R&D expensing and pairing matched "
+                        "recovery for local open-weight inference hardware (so on-prem deployments are not taxed worse than "
+                        "cloud APIs expensed under Section 162, alongside reviewing Section 162 offsets on mass-displacement "
+                        "AI contracts), while keeping small-business Section 179 limits, grid hardware, 35% Section 48D chip-fab "
+                        "credits, and restored clean-energy incentives cut back in July 2025."
                     ),
                     (
-                        "Congress should pair the resulting corporate tax revenues with a refundable working-class payroll tax "
-                        "credit backed by a mandatory dollar-for-dollar general-revenue transfer that keeps the Social Security "
-                        "and Medicare Trust Funds completely whole."
+                        "Paired with permanent corporate base broadeners (offsetting bonus depreciation's front-loaded timing "
+                        "shift), revenues should fund a gradually phased-out employer-and-worker earnings credit indexed to "
+                        "FICA wages and backed by permanent general-revenue law keeping Social Security and Medicare Trust "
+                        "Funds completely whole."
                     ),
                 ],
             },
@@ -868,10 +890,11 @@ SPOKES = [
                 "heading": "2. Outlaw abusive \"bossware,\" forced arbitration, and secret deployments",
                 "paragraphs": [
                     (
-                        "On the job, federal labor law should require an accountable human decision-maker for hiring, firing, "
-                        "pay, and work-speed safety, outlaw injury-inducing algorithmic quotas ([[term-2|\"bossware\"|\"Bossware\"|\"Bossware\" is workplace software that monitors keystrokes, cameras, or movement speed to enforce rigid quotas or automated discipline.]]), "
-                        "and bar forced pre-dispute arbitration waivers over workplace AI violations so non-union workers can "
-                        "actually enforce statutory protections."
+                        "On the job, federal labor law should require documented, independent human override authority for hiring, "
+                        "firing, pay, and work-speed safety across covered employers (including vendor, staffing-agency, and "
+                        "1099 intermediaries), outlaw injury-inducing algorithmic quotas ([[term-2|\"bossware\"|\"Bossware\"|\"Bossware\" is workplace software that monitors keystrokes, cameras, or movement speed to enforce rigid quotas or automated discipline.]]), "
+                        "and bar forced pre-dispute or separation-agreement arbitration waivers over workplace AI claims so "
+                        "non-union workers can actually enforce statutory protections."
                     ),
                     (
                         "Consistent with the AFL-CIO's Workers First Initiative on AI, Congress should guarantee workers advance "
@@ -881,7 +904,7 @@ SPOKES = [
                     (
                         "Under the National Labor Relations Act, Congress should make workplace surveillance and automated quotas "
                         "a mandatory subject of pre-deployment collective bargaining alongside mandatory effects bargaining over "
-                        "severance, scheduling, and transition protections."
+                        "severance, scheduling, and transition protections, backed by civil monetary penalties."
                     ),
                 ],
             },
@@ -895,27 +918,30 @@ SPOKES = [
                     (
                         "Tax parity only stops marginal automation; where capable AI agents outperform humans at a fraction of "
                         "payroll cost, mid-career cognitive workers will still face displacement where legacy retraining programs "
-                        "like the expired Trade Adjustment Assistance system and generic WIOA classroom vouchers failed. Building "
-                        "on Hamilton Project and Brookings models, Congress should enact federal [[term-2|wage insurance|Wage insurance|Wage insurance is a temporary federal paycheck supplement (such as covering half of a pay drop up to an indexed annual cap for two years) when a laid-off worker starts a new job at lower pay.]] "
-                        "for displaced workers with at least one year of job tenure that temporarily replaces half of the earnings "
-                        "drop (up to an inflation-indexed annual cap such as $15,000 to $20,000 for two years) when they take a "
-                        "lower-paying job with a new employer."
+                        "like the expired Trade Adjustment Assistance system and generic WIOA classroom vouchers failed. Scaling "
+                        "up $10,000 Hamilton Project and Brookings models, Congress should enact federal [[term-2|wage insurance|Wage insurance|A temporary federal paycheck supplement (covering half of a pay drop up to an indexed $15,000-$20,000 annual cap for two years, subject to a prior-earnings ceiling) when a displaced worker with 1+ year of tenure takes a lower-paying job at an unaffiliated employer.]] "
+                        "for displaced workers with at least one year of job tenure (subject to a prior-earnings ceiling) that "
+                        "replaces half of the earnings drop (up to an inflation-indexed $15,000 to $20,000 a year for two years) "
+                        "at an unaffiliated new employer."
                     ),
                     (
-                        "Congress should also update the federal [[term-3|WARN Act|WARN Act|The federal WARN Act currently requires employers with 100 or more full-time workers to give 60 days' notice before plant closings affecting 50 or more workers, or single-site mass layoffs affecting at least 500 workers (or 50 to 499 workers making up at least one-third of active site staff).]] "
-                        "so distributed remote and rolling mass layoffs trigger 90-day notice and mandatory severance transition "
-                        "funding without reducing state unemployment benefits."
+                        "Congress should also update the federal [[term-3|WARN Act|WARN Act|The federal WARN Act currently requires employers with 100 or more full-time workers to give 60 days' notice before plant closings affecting 50 or more full-time workers, or single-site mass layoffs affecting at least 500 full-time workers (or 50 to 499 workers making up at least one-third of active full-time site staff) within a 30-day period.]] "
+                        "so distributed remote and 180-day rolling mass layoffs trigger 90-day notice (preserving narrow "
+                        "Section 2102(b) faltering-company defenses) and capped mandatory severance, while amending "
+                        "[[term-3|FUTA|FUTA (Federal Unemployment Tax Act)|FUTA sets federal baseline rules for state unemployment insurance, including training-approval standards under 26 U.S.C. Section 3304(a)(8) and federal conditions barring state UI benefit offsets.]] "
+                        "Section 3304(a) so severance never reduces state unemployment benefits."
                     ),
                     (
                         "For skill transitions and younger entrants, federal workforce funds should shift away from generic "
-                        "classroom vouchers toward paid apprenticeships and employer-backed sectoral training in shortage fields "
-                        "like nursing, grid trades, and public-interest tech (high-performing sectoral models shown to raise "
-                        "multi-year earnings in MDRC randomized trials, led over ten years by St. Nicks Alliance), paired with "
-                        "broader Federal Unemployment Tax Act training-approval standards and extended UI stipends so displaced "
-                        "workers keep income support during full-time programs. Finally, Congress should modernize "
-                        "[[term-3|ERISA|ERISA multi-employer plans|ERISA governs private workplace health and retirement benefits, though its portable multi-employer benefit pools are currently limited largely to union collective-bargaining agreements.]] "
-                        "multi-employer plan rules so unions and sectoral boards can run portable benefit pools across short-tenure "
-                        "jobs without weakening W-2 misclassification laws."
+                        "classroom vouchers toward paid apprenticeships and employer-backed [[term-2|sectoral training|Sectoral training|Workforce programs pairing public funds directly with employers and unions to train and place workers into high-demand roles, led in MDRC 10-year trials by Per Scholas (+16% cumulative) and St. Nicks Alliance (+32% Year 10).]] "
+                        "in shortage fields like nursing, grid trades, and public-interest tech (high-performing sectoral models "
+                        "shown to raise multi-year earnings in MDRC randomized trials, led cumulatively over ten years by Per "
+                        "Scholas (+16%) and in Year 10 by St. Nicks Alliance (+32%)), paired with broader FUTA training-approval "
+                        "standards and federally funded extended training UI stipends during full-time programs. Finally, Congress "
+                        "should modernize [[term-3|ERISA|ERISA multi-employer plans|ERISA governs private workplace benefits; Taft-Hartley Section 302(c)(5) multiemployer health and pension pools remain largely limited to union collective-bargaining agreements, whereas non-union association/MEWA pools raise Section 3(40) solvency risks without statutory reserves.]] "
+                        "multi-employer plan rules so unions and sectoral boards can run portable benefit pools for W-2 workers "
+                        "under joint worker-employer trusteeship and ERISA Section 3(40) MEWA solvency reserves without weakening "
+                        "misclassification laws."
                     ),
                 ],
             },
@@ -927,8 +953,8 @@ SPOKES = [
                     "Tax economists across the spectrum warn that literal \"robot taxes\" or domestic AI compute taxes are "
                     "nearly impossible to define in tax law and risk pushing data centers abroad, while MDRC implementation "
                     "studies caution that high-performing sectoral training programs are hard to scale rapidly without deep "
-                    "employer commitment. Pairing general bonus-depreciation reform with trust-fund-neutral payroll credits "
-                    "and rapid-reemployment wage insurance cushions displaced workers immediately without taxing domestic "
+                    "employer commitment. Pairing bonus-depreciation reform and corporate base broadeners with an indexed "
+                    "payroll credit and rapid-reemployment wage insurance cushions displaced workers without taxing domestic "
                     "compute or stranding laid-off staff in low-return classes."
                 ),
             }
@@ -936,7 +962,8 @@ SPOKES = [
         "references": [
             (
                 "Daron Acemoglu, Andrea Manera, and Pascual Restrepo, \"Does the U.S. Tax Code Favor Automation?,\" "
-                "*Brookings Papers on Economic Activity* (Spring 2020)"
+                "*Brookings Papers on Economic Activity* (Spring 2020); JCT / OBBBA (Pub. L. 119-21) IRC Sections 168(k), "
+                "174A(d)(1), 179, and 48D provisions"
             ),
             (
                 "The Hamilton Project / Brookings Institution, wage-loss insurance and AI workforce transition proposals; "
@@ -951,14 +978,14 @@ SPOKES = [
             {
                 "id": "term-1",
                 "cat": "tax",
-                "dt": "100% bonus depreciation vs. economic depreciation (\"so-so automation\")",
+                "dt": "100% bonus depreciation vs. statutory MACRS (\"so-so automation\")",
                 "dd": (
                     "Bonus depreciation (IRC Section 168(k)) lets businesses deduct the full cost of new and eligible used "
-                    "equipment and purchased software in Year 1 instead of spreading deductions over the asset's useful working "
-                    "life (economic depreciation), while Section 174A covers domestic R&D and cloud API subscriptions are "
-                    "deducted as operating expenses under Section 162. Economists use \"so-so automation\" to describe mediocre "
-                    "systems that barely match human staff and get deployed mainly because capital write-offs are taxed far "
-                    "more lightly than human wages."
+                    "equipment and purchased software in Year 1 instead of spreading deductions across statutory MACRS or "
+                    "36-month Section 167(f) schedules. Section 174A covers domestic R&D (excluding GPU hardware under "
+                    "Section 174A(d)(1)), while cloud API subscriptions are deducted as operating expenses under Section 162. "
+                    "Economists use \"so-so automation\" for mediocre systems deployed mainly because capital write-offs are "
+                    "taxed far more lightly than human wages."
                 ),
             },
             {
@@ -968,9 +995,9 @@ SPOKES = [
                 "dd": (
                     "\"Bossware\" is workplace software that monitors keystrokes, cameras, or movement speed to enforce rigid "
                     "quotas or automated discipline. Wage insurance is a temporary federal paycheck supplement (such as covering "
-                    "half of a pay drop up to an indexed annual cap for two years) when a laid-off worker starts a new job at "
-                    "lower pay. Sectoral training pairs public workforce funds directly with employers and unions to train and "
-                    "hire workers for specific job shortages."
+                    "half of a pay drop up to an indexed $15,000-$20,000 annual cap for two years) when a displaced worker starts "
+                    "a new job at lower pay. Sectoral training pairs public workforce funds directly with employers and unions to "
+                    "train and place workers into specific shortage occupations."
                 ),
             },
             {
@@ -978,12 +1005,14 @@ SPOKES = [
                 "cat": "labor",
                 "dt": "WARN Act, FUTA, and ERISA multi-employer plans",
                 "dd": (
-                    "The federal WARN Act currently requires employers with 100 or more full-time workers to give 60 days' "
-                    "notice before plant closings affecting 50 or more workers, or single-site mass layoffs affecting at least "
-                    "500 workers (or 50 to 499 workers making up at least one-third of active site staff). FUTA (the Federal "
-                    "Unemployment Tax Act) sets federal baseline rules for state unemployment insurance. ERISA governs private "
-                    "workplace health and retirement benefits, though its portable multi-employer benefit pools are currently "
-                    "limited largely to union collective-bargaining agreements."
+                    "The federal WARN Act (29 U.S.C. Section 2101) currently requires employers with 100 or more full-time "
+                    "workers to give 60 days' notice before plant closings affecting 50 or more full-time workers, or single-site "
+                    "mass layoffs affecting at least 500 full-time workers (or 50 to 499 workers making up at least one-third "
+                    "of active full-time site staff) within a 30-day period. FUTA (the Federal Unemployment Tax Act, "
+                    "26 U.S.C. Section 3304) sets baseline federal UI rules, including training-approval and benefit-offset "
+                    "conditions. Under ERISA and Taft-Hartley Section 302(c)(5), portable multiemployer health and pension pools "
+                    "remain largely tied to union bargaining agreements while non-union MEWA pools face ERISA Section 3(40) "
+                    "solvency risks without statutory reserves."
                 ),
             },
         ],
@@ -1014,24 +1043,25 @@ SPOKES = [
             "Shadow-Library Ban & Licensing",
         ],
         "meta_description": (
-            "Passing DEFIANCE civil remedies and NO FAKES consent rights with First Amendment safe harbors, stopping "
-            "senior voice-clone scams, requiring privacy-clean synthetic provenance on hosted generators, banning pirated "
-            "training laundering, and backing collective creator licensing."
+            "Passing DEFIANCE civil remedies and revised NO FAKES consent rights with First Amendment safe harbors, "
+            "stopping senior voice-clone scams, requiring privacy-clean hosted synthetic provenance (without user tracking "
+            "or open-weight mandates), banning pirated training laundering, preserving fair use, and backing voluntary "
+            "collective creator licensing."
         ),
         "og_description": (
-            "Civil remedies via DEFIANCE and NO FAKES (with parody/news safe harbors), senior voice-clone fraud enforcement, "
-            "hosted C2PA/watermark rules without identity tracking, and banning shadow-library laundering."
+            "Civil remedies via DEFIANCE and NO FAKES (with speech safe harbors), elder voice-clone scam enforcement, "
+            "hosted-only provenance (no user tracking or open-weight mandate), fair use, and voluntary licensing."
         ),
         "metrics": [
             {
                 "figure": "48 Hours",
-                "label": "Platform removal requirement for nonconsensual intimate images and deepfakes under the TAKE IT DOWN Act.",
+                "label": "Removal clock under the 2025 TAKE IT DOWN Act (FTC enforcement eff. May 2026; needs bad-faith notice penalties).",
                 "cite": "TAKE IT DOWN Act (Pub. L. 119-12, enacted May 2025)",
             },
             {
-                "figure": "Zero Tracking",
-                "label": "End-user identity fields permitted in mandated synthetic-origin provenance metadata or signal watermarks.",
-                "cite": "Proposed Statutory Privacy Rule (cf. Cal. SB 942)",
+                "figure": "No User IDs",
+                "label": "Zero end-user or user-correlatable IDs permitted in mandated hosted-generator provenance or watermarks.",
+                "cite": "Proposed Federal Rule (stricter than Cal. SB 942 / SB 1000)",
             },
         ],
         "bluf_paragraphs": [
@@ -1058,18 +1088,19 @@ SPOKES = [
                 "paragraphs": [
                     (
                         "Building on the criminal penalties and 48-hour platform takedowns enacted in the 2025 "
-                        "[[term-1|TAKE IT DOWN Act|TAKE IT DOWN, DEFIANCE, and NO FAKES Acts|The May 2025 TAKE IT DOWN Act (Pub. L. 119-12) enacted criminal penalties and 48-hour takedowns for nonconsensual intimate imagery; the DEFIANCE Act (S. 1837) adds federal civil lawsuits against intimate-deepfake creators and distributors, and the bipartisan NO FAKES Act creates an enforceable voice-and-visual replica right with First Amendment and notice-and-takedown safe harbors.]] "
-                        "(paired with counter-notice restoration and bad-faith takedown penalties so 48-hour clocks cannot be "
-                        "abused to censor lawful speech), Congress should enact the DEFIANCE Act (S. 1837) so victims of "
-                        "intimate digital forgeries can sue perpetrators and knowing distributors directly in federal court "
-                        "under 15 U.S.C. Section 6851 instead of waiting solely on scarce prosecutorial resources."
+                        "[[term-1|TAKE IT DOWN Act]] (which Congress should amend with steep bad-faith false-notice penalties and "
+                        "facial-scope guardrails so 48-hour clocks cannot censor non-intimate speech without forcing victims to "
+                        "sue to block automatic re-uploads), Congress should enact the DEFIANCE Act (S. 1837) amending "
+                        "15 U.S.C. Section 6851 so victims of intimate digital forgeries can sue perpetrators and knowing or "
+                        "reckless distributors directly (paired with a narrow Section 230 carve-out for sites knowingly profiting "
+                        "from nonconsensual intimate abuse)."
                     ),
                     (
-                        "Alongside DEFIANCE, Congress should pass a bipartisan NO FAKES Act paired with explicit parody, "
-                        "satire, news, historical, documentary, and DMCA-style host notice-and-takedown safe harbors, plus "
-                        "a statutory ban on lifetime likeness assignments and coercive terms-of-service or non-union click-wrap "
-                        "sign-aways so working creators and private citizens keep an enforceable consent right over AI clones "
-                        "of their voice and likeness."
+                        "Alongside DEFIANCE, Congress should pass a revised NO FAKES Act protecting parody, satire, news, "
+                        "historical, and documentary speech as threshold exclusions, removing S. 4591's mandatory staydown "
+                        "fingerprinting, non-judicial unmasking subpoenas, and Section 230 IP carve-out, and banning lifetime "
+                        "assignments plus terms-of-service or non-union click-wrap likeness licenses so working creators and "
+                        "private citizens keep an enforceable consent right over AI clones."
                     ),
                 ],
             },
@@ -1082,18 +1113,20 @@ SPOKES = [
                 "paragraphs": [
                     (
                         "Federal law should enforce the FTC Impersonation Rule (16 C.F.R. Part 461, while finalizing its "
-                        "individual-impersonation extension) alongside FCC TCPA AI-voice consent rules (FCC 24-17 and "
-                        "FCC 24-84), stiffen wire-fraud penalties for elder voice-clone scams, and close non-IP gaps in "
-                        "telecom [[term-3|caller-authentication]] rules so carriers can trace and block spoofed family-emergency "
-                        "and bank-impersonation calls."
+                        "individual-impersonation extension) and the FCC's TCPA AI-voice ruling (FCC 24-17, while finalizing "
+                        "FCC 24-84 disclosures), fund cross-border wire-fraud recovery, stiffen elder wire-fraud penalties, and "
+                        "adopt FCC 25-25 non-IP [[term-3|caller-authentication]] and foreign-gateway traceback rules so carriers "
+                        "can trace and block spoofed family-emergency and bank-impersonation calls."
                     ),
                     (
                         "Congress should also require hosted commercial media generators (explicitly excluding open-weight model "
-                        "downloads and plain text) to embed open [[term-2|synthetic-origin metadata]] or signal watermarks "
-                        "using ephemeral service-level signing keys with zero end-user identity fields, require large platforms "
-                        "to retain or re-attest provenance labels across transcoding, forbid algorithmic demotion or penalties "
-                        "against unsigned citizen or open-source media, and outlaw intentional stripping solely to defraud or "
-                        "impersonate."
+                        "downloads and plain text) to embed open C2PA [[term-2|synthetic-origin metadata]] (using short-lived, "
+                        "RFC 3161-timestamped service signing keys with zero end-user or user-correlatable asset IDs, avoiding "
+                        "California SB 942 and SB 1000's unique-ID and small-tool mandates) or non-tracking soft-binding "
+                        "watermarks, require large platforms to preserve intact manifests or soft bindings across transcoding, "
+                        "bar government mandates that penalize or force demotion of unsigned citizen or open-source media "
+                        "(or false AI labeling solely for lacking provenance), and punish intentional stripping to defraud, "
+                        "impersonate, or conceal unlawful intimate abuse."
                     ),
                 ],
             },
@@ -1102,20 +1135,20 @@ SPOKES = [
                 "toc_num": "03",
                 "kicker": "Section 03 · Copyright Piracy & Collective Licensing",
                 "toc_label": "Training data & creator pay",
-                "heading": "3. Penalize shadow-library laundering and back voluntary creator licensing",
+                "heading": "3. Ban shadow-library piracy, guard fair use, and back voluntary licensing",
                 "paragraphs": [
                     (
                         "For creative works, Congress should require commercial developers to publish high-level training-data "
                         "summaries, enforce clear statutory penalties against pirated [[term-4|shadow libraries]] and the "
-                        "commercial laundering of noncommercial research datasets (closing the loophole where for-profit "
-                        "labs commercialize scrape indexes assembled under academic exemptions), and preserve lawful "
-                        "non-substitutive fair use where public-interest, academic, or commercial training relies on legitimately "
-                        "acquired material."
+                        "commercial laundering of corpora obtained via academic paywall or DMCA Section 1201 research-exemption "
+                        "breaches (sparing open public-web URL indexes), and preserve lawful non-substitutive fair use where "
+                        "public-interest, academic, or commercial training relies on legitimately acquired material (excepting "
+                        "market-diluting commercial substitution)."
                     ),
                     (
                         "To ensure revenue actually reaches writers, journalists, illustrators, musicians, and voice actors "
-                        "instead of sitting solely with major catalogs, federal policy should authorize and support voluntary "
-                        "collective licensing mechanisms that pay individual working creators."
+                        "instead of sitting solely with major catalogs, federal policy should authorize voluntary collective "
+                        "licensing backed by a narrow antitrust safe harbor and non-waivable direct creator payout splits."
                     ),
                 ],
             },
@@ -1127,23 +1160,24 @@ SPOKES = [
                     "Overbroad publicity bills or poorly drafted provenance rules can chill political satire, news reporting, "
                     "and open-source media tools. Scoping provenance obligations strictly to hosted commercial generators "
                     "(never open-weight files or text), banning end-user identity assertions inside C2PA containers, barring "
-                    "penalties on unsigned citizen or open-source media, protecting parody/news/fair-use exceptions, and "
-                    "targeting statutory penalties at pirated shadow libraries protects victims and creators cleanly."
+                    "state penalties on unsigned citizen or open-source media, protecting parody/news/fair-use exceptions, "
+                    "and targeting statutory penalties at pirated shadow libraries protects victims and creators cleanly."
                 ),
             }
         ],
         "references": [
             (
                 "U.S. Copyright Office, *Copyright and Artificial Intelligence, Part 3: Generative AI Training* (May 2025); "
-                "*Bartz v. Anthropic* (including July 2026 $1.5B shadow-library settlement) and *Kadrey v. Meta* (2025-2026)"
+                "*Bartz v. Anthropic* (including July 2026 $1.5B shadow-library settlement) and *Kadrey v. Meta* market-dilution "
+                "orders (2025-2026)"
             ),
             (
                 "TAKE IT DOWN Act (Pub. L. 119-12, enacted May 2025; FTC enforcement eff. May 2026); DEFIANCE Act (S. 1837); "
                 "bipartisan NO FAKES Act (S. 4591)"
             ),
             (
-                "Coalition for Content Provenance and Authenticity (C2PA) open specification; FTC Impersonation Rule "
-                "(16 C.F.R. Part 461) and FCC AI-Voice TCPA Rulings (FCC 24-17, FCC 24-84) (2024-2026)"
+                "Coalition for Content Provenance and Authenticity (C2PA) open spec & RFC 3161; Cal. SB 942 / SB 1000; "
+                "FTC Impersonation Rule (16 C.F.R. Part 461), FCC 24-17 AI-voice ruling, and FCC 24-84 / FCC 25-25 proceedings"
             ),
         ],
         "glossary": [
@@ -1153,10 +1187,10 @@ SPOKES = [
                 "dt": "TAKE IT DOWN, DEFIANCE, and NO FAKES Acts",
                 "dd": (
                     "The May 2025 TAKE IT DOWN Act (Pub. L. 119-12) created federal criminal penalties and mandatory 48-hour "
-                    "takedowns for nonconsensual intimate images, including AI deepfakes. The DEFIANCE Act (S. 1837) adds "
-                    "federal civil damages against intimate-deepfake perpetrators and knowing distributors under 15 U.S.C. "
-                    "Section 6851, while the NO FAKES Act establishes a federal consent right over unauthorized voice or "
-                    "visual replicas paired with First Amendment and host notice-and-takedown safe harbors."
+                    "takedowns for nonconsensual intimate images, including AI deepfakes. The DEFIANCE Act (S. 1837) amends "
+                    "15 U.S.C. Section 6851 with federal civil damages against intimate-deepfake perpetrators and knowing or "
+                    "reckless distributors, while a revised NO FAKES Act establishes a consent right over unauthorized voice "
+                    "or visual replicas paired with threshold speech exclusions and host safe harbors."
                 ),
             },
             {
@@ -1164,11 +1198,10 @@ SPOKES = [
                 "cat": "deepfakes",
                 "dt": "Provenance (synthetic-origin) metadata and signal watermarks",
                 "dd": (
-                    "A cryptographic record (such as the open C2PA standard) or imperceptible signal watermark embedded in "
-                    "synthetic audio, video, or images by hosted commercial tools. While optional C2PA specifications allow "
-                    "identity assertions, federal statute (modeled on California SB 942) should mandate service-only signing "
-                    "keys with zero end-user identity fields, paired with signal watermarks or platform label retention "
-                    "across transcoding."
+                    "A cryptographic C2PA manifest (using short-lived, RFC 3161-timestamped service signing keys) or an "
+                    "imperceptible signal watermark embedded in synthetic media by hosted commercial tools. Unlike California "
+                    "SB 942's unique-identifier mandate and SB 1000's small-tool sweep, federal rules should forbid end-user "
+                    "and user-correlatable asset IDs while preserving intact labels or soft bindings across platform transcoding."
                 ),
             },
             {
@@ -1176,9 +1209,9 @@ SPOKES = [
                 "cat": "deepfakes",
                 "dt": "Telecom caller authentication (STIR/SHAKEN) and voice-clone fraud",
                 "dd": (
-                    "STIR/SHAKEN is the cryptographic caller-ID verification framework used across IP phone networks to stop "
-                    "spoofed phone numbers that scammers pair with short-sample AI voice clones to impersonate family members "
-                    "or bank officials."
+                    "STIR/SHAKEN is the cryptographic caller-ID verification framework across IP phone networks (with FCC "
+                    "25-25 proposing non-IP expansion) that verifies calling numbers instead of detecting cloned AI voices on "
+                    "legitimate VoIP lines, making FCC AI-voice consent rules and wire-fraud enforcement essential."
                 ),
             },
             {
@@ -1187,9 +1220,9 @@ SPOKES = [
                 "dt": "Shadow libraries, dataset laundering, and collective licensing",
                 "dd": (
                     "Shadow libraries are illicit bulk repositories of pirated books, papers, and media; dataset laundering "
-                    "occurs when a commercial firm exploits datasets compiled by academics under noncommercial research claims "
-                    "to train proprietary products. Collective licensing enables rightsholders and working creators to opt "
-                    "works into transparent, shared royalty pools without blocking lawful fair use."
+                    "occurs when a commercial firm exploits corpora obtained through academic paywall or DMCA Section 1201 "
+                    "research-exemption breaches (distinct from open public-web URL indexes). Collective licensing enables "
+                    "voluntary royalty pools with statutory antitrust protection and direct creator payout splits."
                 ),
             },
         ],
@@ -1492,8 +1525,8 @@ HUB = {
     "metrics": [
         {
             "figure": "$9B+ / 76-126 GW",
-            "label": "Data-center cost added to one PJM auction vs. U.S. grid headroom unlocked by modest peak flexibility.",
-            "cite": "PJM Market Monitor; Duke Nicholas Institute (2025, 2026)",
+            "label": "Data-center cost added to one PJM auction vs. U.S. grid headroom modeled for modest peak curtailment.",
+            "cite": "PJM Market Monitor; Duke Nicholas Institute (Feb. 2025)",
         },
         {
             "figure": "71% / 73%",
@@ -1519,8 +1552,8 @@ HUB = {
             "and anxiety over career displacement (with 71% expecting fewer total U.S. jobs, led by 73% among adults "
             "under 30). Families and clinicians are also sounding alarms over manipulative youth AI companions and lab "
             "safety corner-cutting. At the same time, Stanford AI Index, CSIS, and Lowy Institute tracking confirms that "
-            "unilateral U.S. software freezes fail across borders: DeepSeek and Alibaba narrowed frontier benchmark gaps "
-            "to roughly 2.7% and gained wide global adoption through open weights."
+            "unilateral U.S. software freezes fail across borders: top U.S.-China frontier gaps narrowed to 2.7% on "
+            "LMArena while DeepSeek and Alibaba open-weight models sit within 3.3% of closed leaders."
         ),
     ],
     "bluf_goal": (
@@ -1538,27 +1571,24 @@ HUB = {
             "heading": "1. Make hyperscale data centers fund clean power and water up front",
             "lead": (
                 "Families never asked to bankroll Big Tech server farms through higher utility bills, depleted aquifers, "
-                "or unpermitted neighborhood gas plants. Every facility or campus over 20 megawatts should pay its full "
-                "infrastructure and pollution tab up front."
+                "or unpermitted neighborhood gas plants. Every facility or campus over 20 megawatts (aggregated across "
+                "phased and BTM sites) should pay its full infrastructure and pollution tab up front."
             ),
             "bullets": [
                 (
-                    "Enforce 100% cost-causation grid tariffs with minimum-term collateral across FERC, DOE grid grants, "
-                    "and state utility commissions so stranded data-center debt never lands on household bills."
+                    "Enforce 100% cost-causation grid tariffs (including dedicated supply) with minimum-term collateral across "
+                    "FERC, ERCOT/non-RTO regulators, and state utility commissions so data-center debt never hits household bills."
                 ),
                 (
-                    "Reserve fast-track interconnection queues for new, deliverable clean power on an hourly-matched "
-                    "schedule (solar and batteries now, scaling geothermal and nuclear) paired with 0.25% to 1% peak load "
-                    "curtailment across 85 to 366 peak stress hours (unlocking 76 to 126 gigawatts of U.S. grid-withdrawal "
-                    "headroom, paired with a strict ban on fossil backup shifting) alongside reconductoring and dynamic "
-                    "line ratings and clean-priority Order 845 / generator replacement at operating or retiring coal sites."
+                    "Reserve fast-track queues for projects bringing deliverable clean power or bridge contracts on a rising "
+                    "hourly schedule plus 0.25% to 1% annual curtailment across 85-366 peak hours (76-126 GW system headroom "
+                    "via shifting/clean storage instead of fossil backup), reconductoring, and competitive replacement at fossil sites."
                 ),
                 (
-                    "Condition federal water grants (Congress) and DOE loans/cloud contracts in water-stressed basins on "
-                    "ending potable water discounts, requiring drought cutbacks, and mandating closed-loop, hybrid adiabatic, "
-                    "or reclaimed municipal wastewater cooling, and close Subpart KKKKa, RIN 2060-AX08 nonroad, Clean Air Act "
-                    "Sections 110(f)/112(i)(4), and multi-year FPA Section 202(c) methane-turbine loopholes for commercial "
-                    "data centers."
+                    "Condition federal water grants, DOE loans/cloud deals, and state drought/groundwater caps on ending bulk "
+                    "potable discounts and using storage-buffered closed-loop, zero-drought hybrid adiabatic, or reclaimed water, "
+                    "and close Subpart KKKKa (24-mo, <=45% CF, <=850 MMBtu/h), RIN 2060-AX08, CAA §§ 110(f)/112(i)(4), and "
+                    "202(c) retirement/50-hr backup waivers."
                 ),
             ],
             "spoke_slug": "power-water",
@@ -1575,19 +1605,19 @@ HUB = {
             ),
             "bullets": [
                 (
-                    "Expand NSF and DOE's Sept. 2026 NAIRR Operations Center via the bipartisan CREATE AI Act so universities, "
-                    "teaching hospitals, civic groups, and startups run open-science R&D and public-interest compute plus "
-                    "vendor-neutral cloud vouchers instead of donated Big Tech credits."
+                    "Expand NSF's Sept. 2026 NAIRR Operations Center via the CREATE AI Act with the full $2.6B six-year "
+                    "appropriations target for national-lab/university supercomputers and zero-egress cloud vouchers instead "
+                    "of revocable Big Tech credits."
                 ),
                 (
-                    "Keep open-weight AI models below Pillar 6's catastrophic bio-cyber tripwires legal to inspect and deploy "
-                    "on local or domestic servers instead of forcing institutions onto permanent closed corporate APIs."
+                    "Protect open-weight AI distribution below Pillar 6's narrow catastrophic bio-cyber tripwires (Brief "
+                    "2026-01F) from licensing bans, paired with NSTM-6 DNA screening and cyber-hardening, instead of forcing "
+                    "civic institutions onto closed corporate APIs."
                 ),
                 (
-                    "Block exclusive cloud-compute tying and accelerator allocation bottlenecks, enact modernized HSR premerger "
-                    "review for disguised acqui-hires, and outlaw shared algorithms training on current or historical nonpublic "
-                    "competitor data (closing RealPage's 12-month loophole) while sparing proprietary single-merchant tools "
-                    "using a firm's own operational plus public data."
+                    "Block dominant cloud-compute tying and chip bottlenecks, mandate HSR review on non-exclusive/equity "
+                    "acqui-hires, and ban algorithms pooling/training weights on nonpublic data or facilitating price coordination "
+                    "while sparing tenant-isolated internal/public-data tools."
                 ),
             ],
             "spoke_slug": "compute-antitrust",
@@ -1604,21 +1634,19 @@ HUB = {
             ),
             "bullets": [
                 (
-                    "Enact binding defense appropriations requiring human command verification over anti-personnel lethal "
-                    "force (preserving point-defense counter-munitions), ban autonomous nuclear launch, require judicial "
-                    "warrants (with narrow life-safety exigencies) for biometric dragnets, and pass the Fourth Amendment Is "
-                    "Not For Sale Act."
+                    "Enact permanent statutory and defense prohibitions requiring human command over lethal or dual-use "
+                    "strikes (preserving incoming/UAS point defense), ban autonomous nuclear warning/launch, require warrants "
+                    "(with 48-hr exigencies) for 1:N biometric/camera dragnets, and close the broker loophole."
                 ),
                 (
-                    "Boost human legal-aid and public-defender hiring alongside audited LSC/SJI civil tools and privilege-protected "
-                    "Byrne JAG / Defender Services discovery AI, while barring algorithmic bail, sentencing, or benefits denials "
-                    "and reworking the withdrawn Rule 707 draft and Rule 901(c) deepfake-evidence rules."
+                    "Expand legal-aid/public-defender hiring alongside confidentiality-protected civil tools and Byrne JAG / "
+                    "Defender discovery AI, require explainable human findings in federal sentencing/benefits, exempt defender "
+                    "grants from Byrne JAG unvalidated-risk-score rules, and finalize Oct. 2026 Rule 707/901(c) reforms."
                 ),
                 (
-                    "Halt Original Medicare's WISeR pilot and ban automated coverage denials across Medicare, Medicaid, FEHB, "
-                    "ERISA, and commercial plans without specialty physician or qualified clinician review (permitting "
-                    "automated fast-track approvals), ban denial bounties, and override ERISA, Medicare Advantage, and FEHBA "
-                    "preemption to preserve state bad-faith remedies."
+                    "Permanently halt WISeR and ban automated coverage delays or denials across Medicare, Medicaid, TRICARE, "
+                    "FEHB, ERISA, and commercial plans without relevant-specialty clinical review (allowing fast-track "
+                    "approvals), ban denial quotas, and enact explicit ERISA §§ 502(a)/514(b)(2)(B), MA, and FEHBA non-preemption carve-outs."
                 ),
             ],
             "spoke_slug": "civil-liberties",
@@ -1628,28 +1656,26 @@ HUB = {
             "toc_num": "04",
             "toc_label": "Workers, taxes, and wages",
             "kicker": "Pillar 04 · Worker Taxes, Bossware & Wage Insurance",
-            "heading": "4. Equalize worker taxes, ban abusive \"bossware,\" and insure workers against agentic displacement",
+            "heading": "4. Narrow the worker-capital tax gap, ban abusive \"bossware,\" and insure displaced workers",
             "lead": (
                 "Tax law should stop paying corporations a bonus to replace human staff solely for tax arbitrage, and workers "
                 "need concrete income security and bargaining power when capable AI agents transform white-collar roles."
             ),
             "bullets": [
                 (
-                    "Scale back corporate 100% bonus depreciation toward economic depreciation while keeping Section 174A R&D, "
-                    "small-business Section 179, grid hardware, domestic chip fabs, and restored clean-energy incentives, "
-                    "funding a payroll credit backed by mandatory dollar-for-dollar general-revenue transfers keeping Social "
-                    "Security and Medicare whole."
+                    "Taper corporate/pass-through 100% bonus depreciation toward MACRS while preserving Section 174A R&D, "
+                    "matched on-prem inference recovery, Section 179, grid, 35% Section 48D chips, and restored clean-energy "
+                    "credits, funding with base broadeners a FICA-indexed credit keeping Trust Funds whole."
                 ),
                 (
-                    "Require an accountable human decision-maker, outlaw injury-inducing algorithmic quotas (\"bossware\") "
-                    "and forced arbitration, mandate advance notice and anti-retaliation protections, and establish NLRA "
-                    "pre-deployment bargaining over surveillance and displacement."
+                    "Require documented human override authority across employer and vendor/1099 intermediaries, ban injury "
+                    "quotas (\"bossware\") and AI-claim forced arbitration, add advance notice/civil penalties, and mandate "
+                    "NLRA pre-deployment bargaining over surveillance and quotas plus effects bargaining over displacement."
                 ),
                 (
-                    "Replace broken classroom-only retraining with 50% federal wage insurance ($15,000-$20,000/yr cap for "
-                    "two years), 90-day remote/rolling WARN Act notice with severance, paid apprenticeships and sectoral "
-                    "training in shortage fields, and union and sectoral ERISA portable benefit pools (without weakening "
-                    "W-2 misclassification laws)."
+                    "Replace broken vouchers with 50% wage-loss insurance ($15,000-$20,000/yr cap, 1+ yr tenure), 180-day "
+                    "rolling WARN notice/severance with FUTA § 3304(a) UI non-offset rules, MDRC-backed apprenticeships, and "
+                    "W-2/MEWA-solvent ERISA portable benefit pools."
                 ),
             ],
             "spoke_slug": "workers-taxes",
@@ -1666,18 +1692,19 @@ HUB = {
             ),
             "bullets": [
                 (
-                    "Pair the 2025 TAKE IT DOWN Act (Pub. L. 119-12, with bad-faith takedown safeguards) with DEFIANCE Act "
-                    "civil suits against intimate-deepfake perpetrators and NO FAKES Act voice-and-likeness rights with "
-                    "parody/news/host safe harbors and anti-clickwrap protections."
+                    "Amend Pub. L. 119-12 (TAKE IT DOWN) with bad-faith notice penalties without NCII put-backs, pass DEFIANCE "
+                    "(S. 1837 knowing/reckless + profiteer suits), and pass a revised NO FAKES banning lifetime assignments "
+                    "and clickwrap licenses without staydown filters or 512(h) subpoenas."
                 ),
                 (
-                    "Enforce FTC Part 461 and FCC AI-voice rules plus telecom caller-ID authentication against senior scams, "
-                    "require hosted commercial media generators (never open-weight files or text) to embed open privacy-clean "
-                    "provenance retained across platform transcoding, and impose zero penalties on unsigned citizen media."
+                    "Enforce and finalize FTC Part 461 (individuals), FCC 24-17/24-84, and FCC 25-25 non-IP caller-ID rules, "
+                    "mandate RFC 3161-timestamped hosted C2PA/watermark provenance (zero user IDs, never open weights/text), "
+                    "and bar state penalties on unsigned citizen or open-source media."
                 ),
                 (
-                    "Mandate commercial training-data summaries, penalize pirated shadow libraries and commercial laundering of "
-                    "academic datasets, and back voluntary collective licensing paying individual creators without erasing fair use."
+                    "Mandate high-level training summaries, penalize shadow libraries and paywall/Section 1201 research-breach "
+                    "laundering (sparing open URL indexes), protect non-market-diluting fair use, and add antitrust-safe "
+                    "voluntary licensing with direct creator payout splits."
                 ),
             ],
             "spoke_slug": "deepfakes-creators",
@@ -1718,29 +1745,29 @@ HUB = {
             "eyebrow": "01 · Permitting Scope",
             "body": (
                 "Fast-tracking clean energy infrastructure can fracture center-left coalitions if bills sweep too broadly. "
-                "Statutory fast-tracks must stay strictly scoped to transmission timelines, reconductoring, dynamic line "
-                "ratings, geothermal, and battery/zero-carbon projects on low-conflict or remediated sites, preserving "
-                "Tribal consultation and cumulative fenceline safeguards everywhere and never granting fast-tracks or weaker "
-                "NEPA and Clean Air Act enforcement to fossil projects, as demanded by the Sierra Club and frontline "
-                "community groups."
+                "Statutory fast-tracks must stay strictly scoped to interregional transmission timelines, reconductoring, "
+                "dynamic line ratings, geothermal exploration, and battery/zero-carbon projects on low-conflict or remediated "
+                "sites, preserving Tribal consultation and cumulative fenceline safeguards everywhere and never granting "
+                "fast-tracks or weaker NEPA and Clean Air Act enforcement to fossil projects, as demanded by the Sierra Club "
+                "and frontline community groups."
             ),
         },
         {
             "eyebrow": "02 · Tax Parity vs. Robot Taxes",
             "body": (
                 "Tax economists across the spectrum warn that literal 'robot taxes' or compute levies are nearly impossible "
-                "to define and risk driving investment abroad, while MDRC trials caution that sectoral training requires "
-                "deep employer commitment to scale. Scaling back general corporate bonus depreciation (while protecting "
-                "Section 174A R&D) funds payroll relief and wage insurance immediately without taxing domestic compute."
+                "to define and risk driving investment abroad, while MDRC trials (Per Scholas / St. Nicks) caution that "
+                "sectoral training needs deep employer buy-in to scale. Tapering bonus depreciation plus base broadeners "
+                "supports FICA-indexed credits and wage insurance without taxing compute."
             ),
         },
         {
-            "eyebrow": "03 · Open Weights vs. Frontier Tripwires",
+            "eyebrow": "03 · Public Compute, Open Weights & Frontier Tripwires",
             "body": (
-                "Keeping model weights open checks Big Tech lock-in. Pre-release testing should apply only above "
-                "efficiency-indexed catastrophic bio/cyber tripwires with an explicit safe harbor for open weights below "
-                "those limits (never shielding CSAM, shadow-library piracy, or intimate deepfakes), paired with physical "
-                "NSTM-6 DNA screening."
+                "Appropriated NAIRR compute and licensing-free open weights check oligopoly capture. Pre-release red-teaming "
+                "applies only above efficiency-indexed catastrophic bio/cyber tripwires with an explicit open-weight harbor "
+                "below those limits (never shielding CSAM, shadow-library piracy, or intimate deepfakes), paired with "
+                "physical NSTM-6 DNA screening."
             ),
         },
         {
@@ -1748,15 +1775,15 @@ HUB = {
             "body": (
                 "Low-income litigants rarely have a second lawyer to catch AI hallucinations that Stanford studies still "
                 "document in legal tools. Publicly funded legal-aid software requires independent accuracy audits, "
-                "attorney-vetted pro se templates, and human attorney sign-off on generative briefs."
+                "court-compatible, attorney-vetted pro se templates, and human attorney sign-off on open-ended generative briefs."
             ),
         },
         {
             "eyebrow": "05 · Likeness Rights & Creator Pay vs. Free Expression",
             "body": (
                 "Overbroad likeness or watermark laws can chill satire, reporting, and open tools. Limiting synthetic provenance "
-                "to hosted commercial media without identity tracking, barring penalties on unsigned open media, protecting "
-                "parody/news/fair use, and targeting shadow-library piracy protects working creators cleanly."
+                "to hosted commercial generators without user IDs, barring state penalties on unsigned open media, protecting "
+                "parody/news/fair use, and targeting shadow-library piracy protects victims and creators cleanly."
             ),
         },
         {
@@ -1772,24 +1799,27 @@ HUB = {
     "references": [
         (
             "Tyler H. Norris et al. (Feb. 2025) & Martin T. Ross and Jackson Ewing (Feb. 2026), *Duke University Nicholas "
-            "Institute* reports on flexible data-center loads; PJM Independent Market Monitor (Monitoring Analytics) & DOE filings"
+            "Institute*; PJM Independent Market Monitor & DOE/FERC RM26-4 filings; Water Foundation/Brookings, EPA Subpart "
+            "KKKKa (91 FR 1910), RIN 2060-AX08, and *Michigan v. DOE*"
         ),
         (
             "Daron Acemoglu, Andrea Manera, and Pascual Restrepo, \"Does the U.S. Tax Code Favor Automation?,\" *Brookings "
-            "Papers on Economic Activity* (Spring 2020); Hamilton Project wage-insurance models; MDRC *WorkAdvance* 10-year "
-            "follow-up (Sept. 2025)"
+            "Papers on Economic Activity* (Spring 2020); JCT / OBBBA IRC Sections 168(k), 174A(d)(1), 48D; Hamilton Project "
+            "wage-insurance models; MDRC *WorkAdvance* 10-year follow-up (Sept. 2025)"
         ),
         (
-            "Pew Research Center U.S. public opinion surveys (2025-2026); Stanford HAI *AI Index Report* (2025-2026); "
-            "CSIS and Lowy Institute open-weight competition analyses; *United States v. RealPage* (May 2026) & *Chamber of Commerce v. FTC*"
+            "Pew Research Center U.S. public surveys (2025-2026); Stanford HAI *AI Index Report* (2026); NSF NAIRR-OC "
+            "(#2616251) & CREATE AI Act; *RealPage* (May 2026), *RealPage v. James* (Sept. 2026), S. 232, Cal. AB 325, "
+            "FTC Section 6(b) & *Chamber of Commerce v. FTC*"
         ),
         (
-            "AFL-CIO *Workers First Initiative on AI* (2025); Legal Services Corporation *The Justice Gap* (2022); U.S. "
-            "Judicial Conference Proposed Rule 707 withdrawal (May 2026) & Rule 901(c) record; CMS WISeR & House defunding action (2026)"
+            "Just Security / EFF 2026 Pentagon vendor analyses; ACLU/GAO data-broker reports; AFL-CIO *Workers First* (2025); "
+            "LSC *Justice Gap* (2022) & Stanford RegLab; Judicial Conference May/Oct. 2026 Rule 707/901(c) record; CMS WISeR & *Lokken*/*Barrows*"
         ),
         (
-            "U.S. Copyright Office *Generative AI Training* Part 3 (May 2025); TAKE IT DOWN Act (Pub. L. 119-12), DEFIANCE Act "
-            "(S. 1837), NO FAKES Act (S. 4591), C2PA provenance specs, FTC 16 C.F.R. Part 461, and *Bartz v. Anthropic* (July 2026)"
+            "U.S. Copyright Office *Generative AI Training* Part 3 (May 2025); TAKE IT DOWN (Pub. L. 119-12), DEFIANCE "
+            "(S. 1837), NO FAKES (S. 4591), C2PA/RFC 3161, Cal. SB 942/SB 1000, FTC 16 C.F.R. Part 461, FCC 24-17/24-84/25-25, "
+            "*Bartz v. Anthropic* (July 2026) & *Kadrey v. Meta*"
         ),
         (
             "California SB 53, SB 243 & SB 1119 (2025-2026); NY RAISE Act (eff. Jan. 2027) & GBL Arts. 47-48; AI Whistleblower "

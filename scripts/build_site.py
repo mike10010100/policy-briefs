@@ -1109,7 +1109,7 @@ def build_spoke_print_html(sp: dict) -> str:
   <style>
     @page {{
       size: letter;
-      margin: 0.58in 0.7in 0.66in 0.7in;
+      margin: 0.48in 0.62in 0.54in 0.62in;
       @bottom-left {{
         content: "{h_text(sp['code'].upper())}  |  MICHAEL PAULAUSKI  |  {data.SITE['date_upper']}";
         font-family: 'Liberation Sans', sans-serif;
@@ -1129,107 +1129,107 @@ def build_spoke_print_html(sp: dict) -> str:
       margin: 0;
       padding: 0;
       font-family: 'Noto Serif', 'Liberation Serif', Georgia, serif;
-      font-size: 10pt;
-      line-height: 1.44;
+      font-size: 9.45pt;
+      line-height: 1.35;
       color: #111827;
       background: #ffffff;
     }}
     .header-block {{
       border-top: 2.5pt solid #0f172a;
       border-bottom: 0.75pt solid #cbd5e1;
-      padding: 9pt 0 8pt 0;
-      margin-bottom: 12pt;
+      padding: 6.5pt 0 5.5pt 0;
+      margin-bottom: 8.5pt;
     }}
     .doc-label {{
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 10pt;
+      font-size: 9.8pt;
       font-weight: 700;
       letter-spacing: 0.11em;
       text-transform: uppercase;
       color: #0f172a;
-      margin: 0 0 6pt 0;
+      margin: 0 0 4.5pt 0;
     }}
     .meta-table {{
       border-collapse: collapse;
       width: 100%;
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 9.2pt;
-      line-height: 1.34;
+      font-size: 8.85pt;
+      line-height: 1.28;
       color: #1e293b;
     }}
-    .meta-table td {{ padding: 1.5pt 0; vertical-align: top; }}
+    .meta-table td {{ padding: 1pt 0; vertical-align: top; }}
     .meta-label {{ width: 88pt; font-weight: 700; color: #334155; }}
     .bluf-box {{
       background: #f8fafc;
       border-left: 3pt solid #1e3a5f;
-      padding: 9pt 12pt;
-      margin: 0 0 12pt 0;
+      padding: 6.5pt 10pt;
+      margin: 0 0 8.5pt 0;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }}
-    .bluf-box h3 {{ margin: 0 0 5pt 0; color: #1e3a5f; }}
+    .bluf-box h3 {{ margin: 0 0 3.5pt 0; color: #1e3a5f; }}
     .bluf-box p:last-child {{ margin-bottom: 0; }}
     h3 {{
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 10.9pt;
+      font-size: 10.4pt;
       font-weight: 700;
       color: #0f172a;
-      margin: 13pt 0 5pt 0;
-      line-height: 1.25;
+      margin: 9.5pt 0 3.5pt 0;
+      line-height: 1.22;
       break-after: avoid;
       page-break-after: avoid;
     }}
-    p {{ margin: 0 0 7.5pt 0; orphans: 3; widows: 3; text-align: left; }}
+    p {{ margin: 0 0 5pt 0; orphans: 3; widows: 3; text-align: left; }}
     .tradeoff-print-box {{
       border-left: 2pt solid #cbd5e1;
       padding-left: 9pt;
-      margin: 0 0 8pt 0;
+      margin: 0 0 5.5pt 0;
       break-inside: avoid;
       page-break-inside: avoid;
     }}
     .tradeoff-print-eyebrow {{
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 8.6pt;
+      font-size: 8.2pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: #1e3a5f;
-      margin-bottom: 2.5pt;
+      margin-bottom: 1.5pt;
     }}
     .tradeoff-print-box p {{ margin: 0; }}
     .references-block {{
-      margin-top: 12pt;
-      padding-top: 8pt;
+      margin-top: 8.5pt;
+      padding-top: 5.5pt;
       border-top: 0.75pt solid #cbd5e1;
-      font-size: 8.7pt;
-      line-height: 1.36;
+      font-size: 8.3pt;
+      line-height: 1.28;
       color: #334155;
       break-inside: avoid;
       page-break-inside: avoid;
     }}
     .references-title {{
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 8.9pt;
+      font-size: 8.5pt;
       font-weight: 700;
       color: #0f172a;
-      margin: 0 0 4pt 0;
+      margin: 0 0 3pt 0;
     }}
     .references-block ul {{ margin: 0; padding-left: 14pt; }}
-    .references-block li {{ margin-bottom: 2.5pt; }}
+    .references-block li {{ margin-bottom: 1.5pt; }}
     .glossary-appendix {{
-      margin-top: 14pt;
-      padding-top: 8pt;
+      margin-top: 9.5pt;
+      padding-top: 5.5pt;
       border-top: 2pt solid #0f172a;
     }}
     .glossary-header {{
-      margin-bottom: 8pt;
+      margin-bottom: 5pt;
       break-after: avoid;
       page-break-after: avoid;
     }}
-    .glossary-header h3 {{ margin: 0 0 2pt 0; color: #0f172a; }}
+    .glossary-header h3 {{ margin: 0 0 1.5pt 0; color: #0f172a; }}
     .glossary-subtitle {{
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 8.6pt;
+      font-size: 8.2pt;
       color: #475569;
       margin: 0;
     }}
@@ -1237,24 +1237,24 @@ def build_spoke_print_html(sp: dict) -> str:
       margin: 0;
       padding: 0;
       column-count: 2;
-      column-gap: 18pt;
+      column-gap: 15pt;
     }}
     .glossary-item {{
       break-inside: avoid;
       page-break-inside: avoid;
-      margin: 0 0 8pt 0;
+      margin: 0 0 5.5pt 0;
     }}
     .glossary-item dt {{
       font-family: 'Liberation Sans', sans-serif;
-      font-size: 9.1pt;
+      font-size: 8.75pt;
       font-weight: 700;
       color: #0f172a;
-      margin: 0 0 2pt 0;
+      margin: 0 0 1pt 0;
     }}
     .glossary-item dd {{
       margin: 0;
-      font-size: 8.85pt;
-      line-height: 1.36;
+      font-size: 8.35pt;
+      line-height: 1.28;
       color: #1f2937;
     }}
   </style>
@@ -1413,12 +1413,13 @@ def build_spoke_web_html(sp: dict, idx: int, pdf_pages: int) -> str:
         '<span class="pager-title">Review Full 6-Pillar Executive Overview</span></a>'
     )
 
+    page_title = f"{sp['seo_title']} | {sp['code']}" if "seo_title" in sp else f"{sp['title']} | {sp['code']} by {data.SITE['author']}"
     return f"""<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{h_text(sp['title'])} | {h_text(sp['code'])} by {h_text(data.SITE['author'])}</title>
+  <title>{h_text(page_title)}</title>
   <meta name="description" content="{h(sp['meta_description'])}" />
   <link rel="canonical" href="{data.SITE['base_url']}/ai-governance/{sp['slug']}/" />
 
@@ -1732,7 +1733,7 @@ def build_root_index_html(hub_pages: int, spoke_pdf_pages: dict[str, int]) -> st
           <a href="./ai-governance/">{h_text(hub['title'])}</a>
         </h3>
 
-        <p class="entry-summary">A hub-and-spoke federal AI governance agenda separating open research speed from accountable commercial and government deployment: 100% cost-causation grid tariffs, water conservation, and gas-turbine air limits; public compute and algorithmic antitrust; statutory civil-liberties and health-care guardrails; worker tax parity and wage insurance; deepfake and creator rights; and frontier bio-cyber safety plus bans on manipulative chatbot design without government-ID dragnets.</p>
+        <p class="entry-summary">A hub-and-spoke federal AI governance agenda separating open research speed from accountable commercial and government deployment: 100% cost-causation grid tariffs, water conservation, and data-center turbine loophole closures; public compute and algorithmic antitrust; statutory civil-liberties, courtroom, and health-care guardrails; worker tax parity, workplace AI rules, and wage-loss insurance; deepfake and creator rights; and frontier bio-cyber safety plus bans on manipulative chatbot design without government-ID dragnets.</p>
 
         <div class="entry-tags" aria-label="Topics">
           <span class="entry-tag">executive overview</span>
